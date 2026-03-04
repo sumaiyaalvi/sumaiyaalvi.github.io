@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "About me"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sumaiya Alvi",
@@ -19,5 +12,12 @@
     "title": "Projects",
     "section": "",
     "text": "projects"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "About me"
   }
 ]

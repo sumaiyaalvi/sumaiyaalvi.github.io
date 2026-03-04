@@ -15,7 +15,8 @@ website:
 format:
   html:
     theme:
-      - cosmo
+      light: Morph
+      dark: Solar
     css: styles.css
     toc: true
     page-layout: full
