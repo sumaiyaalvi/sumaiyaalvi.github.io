@@ -1,11 +1,18 @@
 ---
-title: "sumaiyaalvi.github.io"
+title: "Sumaiya Alvi"
+image: media/memage.jpg
+2toc: false
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 15em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/sumaiyaxalvi/
+    - text: GitHub
+      href: https://github.com/sumaiyaalvi
+    - text: Email
+      href: mailto:sumaiyaxalvi@gmail.com
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Hi there! My name is Sumaiya Alvi, welcome to my website! I'm currently a 4th year student at UC Santa Barbara studying Statistics and Data Science. In my 4 years taking classes at this university, my favorite topic that I've learned so far has to be data visualization. I love experimenting and learning more about all the fun customisations that can be made. Outside of class, you can catch my at MSA (Muslim Student Association) club meetings where I serve as Vice President, going for sunset walks in Isla Vista, or re-reading my favorite book, _Song of Achilles_. Feel free to explore all the different pages on this website to learn more about me!
