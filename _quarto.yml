@@ -8,6 +8,9 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - projects.qmd
+      - interests.qmd
+      - resume.qmd
 
 format:
   html:
