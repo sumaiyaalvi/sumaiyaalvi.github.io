@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  favicon: media/claude-brands-solid-full.svg
   navbar:
     left:
       - href: index.qmd
@@ -11,6 +12,10 @@ website:
       - projects.qmd
       - interests.qmd
       - resume.qmd
+    right: 
+      - icon: github
+        href: https://github.com/sumaiyaalvi
+        target: _blank
 
 format:
   html:

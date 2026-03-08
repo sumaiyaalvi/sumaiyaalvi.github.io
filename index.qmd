@@ -7,11 +7,14 @@ about:
   image-shape: round
   image-width: 15em
   links:
-    - text: LinkedIn
+    - icon: linkedin
+      text: LinkedIn
       href: https://www.linkedin.com/in/sumaiyaxalvi/
-    - text: GitHub
+    - icon: github
+      text: GitHub
       href: https://github.com/sumaiyaalvi
-    - text: Email
+    - icon: envelope
+      text: Email
       href: mailto:sumaiyaxalvi@gmail.com
 ---
 
