@@ -3,14 +3,17 @@ project:
   output-dir: docs
 
 website:
+  title: "Sumaiya Alvi"
+  site-url: https://sumaiyaalvi.github.io/
   favicon: media/claude-brands-solid-full.svg
   navbar:
+    title: false
     left:
       - href: index.qmd
-        text: Home
+        text: Sumaiya Alvi
       - about.qmd
-      - projects.qmd
       - interests.qmd
+      - projects.qmd
       - resume.qmd
     right: 
       - icon: github

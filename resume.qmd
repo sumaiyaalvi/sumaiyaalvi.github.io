@@ -1,5 +1,5 @@
 ---
-title: "Resume/CV"
+title: "Resume and Coursework"
 ---
 
 ## My most recent resume
@@ -45,17 +45,10 @@ This course focused on the programming and computational tools used in modern da
 
 **Winter 2026**
 
-This course focused on applying statistical methods to environmental datasets and interpreting the results in real-world contexts. Using `R`, I conducted hypothesis tests, performed statistical analyses, and created complex visualizations to explore patterns in environmental data. The class emphasized selecting appropriate statistical methods and communicating results clearly while connecting the analysis to broader environmental questions.
+This course focused on applying statistical methods to environmental datasets and interpreting the results in real-world contexts. Using `R`, I **conducted hypothesis tests, performed statistical analyses, and created complex visualizations** to explore patterns in environmental data. The class emphasized selecting appropriate statistical methods and communicating results clearly while connecting the analysis to broader environmental questions.
 
 ### GEOG 176A - Intro to Geographic Information Systems
 
 **Fall 2025**
 
 This course introduced the fundamentals of **GIS and spatial data analysis using ArcGIS Pro**. I worked with geographic datasets to create maps, analyze spatial relationships, and visualize geographic patterns. The class emphasized how spatial data can be used to communicate information about places, environments, and geographic trends. For my final project, I analyzed how COVID-19 lockdowns impacted wildlife behavior in urban areas (specifically coyotes in Los Angeles county).
-
-
-
-
-
-
-

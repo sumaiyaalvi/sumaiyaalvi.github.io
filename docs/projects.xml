@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Sumaiya Alvi</title>
+<link>https://sumaiyaalvi.github.io/projects.html</link>
+<atom:link href="https://sumaiyaalvi.github.io/projects.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Mon, 09 Mar 2026 17:13:41 GMT</lastBuildDate>
+<item>
+  <title>Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch</title>
+  <link>https://sumaiyaalvi.github.io/projects/beats by dre/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>From April to June 2025, I worked on a consumer insights and social listening project centered on the <strong>Beats Pill launch</strong>. The goal of this project was to better understand how consumers were responding to the product by combining survey data with social media conversations and translating those findings into actionable recommendations.</p>
+<p>Using <strong>Python in Google Colab</strong>, I collected, cleaned, and structured both qualitative and quantitative data. I then used <strong>exploratory data analysis, sentiment analysis, and qualitative review</strong> to identify major themes in consumer perception, feature preferences, and overall behavior.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>Python</strong></li>
+<li><strong>Google Colab</strong></li>
+<li><strong>Exploratory Data Analysis (EDA)</strong></li>
+<li><strong>Sentiment Analysis</strong></li>
+<li><strong>Qualitative Analysis</strong></li>
+<li><strong>Data Visualization</strong></li>
+<li><strong>Dashboard Development</strong></li>
+<li><strong>Stakeholder Communication</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>How were consumers reacting to the Beats Pill launch?</li>
+<li>What product features or qualities were mentioned most often?</li>
+<li>What themes emerged from survey responses and social media discussions?</li>
+<li>How could these findings be turned into useful product or marketing recommendations?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>In this project, I worked on the full analysis pipeline from data preparation to final presentation. This included collecting and organizing data, analyzing sentiment and discussion themes, creating visualizations, and summarizing the results in a way that would be useful for non-technical stakeholders.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>I combined both quantitative and qualitative approaches to better understand consumer responses.</p>
+<section id="data-collection-and-cleaning" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-and-cleaning">Data Collection and Cleaning</h3>
+<p>I worked with consumer survey responses and social media conversations related to the Beats Pill launch. A large part of the project involved cleaning and structuring the data so it could be analyzed consistently across sources.</p>
+</section>
+<section id="sentiment-analysis-and-eda" class="level3">
+<h3 class="anchored" data-anchor-id="sentiment-analysis-and-eda">Sentiment Analysis and EDA</h3>
+<p>Using Python, I performed sentiment analysis and exploratory data analysis to identify patterns in how people discussed the product. This helped highlight overall tone, recurring opinions, and feature-level trends in consumer reactions.</p>
+</section>
+<section id="qualitative-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="qualitative-analysis">Qualitative Analysis</h3>
+<p>In addition to numerical summaries, I reviewed open-ended responses and discussion content to identify themes that might not be fully captured through sentiment scores alone. This helped provide more context around what consumers liked, disliked, or expected from the product.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>A few major themes emerged from the analysis:</p>
+<ul>
+<li>Consumer reactions were shaped by a mix of product features, brand perception, and launch messaging</li>
+<li>Social listening data revealed recurring points of praise and criticism that complemented the survey findings</li>
+<li>Combining quantitative summaries with qualitative review made the recommendations more grounded and actionable</li>
+<li>Clear visual storytelling was important for communicating insights to stakeholders without a technical background</li>
+</ul>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<p>This project resulted in several final deliverables, which are linked below.</p>
+<p><a href="../../projects/beats by dre/beats_presentation.pdf" target="_blank">View the final presentation (PDF)</a></p>
+<p><a href="https://claude.ai/public/artifacts/cc49c7ec-1b6e-40db-93fe-6429e480c300" target="_blank">Open the Claude insights dashboard</a></p>
+<p><a href="https://docs.google.com/document/d/1_2_djk76Xk8LL9TROq4A0o5ZydId4PDDbNxEnnify3k/edit?usp=sharing" target="_blank">Read the project summary</a></p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project strengthened my skills in <strong>consumer analytics, storytelling, and stakeholder communication</strong>. It also gave me more experience working with messy real-world data and thinking carefully about how to turn analysis into recommendations that are both clear and useful.</p>
+<p>What I found especially valuable was the balance between technical analysis and communication. Beyond identifying trends in the data, the project required me to think about how to present those findings in a consulting-style format that could support real decision-making.</p>
+<iframe src="../../projects/beats by dre/beats_presentation.pdf" width="100%" height="800px">
+</iframe>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://sumaiyaalvi.github.io/projects/beats by dre/</guid>
+  <pubDate>Mon, 09 Mar 2026 17:13:41 GMT</pubDate>
+  <media:content url="https://sumaiyaalvi.github.io/projects/beats by dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
+</item>
+</channel>
+</rss>

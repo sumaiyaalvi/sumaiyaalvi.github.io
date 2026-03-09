@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Using EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch">
 
-<title>Around the World – Sumaiya Alvi</title>
+<title>Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch – Sumaiya Alvi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-05ba2f862116f4def30c03b3504c36a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-05ba2f862116f4def30c03b3504c36a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -90,23 +91,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Sumaiya Alvi</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">All About Me!</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./interests.html" aria-current="page"> 
+    <a class="nav-link" href="../../interests.html"> 
 <span class="menu-text">Around the World</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume and Coursework</span></a>
   </li>  
 </ul>
@@ -127,18 +128,43 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#tools-and-skills" id="toc-tools-and-skills" class="nav-link" data-scroll-target="#tools-and-skills">Tools and Skills</a></li>
+  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">Project Goals</a></li>
+  <li><a href="#my-role" id="toc-my-role" class="nav-link" data-scroll-target="#my-role">My Role</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#data-collection-and-cleaning" id="toc-data-collection-and-cleaning" class="nav-link" data-scroll-target="#data-collection-and-cleaning">Data Collection and Cleaning</a></li>
+  <li><a href="#sentiment-analysis-and-eda" id="toc-sentiment-analysis-and-eda" class="nav-link" data-scroll-target="#sentiment-analysis-and-eda">Sentiment Analysis and EDA</a></li>
+  <li><a href="#qualitative-analysis" id="toc-qualitative-analysis" class="nav-link" data-scroll-target="#qualitative-analysis">Qualitative Analysis</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Around the World</h1>
+<h1 class="title">Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>Using EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch</p>
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -150,9 +176,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>travel</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>From April to June 2025, I worked on a consumer insights and social listening project centered on the <strong>Beats Pill launch</strong>. The goal of this project was to better understand how consumers were responding to the product by combining survey data with social media conversations and translating those findings into actionable recommendations.</p>
+<p>Using <strong>Python in Google Colab</strong>, I collected, cleaned, and structured both qualitative and quantitative data. I then used <strong>exploratory data analysis, sentiment analysis, and qualitative review</strong> to identify major themes in consumer perception, feature preferences, and overall behavior.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>Python</strong></li>
+<li><strong>Google Colab</strong></li>
+<li><strong>Exploratory Data Analysis (EDA)</strong></li>
+<li><strong>Sentiment Analysis</strong></li>
+<li><strong>Qualitative Analysis</strong></li>
+<li><strong>Data Visualization</strong></li>
+<li><strong>Dashboard Development</strong></li>
+<li><strong>Stakeholder Communication</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>How were consumers reacting to the Beats Pill launch?</li>
+<li>What product features or qualities were mentioned most often?</li>
+<li>What themes emerged from survey responses and social media discussions?</li>
+<li>How could these findings be turned into useful product or marketing recommendations?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>In this project, I worked on the full analysis pipeline from data preparation to final presentation. This included collecting and organizing data, analyzing sentiment and discussion themes, creating visualizations, and summarizing the results in a way that would be useful for non-technical stakeholders.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>I combined both quantitative and qualitative approaches to better understand consumer responses.</p>
+<section id="data-collection-and-cleaning" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-and-cleaning">Data Collection and Cleaning</h3>
+<p>I worked with consumer survey responses and social media conversations related to the Beats Pill launch. A large part of the project involved cleaning and structuring the data so it could be analyzed consistently across sources.</p>
+</section>
+<section id="sentiment-analysis-and-eda" class="level3">
+<h3 class="anchored" data-anchor-id="sentiment-analysis-and-eda">Sentiment Analysis and EDA</h3>
+<p>Using Python, I performed sentiment analysis and exploratory data analysis to identify patterns in how people discussed the product. This helped highlight overall tone, recurring opinions, and feature-level trends in consumer reactions.</p>
+</section>
+<section id="qualitative-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="qualitative-analysis">Qualitative Analysis</h3>
+<p>In addition to numerical summaries, I reviewed open-ended responses and discussion content to identify themes that might not be fully captured through sentiment scores alone. This helped provide more context around what consumers liked, disliked, or expected from the product.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>A few major themes emerged from the analysis:</p>
+<ul>
+<li>Consumer reactions were shaped by a mix of product features, brand perception, and launch messaging</li>
+<li>Social listening data revealed recurring points of praise and criticism that complemented the survey findings</li>
+<li>Combining quantitative summaries with qualitative review made the recommendations more grounded and actionable</li>
+<li>Clear visual storytelling was important for communicating insights to stakeholders without a technical background</li>
+</ul>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<p>This project resulted in several final deliverables, which are linked below.</p>
+<p><a href="../../projects/beats by dre/beats_presentation.pdf" target="_blank">View the final presentation (PDF)</a></p>
+<p><a href="https://claude.ai/public/artifacts/cc49c7ec-1b6e-40db-93fe-6429e480c300" target="_blank">Open the Claude insights dashboard</a></p>
+<p><a href="https://docs.google.com/document/d/1_2_djk76Xk8LL9TROq4A0o5ZydId4PDDbNxEnnify3k/edit?usp=sharing" target="_blank">Read the project summary</a></p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project strengthened my skills in <strong>consumer analytics, storytelling, and stakeholder communication</strong>. It also gave me more experience working with messy real-world data and thinking carefully about how to turn analysis into recommendations that are both clear and useful.</p>
+<p>What I found especially valuable was the balance between technical analysis and communication. Beyond identifying trends in the data, the project required me to think about how to present those findings in a consulting-style format that could support real decision-making.</p>
+<iframe src="../../projects/beats by dre/beats_presentation.pdf" width="100%" height="800px">
+</iframe>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
