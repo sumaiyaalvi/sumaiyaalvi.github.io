@@ -7,116 +7,39 @@
     "text": "I love traveling because it always gives me meaningful quality time with the people I’m with, whether that’s family or friends. In a new place, my favorite thing to do is simply walk around. It forces you to slow down and notice the small details you might otherwise miss if you were just driving by.\nMy family has taken long road trips for as long as I can remember, so I’ve grown up being comfortable with long journeys across North America. I’ve always loved traveling abroad too, and there’s something about going to the airport that still feels exciting every time. Travel in any and every form is okay with me!"
   },
   {
+    "objectID": "interests.html#on-the-road",
+    "href": "interests.html#on-the-road",
+    "title": "Around the World",
+    "section": "",
+    "text": "I love traveling because it always gives me meaningful quality time with the people I’m with, whether that’s family or friends. In a new place, my favorite thing to do is simply walk around. It forces you to slow down and notice the small details you might otherwise miss if you were just driving by.\nMy family has taken long road trips for as long as I can remember, so I’ve grown up being comfortable with long journeys across North America. I’ve always loved traveling abroad too, and there’s something about going to the airport that still feels exciting every time. Travel in any and every form is okay with me!"
+  },
+  {
+    "objectID": "interests.html#my-favorite-trip",
+    "href": "interests.html#my-favorite-trip",
+    "title": "Around the World",
+    "section": "My favorite trip",
+    "text": "My favorite trip\n\nBanff, Canada — July 2022\nMy favorite place I’ve traveled to is Banff, Canada, which I roadtripped to in July 2022 with my family. The mountains are my favorite kind of landscape, and Banff ended up being the perfect place to fully appreciate them. Between the scenery, the wildlife, and the feeling of being surrounded by nature everywhere you look, it’s easily one of the most beautiful places I’ve been. I would love to go back one day."
+  },
+  {
+    "objectID": "interests.html#my-most-recent-trip",
+    "href": "interests.html#my-most-recent-trip",
+    "title": "Around the World",
+    "section": "My most recent trip",
+    "text": "My most recent trip\n\nJoshua Tree — December 2025\nMy most recent trip was to Joshua Tree in December 2025. I had never been there before, so it was really fun to experience the desert and explore a landscape that felt so different from what I’m usually surrounded by. I went with my best friend for New Years, and we also spent time around Palm Springs, which made the trip even more memorable."
+  },
+  {
+    "objectID": "interests.html#photos-of-more-of-my-recent-adventures",
+    "href": "interests.html#photos-of-more-of-my-recent-adventures",
+    "title": "Around the World",
+    "section": "Photos of more of my recent adventures",
+    "text": "Photos of more of my recent adventures\n\n\n\n\n\n\nSan Diego CA, October 2025\n\n\n\n\n\n\n\nHonolulu HI, September 2025\n\n\n\n\n\n\n\nSanta Cruz CA, August 2025\n\n\n\n\n\n\n\n\n\nIstanbul Turkey, July 2025\n\n\n\n\n\n\n\nDubai UAE, July 2025\n\n\n\n\n\n\n\nSan Francisco CA, January 2025\n\n\n\n\n\n\n\n\n\nSanta Cruz CA, December 2024\n\n\n\n\n\n\n\nArnold CA, August 2024\n\n\n\n\n\n\n\nCrater Lake OR, July 2024\n\n\n\n\n\n\n\n\n\nTulelake CA, July 2024\n\n\n\n\n\n\n\nAbu Dhabi UAE, January 2024\n\n\n\n\n\n\n\nDubai UAE, December 2023\n\n\n\n\n\n\n\n\n\nAligarh India, June 2023\n\n\n\n\n\n\n\nSanta Cruz Island CA, November 2023\n\n\n\n\n\n\n\nNiagara Falls Canada, July 2023\n\n\n\n\n\n\n\n\n\nMontreal Canada, July 2023\n\n\n\n\n\n\n\nToronto Canada, June 2023\n\n\n\n\n\n\n\nArnold CA, January 2023"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sumaiya Alvi",
     "section": "",
     "text": "Hi there! My name is Sumaiya Alvi, welcome to my website! I’m currently a 4th year student at UC Santa Barbara studying Statistics and Data Science. In my 4 years taking classes at this university, my favorite topic that I’ve learned so far has to be data visualization. I love experimenting and learning more about all the fun customisations that can be made. Outside of class, you can catch my at MSA (Muslim Student Association) club meetings where I serve as Vice President, going for sunset walks in Isla Vista, or re-reading my favorite book, Song of Achilles. Feel free to explore all the different pages on this website to learn more about me!"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects Portfolio",
-    "section": "",
-    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Factors Influence My Daily Screen Time?\n\n\nTracking my screen time over one month and using both ggplot visualizations and an affective visualization to explore patterns in my habits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Diamond Prices with Regression Analysis\n\n\nUsing regression analysis in R to identify how carat, cut, and color influence diamond prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing UCSB Housing Costs Through Data Journalism\n\n\nInvestigating a decade of UCSB housing price increases using data analysis and Datawrapper visualizations for the Daily Nexus\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing Vegan Dining Hall Options to Support Campus Food Advocacy\n\n\nUsing Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "All About Me!",
-    "section": "",
-    "text": "Where I’m from\nI’m originally from Mountain House, California, where my family has lived for the past 21 years. I grew up watching the town change from just a few hundred houses into a fully established community. Because it was such a small place for most of my childhood, everyone knew everyone. I grew up alongside many of the same people for years and eventually graduated high school with classmates I had first met in kindergarten.\nLiving in a town where there wasn’t always much to do taught me to be resourceful and to appreciate the slower pace of everyday life. Mountain House is where I learned to enjoy simple things, like taking long walks and spending time outside. Growing up there gave me a strong sense of community and helped shape the way I value connection, quiet moments, and the scenery around me.\n\n\n\n\n\n\nOn a walk around my neighborhood\n\n\n\n\n\n\n\nHigh school graduation with my friends\n\n\n\n\n\n\n\nTypical spring day in Mountain House\n\n\n\n\n\n\n\n Pets\nI’ve always loved cats because their affection feels earned. They’re independent, never afraid to set their boundaries, and when they do choose to show love, it feels especially meaningful. In January 2021 my family adopted two cats, Caesar and Felix, who are brothers with very different personalities. They don’t usually spend much time together because each prefers doing things their own way, but every once in a while I’ll catch them curled up together for a nap.\nFelix is the troublemaker of the two. If you hear someone bouncing off the walls at three in the morning, it’s almost certainly him. He’s restless and curious, but he’s also very affectionate and always ready to demand pets from the people he loves. Caesar, on the other hand, is much more of a lone wolf. He’s selective about who he gives his attention to and spends most of his day asleep on someone’s bed. The remaining few hours are usually dedicated to convincing us that he absolutely needs another snack.\n\n\n\n\n\n\nCaesar getting ready for nap #12, probably\n\n\n\n\n\n\n\nCaught red-handed\n\n\n\n\n\n\n\nFelix making it impossible for me to do my homework\n\n\n\n\n\n\n\n Hobbies and Interests\nIn my free time, I enjoy reading, especially when I can do it outdoors. One of my favorite things to do during my time at UCSB has been finding a quiet spot on a sunny day and spending a couple of hours getting lost in a book. I only really got into reading during quarantine, but it quickly became one of my favorite ways to unwind. My favorite book I’ve read since then is The Song of Achilles by Madeline Miller, and an honorable mention goes to the Harry Potter series, which is a story I’ll never get tired of revisiting.\nRecently, I’ve also started learning how to knit. My grandma used to knit sweaters and sew outfits for me and my older sister when we were younger, and it’s something I’ve always wanted to be able to do myself. There’s something really satisfying about watching a simple roll of yarn turn into something tangible that you can actually wear and say you made on your own.\nI’m also a big Formula 1 fan. No matter how early the race starts, I’ll usually set an alarm to watch it live. Race weekends have become something I genuinely look forward to, and I rarely miss one. Oscar Piastri WDC soon!\n\n\n\n\n\n\nLooking for my next read\n\n\n\n\n\n\n\nMe and my sister in outfits my grandma sewed\n\n\n\n\n\n\n\nUp at 5 AM watching the Monza Grand Prix"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume and Coursework",
-    "section": "",
-    "text": "(as of March 2026)"
-  },
-  {
-    "objectID": "resume.html#my-most-recent-resume",
-    "href": "resume.html#my-most-recent-resume",
-    "title": "Resume and Coursework",
-    "section": "",
-    "text": "(as of March 2026)"
-  },
-  {
-    "objectID": "resume.html#notable-coursework-at-ucsb",
-    "href": "resume.html#notable-coursework-at-ucsb",
-    "title": "Resume and Coursework",
-    "section": "Notable coursework at UCSB",
-    "text": "Notable coursework at UCSB\n\nPSTAT 120A/B/C - Probability & Statistics\nSpring 2024, Fall 2024, Fall 2025\nThis three-course sequence provided a mathematical foundation in probability theory and statistical inference. I learned about probability distributions, expectations, limit theorems, and statistical estimation, and how these concepts support many statistical methods used in data analysis. The sequence helped me understand the theoretical reasoning behind modeling uncertainty and drawing conclusions from data.\n\n\nPSTAT 126 - Regression Analysis\nWinter 2025\nThis course focused on building and interpreting linear regression models using R. I learned how to estimate model parameters, evaluate assumptions such as linearity and homoscedasticity, and assess model fit through diagnostic plots and statistical tests. The class emphasized using regression both for prediction and for understanding relationships between variables.\n\n\nPSTAT 122 - Design of Experiments\nWinter 2025\nIn this course I learned how to design experiments that isolate the effects of multiple variables using randomization, blocking, and factorial designs. Using R, I analyzed experimental results and interpreted how different treatment combinations influenced outcomes. The course emphasized how thoughtful experimental design leads to more reliable and interpretable results.\n\n\nPSTAT 131 - Statistical Machine Learning\nFall 2025\nIn this course I was introduced to machine learning methods used for prediction and classification. Using R, I implemented models such as regularized regression and classification algorithms, and learned how to evaluate model performance using training/testing splits and cross-validation. The class focused on understanding how models generalize to new data and how to prevent overfitting.\n\n\nPSTAT 134 - Statistical Data Science\nWinter 2026\nThis course focused on the programming and computational tools used in modern data science. Using Python, I worked with libraries such as pandas to clean and manipulate datasets, accessed external data through APIs, and used Git and the command line to manage and reproduce analyses. Through a series of DataCamp modules and projects, I developed practical experience working with data pipelines and organizing code for reproducible data analysis.\n\n\nENV S 193 DS - Statistics for Environmental Science\nWinter 2026\nThis course focused on applying statistical methods to environmental datasets and interpreting the results in real-world contexts. Using R, I conducted hypothesis tests, performed statistical analyses, and created complex visualizations to explore patterns in environmental data. The class emphasized selecting appropriate statistical methods and communicating results clearly while connecting the analysis to broader environmental questions.\n\n\nGEOG 176A - Intro to Geographic Information Systems\nFall 2025\nThis course introduced the fundamentals of GIS and spatial data analysis using ArcGIS Pro. I worked with geographic datasets to create maps, analyze spatial relationships, and visualize geographic patterns. The class emphasized how spatial data can be used to communicate information about places, environments, and geographic trends. For my final project, I analyzed how COVID-19 lockdowns impacted wildlife behavior in urban areas (specifically coyotes in Los Angeles county)."
-  },
-  {
-    "objectID": "projects/beats by dre/index.html",
-    "href": "projects/beats by dre/index.html",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "",
-    "text": "From April to June 2025, I worked on a consumer insights and social listening project centered on the Beats Pill launch. The goal of this project was to better understand how consumers were responding to the product by combining survey data with social media conversations and translating those findings into actionable recommendations.\nUsing Python in Google Colab, I collected, cleaned, and structured both qualitative and quantitative data. I then used exploratory data analysis, sentiment analysis, and qualitative review to identify major themes in consumer perception, feature preferences, and overall behavior."
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#overview",
-    "href": "projects/beats by dre/index.html#overview",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "",
-    "text": "From April to June 2025, I worked on a consumer insights and social listening project centered on the Beats Pill launch. The goal of this project was to better understand how consumers were responding to the product by combining survey data with social media conversations and translating those findings into actionable recommendations.\nUsing Python in Google Colab, I collected, cleaned, and structured both qualitative and quantitative data. I then used exploratory data analysis, sentiment analysis, and qualitative review to identify major themes in consumer perception, feature preferences, and overall behavior."
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#tools-and-skills",
-    "href": "projects/beats by dre/index.html#tools-and-skills",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "Tools and Skills",
-    "text": "Tools and Skills\n\nPython\nGoogle Colab\nExploratory Data Analysis (EDA)\nSentiment Analysis\nQualitative Analysis\nData Visualization\nDashboard Development\nStakeholder Communication"
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#project-goals",
-    "href": "projects/beats by dre/index.html#project-goals",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "Project Goals",
-    "text": "Project Goals\nThis project focused on a few main questions:\n\nHow were consumers reacting to the Beats Pill launch?\nWhat product features or qualities were mentioned most often?\nWhat themes emerged from survey responses and social media discussions?\nHow could these findings be turned into useful product or marketing recommendations?"
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#my-role",
-    "href": "projects/beats by dre/index.html#my-role",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "My Role",
-    "text": "My Role\nIn this project, I worked on the full analysis pipeline from data preparation to final presentation. This included collecting and organizing data, analyzing sentiment and discussion themes, creating visualizations, and summarizing the results in a way that would be useful for non-technical stakeholders."
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#methods",
-    "href": "projects/beats by dre/index.html#methods",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "Methods",
-    "text": "Methods\nI combined both quantitative and qualitative approaches to better understand consumer responses.\n\nData Collection and Cleaning\nI worked with consumer survey responses and social media conversations related to the Beats Pill launch. A large part of the project involved cleaning and structuring the data so it could be analyzed consistently across sources.\n\n\nSentiment Analysis and EDA\nUsing Python, I performed sentiment analysis and exploratory data analysis to identify patterns in how people discussed the product. This helped highlight overall tone, recurring opinions, and feature-level trends in consumer reactions.\n Cleaning and Prepping Data, & Exploratory Data Analaysis\n\n\nQualitative Analysis\nIn addition to numerical summaries, I reviewed open-ended responses and discussion content to identify themes that might not be fully captured through sentiment scores alone. This helped provide more context around what consumers liked, disliked, or expected from the product."
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#key-takeaways",
-    "href": "projects/beats by dre/index.html#key-takeaways",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\nA few major themes emerged from the analysis:\n\nConsumer reactions were shaped by a mix of product features, brand perception, and launch messaging\nSocial listening data revealed recurring points of praise and criticism that complemented the survey findings\nCombining quantitative summaries with qualitative review made the recommendations more grounded and actionable\nClear visual storytelling was important for communicating insights to stakeholders without a technical background\n\n Sharing Insights"
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#deliverables",
-    "href": "projects/beats by dre/index.html#deliverables",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "Deliverables",
-    "text": "Deliverables\nThis project resulted in several final deliverables, which are linked below.\nView the final presentation (PDF)\nOpen the Claude insights dashboard\nRead the project summary"
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#reflection",
-    "href": "projects/beats by dre/index.html#reflection",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "Reflection",
-    "text": "Reflection\nThis project strengthened my skills in consumer analytics, storytelling, and stakeholder communication. It also gave me more experience working with messy real-world data and thinking carefully about how to turn analysis into recommendations that are both clear and useful.\nWhat I found especially valuable was the balance between technical analysis and communication. Beyond identifying trends in the data, the project required me to think about how to present those findings in a consulting-style format that could support real decision-making."
-  },
-  {
-    "objectID": "projects/beats by dre/index.html#embedded-presentation",
-    "href": "projects/beats by dre/index.html#embedded-presentation",
-    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
-    "section": "Embedded Presentation",
-    "text": "Embedded Presentation"
   },
   {
     "objectID": "projects/beats-by-dre/index.html",
@@ -180,202 +103,6 @@
     "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
     "section": "Reflection",
     "text": "Reflection\nThis project strengthened my skills in consumer analytics, storytelling, and stakeholder communication. It also gave me more experience working with messy real-world data and thinking carefully about how to turn analysis into recommendations that are both clear and useful.\nWhat I found especially valuable was the balance between technical analysis and communication. Beyond identifying trends in the data, the project required me to think about how to present those findings in a consulting-style format that could support real decision-making."
-  },
-  {
-    "objectID": "projects/coyotes/index.html",
-    "href": "projects/coyotes/index.html",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "",
-    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis Course: GEOG 176A - Intro to GIS\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
-  },
-  {
-    "objectID": "projects/coyotes/index.html#overview",
-    "href": "projects/coyotes/index.html#overview",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "",
-    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis Course: GEOG 176A - Intro to GIS\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
-  },
-  {
-    "objectID": "projects/coyotes/index.html#tools-and-skills",
-    "href": "projects/coyotes/index.html#tools-and-skills",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "Tools and Skills",
-    "text": "Tools and Skills\n\nArcGIS Pro\nSpatial Analysis\nConvex Hull Analysis\nBuffer Analysis\nSpatial Join\nKernel Density Analysis\nMap Design\nEnvironmental Data Interpretation\nCollaborative Research"
-  },
-  {
-    "objectID": "projects/coyotes/index.html#project-goals",
-    "href": "projects/coyotes/index.html#project-goals",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "Project Goals",
-    "text": "Project Goals\nThis project focused on a few main questions:\n\nDid reduced human mobility during the COVID-19 lockdown allow coyotes to expand into new urban areas?\nHow did the spatial extent of coyote sightings change before, during, and after lockdown?\nWas reduced human activity associated with changes in where coyotes were observed?\nWhat can these patterns tell us about coexistence between wildlife and people in urban environments?"
-  },
-  {
-    "objectID": "projects/coyotes/index.html#my-role",
-    "href": "projects/coyotes/index.html#my-role",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "My Role",
-    "text": "My Role\nThis project was completed in collaboration with one partner, and responsibilities were shared evenly across all stages of the analysis. I worked extensively on importing and cleaning our CSV datasets, converting them into spatial point layers in ArcGIS Pro, and helping conduct the spatial analyses used throughout the project. We also worked together on map design, interpretation of results, and presenting our findings in a clear and visually effective way."
-  },
-  {
-    "objectID": "projects/coyotes/index.html#methods",
-    "href": "projects/coyotes/index.html#methods",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "Methods",
-    "text": "Methods\nWe combined multiple datasets and spatial analysis techniques to investigate how coyote activity changed as human mobility declined during the pandemic.\n\nData Collection and Preparation\nWe used coyote sighting data from iNaturalist, parking citation data from the Los Angeles Open Data Portal, and land cover data from ArcGIS Online. All datasets were filtered spatially to Los Angeles County and temporally to April 2019, April 2020, and April 2021 in order to control for seasonal variation and make meaningful comparisons across years.\nAfter filtering the data, we imported CSV files into ArcGIS Pro and converted them into spatial point layers using latitude and longitude fields. This preparation allowed us to compare wildlife sightings and human mobility patterns within the same geographic space.\n\n\nConvex Hull Analysis\nTo examine the overall spatial extent of coyote sightings, we used convex hull analysis for each study year. This created polygons representing the outer boundary of sightings and allowed us to compare how far coyote activity extended across Los Angeles over time.\nThe analysis showed that the geographic extent of coyote sightings expanded noticeably in April 2020 compared to 2019, suggesting that coyotes occupied a wider range of areas during the lockdown. In 2021, the extent contracted again, appearing more similar to pre-lockdown conditions.\n\n\nBuffer Analysis and Spatial Join\nTo investigate the relationship between wildlife presence and human activity, we created 1500-meter buffers around coyote sightings and used a spatial join to count nearby parking citations. Parking citations served as a proxy for human mobility, since fewer people moving around the city would likely correspond with fewer citations being issued.\nThis analysis revealed a sharp drop in citations near coyote sightings during lockdown. In April 2019, there were 5,530 parking citations within 1500 meters of coyote sightings; in April 2020, that number dropped to 1,452; and in April 2021, it increased to 10,579, indicating a strong rebound in human mobility.\n\n\nKernel Density Analysis\nWe also used kernel density analysis to identify areas with higher concentrations of coyote sightings. The 2020 density maps showed a more widespread distribution of coyote activity compared to the other years, with increased sightings in more urbanized areas such as the San Fernando Valley and areas near Santa Monica.\nThis suggested that during the lockdown, coyotes were not only observed more often, but were also active across a broader range of urban environments rather than remaining concentrated near parks or natural open spaces."
-  },
-  {
-    "objectID": "projects/coyotes/index.html#key-takeaways",
-    "href": "projects/coyotes/index.html#key-takeaways",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\nA few major patterns emerged from the analysis:\n\nThe spatial extent of coyote sightings expanded during the 2020 lockdown compared to 2019 and 2021\nParking citations near coyote sightings dropped sharply in 2020, reflecting reduced human mobility\nKernel density maps showed more widespread coyote activity in urban areas during lockdown\nTogether, these findings suggest that reduced human presence coincided with broader and more visible coyote movement throughout Los Angeles"
-  },
-  {
-    "objectID": "projects/coyotes/index.html#deliverables",
-    "href": "projects/coyotes/index.html#deliverables",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "Deliverables",
-    "text": "Deliverables\nThis project resulted in several final deliverables, which are linked below.\n\nView the final presentation (PDF)\nRead the written project report"
-  },
-  {
-    "objectID": "projects/coyotes/index.html#reflection",
-    "href": "projects/coyotes/index.html#reflection",
-    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
-    "section": "Reflection",
-    "text": "Reflection\nThis project gave me hands-on experience using ArcGIS Pro to work with spatial data and apply analytical techniques to a real-world environmental question. It strengthened my skills in data preparation, spatial thinking, and map-based storytelling, while also showing me how geographic analysis can be used to better understand the relationship between people and wildlife in urban environments.\nWhat I found especially valuable was being able to connect technical spatial methods to a broader question about coexistence and city planning. The project reinforced how changes in human behavior can shape ecological patterns in ways that become visible through careful spatial analysis."
-  },
-  {
-    "objectID": "projects/diamonds/index.html",
-    "href": "projects/diamonds/index.html",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "",
-    "text": "Timeline: Spring 2025\nMethods: Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics\nCourse: PSTAT 126 - Regression Analysis\nThis project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.\nUsing R, I analyzed relationships between price and several predictors, including carat, cut, color, and depth. Through exploratory data analysis, hypothesis testing, and model comparison, I found that carat, cut, and color were the most important predictors of diamond price, while depth did not meaningfully improve the model."
-  },
-  {
-    "objectID": "projects/diamonds/index.html#overview",
-    "href": "projects/diamonds/index.html#overview",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "",
-    "text": "Timeline: Spring 2025\nMethods: Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics\nCourse: PSTAT 126 - Regression Analysis\nThis project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.\nUsing R, I analyzed relationships between price and several predictors, including carat, cut, color, and depth. Through exploratory data analysis, hypothesis testing, and model comparison, I found that carat, cut, and color were the most important predictors of diamond price, while depth did not meaningfully improve the model."
-  },
-  {
-    "objectID": "projects/diamonds/index.html#tools-and-skills",
-    "href": "projects/diamonds/index.html#tools-and-skills",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "Tools and Skills",
-    "text": "Tools and Skills\n\nR\nggplot2\ndplyr\nExploratory Data Analysis (EDA)\nANOVA\nSimple Linear Regression\nMultiple Linear Regression\nLog Transformation\nResidual Analysis\nModel Selection"
-  },
-  {
-    "objectID": "projects/diamonds/index.html#project-goals",
-    "href": "projects/diamonds/index.html#project-goals",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "Project Goals",
-    "text": "Project Goals\nThis project focused on a few main questions:\n\nWhich diamond characteristics are most strongly associated with price?\nHow well can diamond price be predicted using carat, cut, color, and depth?\nDo transformations improve model fit and better satisfy regression assumptions?\nWhich combination of predictors produces the strongest and most interpretable final model?"
-  },
-  {
-    "objectID": "projects/diamonds/index.html#my-role",
-    "href": "projects/diamonds/index.html#my-role",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "My Role",
-    "text": "My Role\nIn this project, I completed the full analysis independently in R. This included selecting a random sample from the dataset, creating visualizations, fitting and interpreting regression models, checking model assumptions, comparing adjusted \\(R^2\\) values across models, and identifying the final best-performing model."
-  },
-  {
-    "objectID": "projects/diamonds/index.html#methods",
-    "href": "projects/diamonds/index.html#methods",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "Methods",
-    "text": "Methods\nI combined visualization, statistical testing, and regression modeling to understand the drivers of diamond price.\n\nData Collection and Sampling\nI worked with a diamonds dataset from Kaggle that included variables such as price, carat, cut, color, depth, and clarity. For this project, I selected a random sample of 1,000 diamonds and focused on carat, cut, color, depth, and price in order to build a manageable and interpretable regression analysis.\n\n\nExploratory Data Analysis\nI began by creating summary statistics, histograms for the quantitative variables, and bar plots for the categorical variables. The distributions showed that carat and price were both strongly right-skewed, indicating that the sample contained many lower-carat, lower-priced diamonds and relatively few high-end diamonds.\nThe bar plots also showed that Ideal cuts were the most common, while the distribution of diamond colors was fairly even except for J, which appeared much less frequently. These early patterns suggested that carat, cut, and color might all influence price in different ways.\n\n\nInitial Relationship Testing\nTo examine relationships between variables, I calculated correlations among the quantitative predictors and used ANOVA to test whether price differed across levels of cut and color. The strongest relationship was between price and carat, with a correlation of about 0.92, indicating that larger diamonds tended to be much more expensive.\nThe ANOVA results also showed statistically significant differences in price across both cut and color categories. In contrast, depth showed almost no linear relationship with price, suggesting that it would likely be less useful as a predictor.\n\n\nRegression Modeling\nI first fit a multiple linear regression model using price as the response and carat, depth, cut, and color as predictors. This model explained a large proportion of the variability in price, but it also showed that depth was not statistically significant, while some levels of cut and color were.\nI then fit a simple linear regression model using carat alone to better understand its individual effect on price. Carat was a highly significant predictor, but residual diagnostics showed clear violations of the linearity and constant variance assumptions.\n\n\nModel Transformation and Diagnostics\nTo address these issues, I transformed the variables by taking the logs of both price and carat. After fitting a model with log(price) as the response and log(carat) as the predictor, the residual plots improved substantially and the assumptions of linearity, normality, and homoscedasticity were much better satisfied.\nI confirmed the improvement using both the residuals vs. fitted plot and a Q-Q plot. The transformed model also produced a stronger fit, with the \\(R^2\\) increasing from about 0.85 in the simple linear model to about 0.93 after the log transformation.\n\n\nModel Selection\nTo determine the best final model, I compared adjusted \\(R^2\\) values after adding depth, cut, and color to the transformed model. Adding depth slightly decreased adjusted \\(R^2\\), indicating that it did not improve the model. Adding cut and color, however, both improved fit, and the best-performing model included:\n\nlog(carat)\ncut\ncolor\n\nThis final model achieved an \\(R^2\\) of about 0.9447, showing that it explained nearly 94% of the variation in log diamond price."
-  },
-  {
-    "objectID": "projects/diamonds/index.html#key-takeaways",
-    "href": "projects/diamonds/index.html#key-takeaways",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\nA few major findings emerged from the analysis:\n\nCarat was the strongest predictor of diamond price\nCut and color both improved the model and helped explain additional variation in price\nDepth did not meaningfully contribute to predicting price and was dropped from the final model\nLog-transforming price and carat substantially improved the regression assumptions and overall model fit\nThe final model using log(carat), cut, and color explained about 94% of the variability in log price"
-  },
-  {
-    "objectID": "projects/diamonds/index.html#deliverable",
-    "href": "projects/diamonds/index.html#deliverable",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "Deliverable",
-    "text": "Deliverable\nView the full analysis (R Markdown / PDF)"
-  },
-  {
-    "objectID": "projects/diamonds/index.html#reflection",
-    "href": "projects/diamonds/index.html#reflection",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "Reflection",
-    "text": "Reflection\nThis project strengthened my understanding of how regression modeling can be used not just to make predictions, but also to compare predictors, evaluate assumptions, and improve model performance through thoughtful transformations. It gave me more experience interpreting categorical and quantitative predictors together in a multiple regression setting, and helped me see how model diagnostics directly shape the decisions made during analysis.\nWhat I found especially valuable was the process of refining the model rather than stopping at the first strong result. Seeing how the log transformation improved the residual patterns, and how model comparison helped justify dropping depth while keeping cut and color, made the final model feel much more intentional and statistically sound."
-  },
-  {
-    "objectID": "projects/diamonds/index.html#view-the-full-report",
-    "href": "projects/diamonds/index.html#view-the-full-report",
-    "title": "Modeling Diamond Prices with Regression Analysis",
-    "section": "View the full report",
-    "text": "View the full report"
-  },
-  {
-    "objectID": "projects/vegan/index.html",
-    "href": "projects/vegan/index.html",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "",
-    "text": "Timeline: August 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
-  },
-  {
-    "objectID": "projects/vegan/index.html#overview",
-    "href": "projects/vegan/index.html#overview",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "",
-    "text": "Timeline: August 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
-  },
-  {
-    "objectID": "projects/vegan/index.html#tools-and-skills",
-    "href": "projects/vegan/index.html#tools-and-skills",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "Tools and Skills",
-    "text": "Tools and Skills\n\nGoogle Sheets\nData Cleaning\nCategorization\nFrequency Analysis\nData Interpretation\nDatawrapper\nData Visualization\nAdvocacy-Focused Communication"
-  },
-  {
-    "objectID": "projects/vegan/index.html#project-goals",
-    "href": "projects/vegan/index.html#project-goals",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "Project Goals",
-    "text": "Project Goals\nThis project focused on a few main questions:\n\nHow many dining hall options were offered overall?\nHow many of those options were vegan?\nOf the vegan options, how many could reasonably be considered nutritionally sufficient entrees?\nHow often were those nutritious vegan entrees actually served throughout the academic year?\nHow could these findings be communicated clearly to support campus dining advocacy?"
-  },
-  {
-    "objectID": "projects/vegan/index.html#my-role",
-    "href": "projects/vegan/index.html#my-role",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "My Role",
-    "text": "My Role\nIn this project, I independently analyzed dining hall menu data to support a campus advocacy effort focused on vegan food access. I worked directly in Google Sheets to organize the data, count and compare subsets of menu items, and identify patterns in how frequently different vegan options appeared. I then created Datawrapper visuals to present the results in a way that would be easy to understand and useful for advocacy."
-  },
-  {
-    "objectID": "projects/vegan/index.html#methods",
-    "href": "projects/vegan/index.html#methods",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "Methods",
-    "text": "Methods\nThis project combined spreadsheet-based analysis with visual storytelling to highlight the difference between simply offering vegan items and offering vegan meals that are both nutritious and consistently available.\n\nData Organization and Categorization\nI started with a Google Sheet containing dining hall menu items collected over the course of the year. From this dataset, I identified the total number of food options served and then isolated the subset that qualified as vegan.\nFrom there, I further narrowed the data to focus on vegan items that could reasonably be classified as nutritionally sufficient entrees. This distinction was important because the existence of vegan options alone does not necessarily mean students have access to balanced or filling meal choices.\n\n\nFrequency Analysis\nAfter identifying the nutritionally sufficient vegan options, I analyzed how often they appeared in the dining halls. One key threshold I used was whether an item had been served 30 or more times over the data collection period.\nThis helped separate items that appeared only occasionally from those that students could actually expect to encounter on a regular basis. The results showed that while there were many vegan options in total, far fewer were both nutritious and served consistently.\n\n\nData Visualization\nTo communicate the findings, I created a series of Datawrapper charts. These visuals helped compare:\n\nvegan versus non-vegan dining options overall\nnutritious vegan entrees as a portion of all vegan options\nthe small number of nutritionally sufficient vegan entrees that were served regularly\n\nBy presenting the analysis visually, the project made it easier to communicate a policy-relevant point: that the number of meaningful vegan dining choices was much smaller than the raw menu count suggested."
-  },
-  {
-    "objectID": "projects/vegan/index.html#key-takeaways",
-    "href": "projects/vegan/index.html#key-takeaways",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\nA few major patterns emerged from the analysis:\n\nVegan options made up a minority of overall dining hall offerings\nWithin the vegan subset, many items could not be considered nutritionally sufficient entrees\nOnly a relatively small number of nutritious vegan entrees were served consistently throughout the year\nLooking only at the total count of vegan items overstated how accessible substantial vegan dining options actually were\nClear visualizations made the findings more effective for advocacy and communication"
-  },
-  {
-    "objectID": "projects/vegan/index.html#final-visuals",
-    "href": "projects/vegan/index.html#final-visuals",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "Final Visuals",
-    "text": "Final Visuals"
-  },
-  {
-    "objectID": "projects/vegan/index.html#reflection",
-    "href": "projects/vegan/index.html#reflection",
-    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
-    "section": "Reflection",
-    "text": "Reflection\nThis project showed me that even relatively simple tools like Google Sheets can be powerful when paired with a clear question and strong communication. It reinforced the importance of distinguishing between raw counts and meaningful access, especially in a policy or advocacy context where numbers can easily be misleading without proper interpretation.\nWhat I found especially valuable was the challenge of turning spreadsheet analysis into a more persuasive visual story. The project strengthened my ability to work with structured data in a practical setting and to present findings in a way that supports real-world decision-making."
   },
   {
     "objectID": "projects/housing/index.html",
@@ -497,31 +224,227 @@
     "text": "Visualization 2: Screen Time vs. Class/Study Time\nThis visualization examines the relationship between class/study time and screen time using a scatterplot. Each point represents one day, allowing the two variables to be compared directly.\nA linear trend line is added to summarize the overall relationship between the variables. This helps identify whether days with more academic work tend to correspond to higher or lower screen time.\n\nplot2_static &lt;- ggplot(\n  data = screentime, #starting with my dataframe\n  aes(\n    x = `Class + Study time (hours)`, #x-axis: continuous predictor\n    y = `Screen Time (hours)`, #y-axis: response variable\n    #custom hover text for the interactive plot\n    text = paste(\n      \"Date:\", Date,\n      \"&lt;br&gt;Class + Study Time:\", `Class + Study time (hours)`, \"hours\",\n      \"&lt;br&gt;Screen Time:\", `Screen Time (hours)`, \"hours\"\n    )\n  )\n) +\n  geom_point(\n    color = \"darkorange\", #changing color from default\n    size = 2, #point size\n    alpha = 0.8 #making points slightly transparent\n  ) +\n  #adding linear regression trend line to show overall relationship\n  geom_smooth(\n    method = \"lm\",\n    se = TRUE, #showing confidence interval around regression line\n    color = \"#014f86\", #custom color for trend line\n    inherit.aes = FALSE, #preventing hover text from applying to regression line\n    aes(\n      x = `Class + Study time (hours)`,\n      y = `Screen Time (hours)`\n    )\n  ) +\n  labs(\n    x = \"Class + Study Time (hours)\", #changing axes labels\n    y = \"Screen Time (hours)\",\n    title = \"Relationship between class/study time and screen time\", #title summarizing main message\n    #subtitle showing most recent observation date\n    subtitle = paste(\"Most recent observation:\", most_recent_date)\n  ) +\n  theme_light() #changing theme from default\n\n\n#using plotly package to make the figure interactive\nplot2_interactive &lt;- ggplotly(plot2_static, tooltip = \"text\") |&gt;\n  layout(\n    font = list(family = \"Sans\"), #editing font for figure title and axes\n    hoverlabel = list(\n      font = list(\n        family = \"Sans\",\n        size = 13, #font size for hover text\n        color = \"#FFFFFF\" #font color for hover text\n      )\n    )\n  )\n\n#display interactive version of the plot\nplot2_interactive\n\n\n\n\n\nFigure 2. Relationship between class/study time (hours) and screen time (hours). Each point represents one day, with the line showing the overall linear trend. The slight negative trend suggests that on days with more class and/or study time, screen time tends to be slightly lower, although the relationship does not appear very strong."
   },
   {
-    "objectID": "interests.html#on-the-road",
-    "href": "interests.html#on-the-road",
-    "title": "Around the World",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume and Coursework",
     "section": "",
-    "text": "I love traveling because it always gives me meaningful quality time with the people I’m with, whether that’s family or friends. In a new place, my favorite thing to do is simply walk around. It forces you to slow down and notice the small details you might otherwise miss if you were just driving by.\nMy family has taken long road trips for as long as I can remember, so I’ve grown up being comfortable with long journeys across North America. I’ve always loved traveling abroad too, and there’s something about going to the airport that still feels exciting every time. Travel in any and every form is okay with me!"
+    "text": "(as of March 2026)"
   },
   {
-    "objectID": "interests.html#my-favorite-trip",
-    "href": "interests.html#my-favorite-trip",
-    "title": "Around the World",
-    "section": "My favorite trip",
-    "text": "My favorite trip\n\nBanff, Canada — July 2022\nMy favorite place I’ve traveled to is Banff, Canada, which I roadtripped to in July 2022 with my family. The mountains are my favorite kind of landscape, and Banff ended up being the perfect place to fully appreciate them. Between the scenery, the wildlife, and the feeling of being surrounded by nature everywhere you look, it’s easily one of the most beautiful places I’ve been. I would love to go back one day."
+    "objectID": "resume.html#my-most-recent-resume",
+    "href": "resume.html#my-most-recent-resume",
+    "title": "Resume and Coursework",
+    "section": "",
+    "text": "(as of March 2026)"
   },
   {
-    "objectID": "interests.html#my-most-recent-trip",
-    "href": "interests.html#my-most-recent-trip",
-    "title": "Around the World",
-    "section": "My most recent trip",
-    "text": "My most recent trip\n\nJoshua Tree — December 2025\nMy most recent trip was to Joshua Tree in December 2025. I had never been there before, so it was really fun to experience the desert and explore a landscape that felt so different from what I’m usually surrounded by. I went with my best friend for New Years, and we also spent time around Palm Springs, which made the trip even more memorable."
+    "objectID": "resume.html#notable-coursework-at-ucsb",
+    "href": "resume.html#notable-coursework-at-ucsb",
+    "title": "Resume and Coursework",
+    "section": "Notable coursework at UCSB",
+    "text": "Notable coursework at UCSB\n\nPSTAT 120A/B/C - Probability & Statistics\nSpring 2024, Fall 2024, Fall 2025\nThis three-course sequence provided a mathematical foundation in probability theory and statistical inference. I learned about probability distributions, expectations, limit theorems, and statistical estimation, and how these concepts support many statistical methods used in data analysis. The sequence helped me understand the theoretical reasoning behind modeling uncertainty and drawing conclusions from data.\n\n\nPSTAT 126 - Regression Analysis\nWinter 2025\nThis course focused on building and interpreting linear regression models using R. I learned how to estimate model parameters, evaluate assumptions such as linearity and homoscedasticity, and assess model fit through diagnostic plots and statistical tests. The class emphasized using regression both for prediction and for understanding relationships between variables.\n\n\nPSTAT 122 - Design of Experiments\nWinter 2025\nIn this course I learned how to design experiments that isolate the effects of multiple variables using randomization, blocking, and factorial designs. Using R, I analyzed experimental results and interpreted how different treatment combinations influenced outcomes. The course emphasized how thoughtful experimental design leads to more reliable and interpretable results.\n\n\nPSTAT 131 - Statistical Machine Learning\nFall 2025\nIn this course I was introduced to machine learning methods used for prediction and classification. Using R, I implemented models such as regularized regression and classification algorithms, and learned how to evaluate model performance using training/testing splits and cross-validation. The class focused on understanding how models generalize to new data and how to prevent overfitting.\n\n\nPSTAT 134 - Statistical Data Science\nWinter 2026\nThis course focused on the programming and computational tools used in modern data science. Using Python, I worked with libraries such as pandas to clean and manipulate datasets, accessed external data through APIs, and used Git and the command line to manage and reproduce analyses. Through a series of DataCamp modules and projects, I developed practical experience working with data pipelines and organizing code for reproducible data analysis.\n\n\nENV S 193 DS - Statistics for Environmental Science\nWinter 2026\nThis course focused on applying statistical methods to environmental datasets and interpreting the results in real-world contexts. Using R, I conducted hypothesis tests, performed statistical analyses, and created complex visualizations to explore patterns in environmental data. The class emphasized selecting appropriate statistical methods and communicating results clearly while connecting the analysis to broader environmental questions.\n\n\nGEOG 176A - Intro to Geographic Information Systems\nFall 2025\nThis course introduced the fundamentals of GIS and spatial data analysis using ArcGIS Pro. I worked with geographic datasets to create maps, analyze spatial relationships, and visualize geographic patterns. The class emphasized how spatial data can be used to communicate information about places, environments, and geographic trends. For my final project, I analyzed how COVID-19 lockdowns impacted wildlife behavior in urban areas (specifically coyotes in Los Angeles county)."
   },
   {
-    "objectID": "interests.html#photos-of-more-of-my-recent-adventures",
-    "href": "interests.html#photos-of-more-of-my-recent-adventures",
-    "title": "Around the World",
-    "section": "Photos of more of my recent adventures",
-    "text": "Photos of more of my recent adventures\n\n\n\n\n\n\nSan Diego CA, October 2025\n\n\n\n\n\n\n\nHonolulu HI, September 2025\n\n\n\n\n\n\n\nSanta Cruz CA, August 2025\n\n\n\n\n\n\n\n\n\nIstanbul Turkey, July 2025\n\n\n\n\n\n\n\nDubai UAE, July 2025\n\n\n\n\n\n\n\nSan Francisco CA, January 2025\n\n\n\n\n\n\n\n\n\nSanta Cruz CA, December 2024\n\n\n\n\n\n\n\nArnold CA, August 2024\n\n\n\n\n\n\n\nCrater Lake OR, July 2024\n\n\n\n\n\n\n\n\n\nTulelake CA, July 2024\n\n\n\n\n\n\n\nAbu Dhabi UAE, January 2024\n\n\n\n\n\n\n\nDubai UAE, December 2023\n\n\n\n\n\n\n\n\n\nAligarh India, June 2023\n\n\n\n\n\n\n\nSanta Cruz Island CA, November 2023\n\n\n\n\n\n\n\nNiagara Falls Canada, July 2023\n\n\n\n\n\n\n\n\n\nMontreal Canada, July 2023\n\n\n\n\n\n\n\nToronto Canada, June 2023\n\n\n\n\n\n\n\nArnold CA, January 2023"
+    "objectID": "projects/coyotes/index.html",
+    "href": "projects/coyotes/index.html",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "",
+    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis Course: GEOG 176A - Intro to GIS\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#overview",
+    "href": "projects/coyotes/index.html#overview",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "",
+    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis Course: GEOG 176A - Intro to GIS\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#tools-and-skills",
+    "href": "projects/coyotes/index.html#tools-and-skills",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nArcGIS Pro\nSpatial Analysis\nConvex Hull Analysis\nBuffer Analysis\nSpatial Join\nKernel Density Analysis\nMap Design\nEnvironmental Data Interpretation\nCollaborative Research"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#project-goals",
+    "href": "projects/coyotes/index.html#project-goals",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nDid reduced human mobility during the COVID-19 lockdown allow coyotes to expand into new urban areas?\nHow did the spatial extent of coyote sightings change before, during, and after lockdown?\nWas reduced human activity associated with changes in where coyotes were observed?\nWhat can these patterns tell us about coexistence between wildlife and people in urban environments?"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#my-role",
+    "href": "projects/coyotes/index.html#my-role",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "My Role",
+    "text": "My Role\nThis project was completed in collaboration with one partner, and responsibilities were shared evenly across all stages of the analysis. I worked extensively on importing and cleaning our CSV datasets, converting them into spatial point layers in ArcGIS Pro, and helping conduct the spatial analyses used throughout the project. We also worked together on map design, interpretation of results, and presenting our findings in a clear and visually effective way."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#methods",
+    "href": "projects/coyotes/index.html#methods",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Methods",
+    "text": "Methods\nWe combined multiple datasets and spatial analysis techniques to investigate how coyote activity changed as human mobility declined during the pandemic.\n\nData Collection and Preparation\nWe used coyote sighting data from iNaturalist, parking citation data from the Los Angeles Open Data Portal, and land cover data from ArcGIS Online. All datasets were filtered spatially to Los Angeles County and temporally to April 2019, April 2020, and April 2021 in order to control for seasonal variation and make meaningful comparisons across years.\nAfter filtering the data, we imported CSV files into ArcGIS Pro and converted them into spatial point layers using latitude and longitude fields. This preparation allowed us to compare wildlife sightings and human mobility patterns within the same geographic space.\n\n\nConvex Hull Analysis\nTo examine the overall spatial extent of coyote sightings, we used convex hull analysis for each study year. This created polygons representing the outer boundary of sightings and allowed us to compare how far coyote activity extended across Los Angeles over time.\nThe analysis showed that the geographic extent of coyote sightings expanded noticeably in April 2020 compared to 2019, suggesting that coyotes occupied a wider range of areas during the lockdown. In 2021, the extent contracted again, appearing more similar to pre-lockdown conditions.\n\n\nBuffer Analysis and Spatial Join\nTo investigate the relationship between wildlife presence and human activity, we created 1500-meter buffers around coyote sightings and used a spatial join to count nearby parking citations. Parking citations served as a proxy for human mobility, since fewer people moving around the city would likely correspond with fewer citations being issued.\nThis analysis revealed a sharp drop in citations near coyote sightings during lockdown. In April 2019, there were 5,530 parking citations within 1500 meters of coyote sightings; in April 2020, that number dropped to 1,452; and in April 2021, it increased to 10,579, indicating a strong rebound in human mobility.\n\n\nKernel Density Analysis\nWe also used kernel density analysis to identify areas with higher concentrations of coyote sightings. The 2020 density maps showed a more widespread distribution of coyote activity compared to the other years, with increased sightings in more urbanized areas such as the San Fernando Valley and areas near Santa Monica.\nThis suggested that during the lockdown, coyotes were not only observed more often, but were also active across a broader range of urban environments rather than remaining concentrated near parks or natural open spaces."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#key-takeaways",
+    "href": "projects/coyotes/index.html#key-takeaways",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nA few major patterns emerged from the analysis:\n\nThe spatial extent of coyote sightings expanded during the 2020 lockdown compared to 2019 and 2021\nParking citations near coyote sightings dropped sharply in 2020, reflecting reduced human mobility\nKernel density maps showed more widespread coyote activity in urban areas during lockdown\nTogether, these findings suggest that reduced human presence coincided with broader and more visible coyote movement throughout Los Angeles"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#deliverables",
+    "href": "projects/coyotes/index.html#deliverables",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Deliverables",
+    "text": "Deliverables\nThis project resulted in several final deliverables, which are linked below.\n\nView the final presentation (PDF)\nRead the written project report"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#reflection",
+    "href": "projects/coyotes/index.html#reflection",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Reflection",
+    "text": "Reflection\nThis project gave me hands-on experience using ArcGIS Pro to work with spatial data and apply analytical techniques to a real-world environmental question. It strengthened my skills in data preparation, spatial thinking, and map-based storytelling, while also showing me how geographic analysis can be used to better understand the relationship between people and wildlife in urban environments.\nWhat I found especially valuable was being able to connect technical spatial methods to a broader question about coexistence and city planning. The project reinforced how changes in human behavior can shape ecological patterns in ways that become visible through careful spatial analysis."
+  },
+  {
+    "objectID": "projects/diamonds/index.html",
+    "href": "projects/diamonds/index.html",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "",
+    "text": "Timeline: Spring 2025\nMethods: Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics\nCourse: PSTAT 126 - Regression Analysis\nThis project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.\nUsing R, I analyzed relationships between price and several predictors, including carat, cut, color, and depth. Through exploratory data analysis, hypothesis testing, and model comparison, I found that carat, cut, and color were the most important predictors of diamond price, while depth did not meaningfully improve the model."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#overview",
+    "href": "projects/diamonds/index.html#overview",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "",
+    "text": "Timeline: Spring 2025\nMethods: Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics\nCourse: PSTAT 126 - Regression Analysis\nThis project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.\nUsing R, I analyzed relationships between price and several predictors, including carat, cut, color, and depth. Through exploratory data analysis, hypothesis testing, and model comparison, I found that carat, cut, and color were the most important predictors of diamond price, while depth did not meaningfully improve the model."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#tools-and-skills",
+    "href": "projects/diamonds/index.html#tools-and-skills",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nR\nggplot2\ndplyr\nExploratory Data Analysis (EDA)\nANOVA\nSimple Linear Regression\nMultiple Linear Regression\nLog Transformation\nResidual Analysis\nModel Selection"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#project-goals",
+    "href": "projects/diamonds/index.html#project-goals",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nWhich diamond characteristics are most strongly associated with price?\nHow well can diamond price be predicted using carat, cut, color, and depth?\nDo transformations improve model fit and better satisfy regression assumptions?\nWhich combination of predictors produces the strongest and most interpretable final model?"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#my-role",
+    "href": "projects/diamonds/index.html#my-role",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "My Role",
+    "text": "My Role\nIn this project, I completed the full analysis independently in R. This included selecting a random sample from the dataset, creating visualizations, fitting and interpreting regression models, checking model assumptions, comparing adjusted \\(R^2\\) values across models, and identifying the final best-performing model."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#methods",
+    "href": "projects/diamonds/index.html#methods",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Methods",
+    "text": "Methods\nI combined visualization, statistical testing, and regression modeling to understand the drivers of diamond price.\n\nData Collection and Sampling\nI worked with a diamonds dataset from Kaggle that included variables such as price, carat, cut, color, depth, and clarity. For this project, I selected a random sample of 1,000 diamonds and focused on carat, cut, color, depth, and price in order to build a manageable and interpretable regression analysis.\n\n\nExploratory Data Analysis\nI began by creating summary statistics, histograms for the quantitative variables, and bar plots for the categorical variables. The distributions showed that carat and price were both strongly right-skewed, indicating that the sample contained many lower-carat, lower-priced diamonds and relatively few high-end diamonds.\nThe bar plots also showed that Ideal cuts were the most common, while the distribution of diamond colors was fairly even except for J, which appeared much less frequently. These early patterns suggested that carat, cut, and color might all influence price in different ways.\n\n\nInitial Relationship Testing\nTo examine relationships between variables, I calculated correlations among the quantitative predictors and used ANOVA to test whether price differed across levels of cut and color. The strongest relationship was between price and carat, with a correlation of about 0.92, indicating that larger diamonds tended to be much more expensive.\nThe ANOVA results also showed statistically significant differences in price across both cut and color categories. In contrast, depth showed almost no linear relationship with price, suggesting that it would likely be less useful as a predictor.\n\n\nRegression Modeling\nI first fit a multiple linear regression model using price as the response and carat, depth, cut, and color as predictors. This model explained a large proportion of the variability in price, but it also showed that depth was not statistically significant, while some levels of cut and color were.\nI then fit a simple linear regression model using carat alone to better understand its individual effect on price. Carat was a highly significant predictor, but residual diagnostics showed clear violations of the linearity and constant variance assumptions.\n\n\nModel Transformation and Diagnostics\nTo address these issues, I transformed the variables by taking the logs of both price and carat. After fitting a model with log(price) as the response and log(carat) as the predictor, the residual plots improved substantially and the assumptions of linearity, normality, and homoscedasticity were much better satisfied.\nI confirmed the improvement using both the residuals vs. fitted plot and a Q-Q plot. The transformed model also produced a stronger fit, with the \\(R^2\\) increasing from about 0.85 in the simple linear model to about 0.93 after the log transformation.\n\n\nModel Selection\nTo determine the best final model, I compared adjusted \\(R^2\\) values after adding depth, cut, and color to the transformed model. Adding depth slightly decreased adjusted \\(R^2\\), indicating that it did not improve the model. Adding cut and color, however, both improved fit, and the best-performing model included:\n\nlog(carat)\ncut\ncolor\n\nThis final model achieved an \\(R^2\\) of about 0.9447, showing that it explained nearly 94% of the variation in log diamond price."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#key-takeaways",
+    "href": "projects/diamonds/index.html#key-takeaways",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nA few major findings emerged from the analysis:\n\nCarat was the strongest predictor of diamond price\nCut and color both improved the model and helped explain additional variation in price\nDepth did not meaningfully contribute to predicting price and was dropped from the final model\nLog-transforming price and carat substantially improved the regression assumptions and overall model fit\nThe final model using log(carat), cut, and color explained about 94% of the variability in log price"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#view-the-full-report",
+    "href": "projects/diamonds/index.html#view-the-full-report",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "View the full report",
+    "text": "View the full report"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#reflection",
+    "href": "projects/diamonds/index.html#reflection",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Reflection",
+    "text": "Reflection\nThis project strengthened my understanding of how regression modeling can be used not just to make predictions, but also to compare predictors, evaluate assumptions, and improve model performance through thoughtful transformations. It gave me more experience interpreting categorical and quantitative predictors together in a multiple regression setting, and helped me see how model diagnostics directly shape the decisions made during analysis.\nWhat I found especially valuable was the process of refining the model rather than stopping at the first strong result. Seeing how the log transformation improved the residual patterns, and how model comparison helped justify dropping depth while keeping cut and color, made the final model feel much more intentional and statistically sound."
+  },
+  {
+    "objectID": "projects/vegan/index.html",
+    "href": "projects/vegan/index.html",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "",
+    "text": "Timeline: August 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
+  },
+  {
+    "objectID": "projects/vegan/index.html#overview",
+    "href": "projects/vegan/index.html#overview",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "",
+    "text": "Timeline: August 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
+  },
+  {
+    "objectID": "projects/vegan/index.html#tools-and-skills",
+    "href": "projects/vegan/index.html#tools-and-skills",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nGoogle Sheets\nData Cleaning\nCategorization\nFrequency Analysis\nData Interpretation\nDatawrapper\nData Visualization\nAdvocacy-Focused Communication"
+  },
+  {
+    "objectID": "projects/vegan/index.html#project-goals",
+    "href": "projects/vegan/index.html#project-goals",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nHow many dining hall options were offered overall?\nHow many of those options were vegan?\nOf the vegan options, how many could reasonably be considered nutritionally sufficient entrees?\nHow often were those nutritious vegan entrees actually served throughout the academic year?\nHow could these findings be communicated clearly to support campus dining advocacy?"
+  },
+  {
+    "objectID": "projects/vegan/index.html#my-role",
+    "href": "projects/vegan/index.html#my-role",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "My Role",
+    "text": "My Role\nIn this project, I independently analyzed dining hall menu data to support a campus advocacy effort focused on vegan food access. I worked directly in Google Sheets to organize the data, count and compare subsets of menu items, and identify patterns in how frequently different vegan options appeared. I then created Datawrapper visuals to present the results in a way that would be easy to understand and useful for advocacy."
+  },
+  {
+    "objectID": "projects/vegan/index.html#methods",
+    "href": "projects/vegan/index.html#methods",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Methods",
+    "text": "Methods\nThis project combined spreadsheet-based analysis with visual storytelling to highlight the difference between simply offering vegan items and offering vegan meals that are both nutritious and consistently available.\n\nData Organization and Categorization\nI started with a Google Sheet containing dining hall menu items collected over the course of the year. From this dataset, I identified the total number of food options served and then isolated the subset that qualified as vegan.\nFrom there, I further narrowed the data to focus on vegan items that could reasonably be classified as nutritionally sufficient entrees. This distinction was important because the existence of vegan options alone does not necessarily mean students have access to balanced or filling meal choices.\n\n\nFrequency Analysis\nAfter identifying the nutritionally sufficient vegan options, I analyzed how often they appeared in the dining halls. One key threshold I used was whether an item had been served 30 or more times over the data collection period.\nThis helped separate items that appeared only occasionally from those that students could actually expect to encounter on a regular basis. The results showed that while there were many vegan options in total, far fewer were both nutritious and served consistently.\n\n\nData Visualization\nTo communicate the findings, I created a series of Datawrapper charts. These visuals helped compare:\n\nvegan versus non-vegan dining options overall\nnutritious vegan entrees as a portion of all vegan options\nthe small number of nutritionally sufficient vegan entrees that were served regularly\n\nBy presenting the analysis visually, the project made it easier to communicate a policy-relevant point: that the number of meaningful vegan dining choices was much smaller than the raw menu count suggested."
+  },
+  {
+    "objectID": "projects/vegan/index.html#key-takeaways",
+    "href": "projects/vegan/index.html#key-takeaways",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nA few major patterns emerged from the analysis:\n\nVegan options made up a minority of overall dining hall offerings\nWithin the vegan subset, many items could not be considered nutritionally sufficient entrees\nOnly a relatively small number of nutritious vegan entrees were served consistently throughout the year\nLooking only at the total count of vegan items overstated how accessible substantial vegan dining options actually were\nClear visualizations made the findings more effective for advocacy and communication"
+  },
+  {
+    "objectID": "projects/vegan/index.html#final-visuals",
+    "href": "projects/vegan/index.html#final-visuals",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Final Visuals",
+    "text": "Final Visuals"
+  },
+  {
+    "objectID": "projects/vegan/index.html#reflection",
+    "href": "projects/vegan/index.html#reflection",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Reflection",
+    "text": "Reflection\nThis project showed me that even relatively simple tools like Google Sheets can be powerful when paired with a clear question and strong communication. It reinforced the importance of distinguishing between raw counts and meaningful access, especially in a policy or advocacy context where numbers can easily be misleading without proper interpretation.\nWhat I found especially valuable was the challenge of turning spreadsheet analysis into a more persuasive visual story. The project strengthened my ability to work with structured data in a practical setting and to present findings in a way that supports real-world decision-making."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects Portfolio",
+    "section": "",
+    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Factors Influence My Daily Screen Time?\n\n\nTracking my screen time over one month and using both ggplot visualizations and an affective visualization to explore patterns in my habits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Diamond Prices with Regression Analysis\n\n\nUsing regression analysis in R to identify how carat, cut, and color influence diamond prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing UCSB Housing Costs Through Data Journalism\n\n\nInvestigating a decade of UCSB housing price increases using data analysis and Datawrapper visualizations for the Daily Nexus\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing Vegan Dining Hall Options to Support Campus Food Advocacy\n\n\nUsing Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "All About Me!",
+    "section": "",
+    "text": "Where I’m from\nI’m originally from Mountain House, California, where my family has lived for the past 21 years. I grew up watching the town change from just a few hundred houses into a fully established community. Because it was such a small place for most of my childhood, everyone knew everyone. I grew up alongside many of the same people for years and eventually graduated high school with classmates I had first met in kindergarten.\nLiving in a town where there wasn’t always much to do taught me to be resourceful and to appreciate the slower pace of everyday life. Mountain House is where I learned to enjoy simple things, like taking long walks and spending time outside. Growing up there gave me a strong sense of community and helped shape the way I value connection, quiet moments, and the scenery around me.\n\n\n\n\n\n\nOn a walk around my neighborhood\n\n\n\n\n\n\n\nHigh school graduation with my friends\n\n\n\n\n\n\n\nTypical spring day in Mountain House\n\n\n\n\n\n\n\n Pets\nI’ve always loved cats because their affection feels earned. They’re independent, never afraid to set their boundaries, and when they do choose to show love, it feels especially meaningful. In January 2021 my family adopted two cats, Caesar and Felix, who are brothers with very different personalities. They don’t usually spend much time together because each prefers doing things their own way, but every once in a while I’ll catch them curled up together for a nap.\nFelix is the troublemaker of the two. If you hear someone bouncing off the walls at three in the morning, it’s almost certainly him. He’s restless and curious, but he’s also very affectionate and always ready to demand pets from the people he loves. Caesar, on the other hand, is much more of a lone wolf. He’s selective about who he gives his attention to and spends most of his day asleep on someone’s bed. The remaining few hours are usually dedicated to convincing us that he absolutely needs another snack.\n\n\n\n\n\n\nCaesar getting ready for nap #12, probably\n\n\n\n\n\n\n\nCaught red-handed\n\n\n\n\n\n\n\nFelix making it impossible for me to do my homework\n\n\n\n\n\n\n\n Hobbies and Interests\nIn my free time, I enjoy reading, especially when I can do it outdoors. One of my favorite things to do during my time at UCSB has been finding a quiet spot on a sunny day and spending a couple of hours getting lost in a book. I only really got into reading during quarantine, but it quickly became one of my favorite ways to unwind. My favorite book I’ve read since then is The Song of Achilles by Madeline Miller, and an honorable mention goes to the Harry Potter series, which is a story I’ll never get tired of revisiting.\nRecently, I’ve also started learning how to knit. My grandma used to knit sweaters and sew outfits for me and my older sister when we were younger, and it’s something I’ve always wanted to be able to do myself. There’s something really satisfying about watching a simple roll of yarn turn into something tangible that you can actually wear and say you made on your own.\nI’m also a big Formula 1 fan. No matter how early the race starts, I’ll usually set an alarm to watch it live. Race weekends have become something I genuinely look forward to, and I rarely miss one. Oscar Piastri WDC soon!\n\n\n\n\n\n\nLooking for my next read\n\n\n\n\n\n\n\nMe and my sister in outfits my grandma sewed\n\n\n\n\n\n\n\nUp at 5 AM watching the Monza Grand Prix"
   }
 ]

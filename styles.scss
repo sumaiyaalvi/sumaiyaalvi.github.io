@@ -18,6 +18,11 @@ $burnt_burg: #6D213C;
 $navbar-hl: $socials_purp; // highlight color when hovering over navbar links
 $secondary: $socials_purp;
 
+body { //ensure body text is the correct color and font
+  color: $socials_purp;
+  font-family: $Sans;
+}
+
 // social buttons default
 .quarto-about-jolla .about-link {
   color: $txt_purp !important;
