@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Using regression analysis in R to identify how carat, cut, and color influence diamond prices">
 
-<title>Projects Portfolio – Sumaiya Alvi</title>
+<title>Modeling Diamond Prices with Regression Analysis – Sumaiya Alvi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5673081cf465d1cbbb9360dfb1a66f45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5673081cf465d1cbbb9360dfb1a66f45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -131,16 +101,16 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Sumaiya Alvi" href="projects.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -150,23 +120,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Sumaiya Alvi</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">All About Me!</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./interests.html"> 
+    <a class="nav-link" href="../../interests.html"> 
 <span class="menu-text">Around the World</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume and Coursework</span></a>
   </li>  
 </ul>
@@ -184,106 +154,164 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Projects Portfolio</h1>
-            <p class="subtitle lead">Some of my personal and academic projects</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#tools-and-skills" id="toc-tools-and-skills" class="nav-link" data-scroll-target="#tools-and-skills">Tools and Skills</a></li>
+  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">Project Goals</a></li>
+  <li><a href="#my-role" id="toc-my-role" class="nav-link" data-scroll-target="#my-role">My Role</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#data-collection-and-sampling" id="toc-data-collection-and-sampling" class="nav-link" data-scroll-target="#data-collection-and-sampling">Data Collection and Sampling</a></li>
+  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
+  <li><a href="#initial-relationship-testing" id="toc-initial-relationship-testing" class="nav-link" data-scroll-target="#initial-relationship-testing">Initial Relationship Testing</a></li>
+  <li><a href="#regression-modeling" id="toc-regression-modeling" class="nav-link" data-scroll-target="#regression-modeling">Regression Modeling</a></li>
+  <li><a href="#model-transformation-and-diagnostics" id="toc-model-transformation-and-diagnostics" class="nav-link" data-scroll-target="#model-transformation-and-diagnostics">Model Transformation and Diagnostics</a></li>
+  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model Selection</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#view-the-full-report" id="toc-view-the-full-report" class="nav-link" data-scroll-target="#view-the-full-report">View the full report</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Modeling Diamond Prices with Regression Analysis</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Regression Analysis</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Using regression analysis in R to identify how carat, cut, and color influence diamond prices</p>
+  </div>
+</div>
 
 
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> Spring 2025<br>
+<strong>Methods:</strong> Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics<br>
+<strong>Course:</strong> PSTAT 126 - Regression Analysis</p>
+<p>This project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.</p>
+<p>Using <strong>R</strong>, I analyzed relationships between price and several predictors, including <strong>carat, cut, color, and depth</strong>. Through exploratory data analysis, hypothesis testing, and model comparison, I found that <strong>carat, cut, and color</strong> were the most important predictors of diamond price, while <strong>depth</strong> did not meaningfully improve the model.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>R</strong></li>
+<li><strong>ggplot2</strong></li>
+<li><strong>dplyr</strong></li>
+<li><strong>Exploratory Data Analysis (EDA)</strong></li>
+<li><strong>ANOVA</strong></li>
+<li><strong>Simple Linear Regression</strong></li>
+<li><strong>Multiple Linear Regression</strong></li>
+<li><strong>Log Transformation</strong></li>
+<li><strong>Residual Analysis</strong></li>
+<li><strong>Model Selection</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>Which diamond characteristics are most strongly associated with price?</li>
+<li>How well can diamond price be predicted using carat, cut, color, and depth?</li>
+<li>Do transformations improve model fit and better satisfy regression assumptions?</li>
+<li>Which combination of predictors produces the strongest and most interpretable final model?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>In this project, I completed the full analysis independently in <strong>R</strong>. This included selecting a random sample from the dataset, creating visualizations, fitting and interpreting regression models, checking model assumptions, comparing adjusted <span class="math inline">\(R^2\)</span> values across models, and identifying the final best-performing model.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>I combined visualization, statistical testing, and regression modeling to understand the drivers of diamond price.</p>
+<section id="data-collection-and-sampling" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-and-sampling">Data Collection and Sampling</h3>
+<p>I worked with a diamonds dataset from <strong>Kaggle</strong> that included variables such as price, carat, cut, color, depth, and clarity. For this project, I selected a random sample of <strong>1,000 diamonds</strong> and focused on <strong>carat, cut, color, depth, and price</strong> in order to build a manageable and interpretable regression analysis.</p>
+</section>
+<section id="exploratory-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h3>
+<p>I began by creating summary statistics, histograms for the quantitative variables, and bar plots for the categorical variables. The distributions showed that <strong>carat</strong> and <strong>price</strong> were both strongly right-skewed, indicating that the sample contained many lower-carat, lower-priced diamonds and relatively few high-end diamonds.</p>
+<p>The bar plots also showed that <strong>Ideal</strong> cuts were the most common, while the distribution of diamond colors was fairly even except for <strong>J</strong>, which appeared much less frequently. These early patterns suggested that carat, cut, and color might all influence price in different ways.</p>
+</section>
+<section id="initial-relationship-testing" class="level3">
+<h3 class="anchored" data-anchor-id="initial-relationship-testing">Initial Relationship Testing</h3>
+<p>To examine relationships between variables, I calculated correlations among the quantitative predictors and used <strong>ANOVA</strong> to test whether price differed across levels of cut and color. The strongest relationship was between <strong>price and carat</strong>, with a correlation of about <strong>0.92</strong>, indicating that larger diamonds tended to be much more expensive.</p>
+<p>The ANOVA results also showed statistically significant differences in price across both <strong>cut</strong> and <strong>color</strong> categories. In contrast, <strong>depth</strong> showed almost no linear relationship with price, suggesting that it would likely be less useful as a predictor.</p>
+</section>
+<section id="regression-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="regression-modeling">Regression Modeling</h3>
+<p>I first fit a <strong>multiple linear regression model</strong> using price as the response and carat, depth, cut, and color as predictors. This model explained a large proportion of the variability in price, but it also showed that <strong>depth was not statistically significant</strong>, while some levels of cut and color were.</p>
+<p>I then fit a <strong>simple linear regression model</strong> using <strong>carat alone</strong> to better understand its individual effect on price. Carat was a highly significant predictor, but residual diagnostics showed clear violations of the linearity and constant variance assumptions.</p>
+</section>
+<section id="model-transformation-and-diagnostics" class="level3">
+<h3 class="anchored" data-anchor-id="model-transformation-and-diagnostics">Model Transformation and Diagnostics</h3>
+<p>To address these issues, I transformed the variables by taking the logs of both <strong>price</strong> and <strong>carat</strong>. After fitting a model with <strong>log(price)</strong> as the response and <strong>log(carat)</strong> as the predictor, the residual plots improved substantially and the assumptions of linearity, normality, and homoscedasticity were much better satisfied.</p>
+<p>I confirmed the improvement using both the <strong>residuals vs.&nbsp;fitted plot</strong> and a <strong>Q-Q plot</strong>. The transformed model also produced a stronger fit, with the <span class="math inline">\(R^2\)</span> increasing from about <strong>0.85</strong> in the simple linear model to about <strong>0.93</strong> after the log transformation.</p>
+</section>
+<section id="model-selection" class="level3">
+<h3 class="anchored" data-anchor-id="model-selection">Model Selection</h3>
+<p>To determine the best final model, I compared adjusted <span class="math inline">\(R^2\)</span> values after adding <strong>depth, cut, and color</strong> to the transformed model. Adding <strong>depth</strong> slightly decreased adjusted <span class="math inline">\(R^2\)</span>, indicating that it did not improve the model. Adding <strong>cut</strong> and <strong>color</strong>, however, both improved fit, and the best-performing model included:</p>
+<ul>
+<li><strong>log(carat)</strong></li>
+<li><strong>cut</strong></li>
+<li><strong>color</strong></li>
+</ul>
+<p>This final model achieved an <span class="math inline">\(R^2\)</span> of about <strong>0.9447</strong>, showing that it explained nearly <strong>94% of the variation in log diamond price</strong>.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>A few major findings emerged from the analysis:</p>
+<ul>
+<li><strong>Carat</strong> was the strongest predictor of diamond price</li>
+<li><strong>Cut</strong> and <strong>color</strong> both improved the model and helped explain additional variation in price</li>
+<li><strong>Depth</strong> did not meaningfully contribute to predicting price and was dropped from the final model</li>
+<li>Log-transforming <strong>price</strong> and <strong>carat</strong> substantially improved the regression assumptions and overall model fit</li>
+<li>The final model using <strong>log(carat), cut, and color</strong> explained about <strong>94%</strong> of the variability in log price</li>
+</ul>
+</section>
+<section id="view-the-full-report" class="level2">
+<h2 class="anchored" data-anchor-id="view-the-full-report">View the full report</h2>
+<iframe src="../../projects/diamonds/finalproject.pdf" width="100%" height="800px">
+</iframe>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project strengthened my understanding of how regression modeling can be used not just to make predictions, but also to compare predictors, evaluate assumptions, and improve model performance through thoughtful transformations. It gave me more experience interpreting categorical and quantitative predictors together in a multiple regression setting, and helped me see how model diagnostics directly shape the decisions made during analysis.</p>
+<p>What I found especially valuable was the process of refining the model rather than stopping at the first strong result. Seeing how the log transformation improved the residual patterns, and how model comparison helped justify dropping depth while keeping cut and color, made the final model feel much more intentional and statistically sound.</p>
 
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QXJjR0lTJTIwUHJvJTJDU3BhdGlhbCUyMEFuYWx5c2lz" data-listing-file-modified-sort="1773079593117" data-listing-reading-time-sort="5" data-listing-word-count-sort="878">
-<a href="./projects/coyotes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/coyotes/coyote.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles
-</h5>
-<div class="card-text listing-description delink">
-<p>Using spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UiUyQ1JlZ3Jlc3Npb24lMjBBbmFseXNpcw==" data-listing-file-modified-sort="1773080737879" data-listing-reading-time-sort="5" data-listing-word-count-sort="936">
-<a href="./projects/diamonds/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/diamonds/diamonds.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modeling Diamond Prices with Regression Analysis
-</h5>
-<div class="card-text listing-description delink">
-<p>Using regression analysis in R to identify how carat, cut, and color influence diamond prices</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDR29vZ2xlJTIwQ29sYWI=" data-listing-file-modified-sort="1773078419050" data-listing-reading-time-sort="3" data-listing-word-count-sort="531">
-<a href="./projects/beats-by-dre/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/beats-by-dre/beats.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch
-</h5>
-<div class="card-text listing-description delink">
-<p>Using EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

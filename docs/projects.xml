@@ -10,7 +10,7 @@
 <atom:link href="https://sumaiyaalvi.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 09 Mar 2026 18:05:32 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Mar 2026 18:25:41 GMT</lastBuildDate>
 <item>
   <title>Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles</title>
   <link>https://sumaiyaalvi.github.io/projects/coyotes/</link>
@@ -22,7 +22,7 @@
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><strong>Timeline:</strong> November-December 2025<br>
-<strong>Methods:</strong> Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis</p>
+<strong>Methods:</strong> Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis <strong>Course:</strong> GEOG 176A - Intro to GIS</p>
 <p>This project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using <strong>coyote sightings in Los Angeles</strong> as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.</p>
 <p>To explore this, my partner and I compared coyote sightings from <strong>April 2019, April 2020, and April 2021</strong> to capture conditions before, during, and after the lockdown period. Using <strong>public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro</strong>, we analyzed how the extent, distribution, and density of coyote activity changed across the three years.</p>
 </section>
@@ -110,8 +110,122 @@
   <category>ArcGIS Pro</category>
   <category>Spatial Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/coyotes/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:05:32 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 18:25:41 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/coyotes/coyote.png" medium="image" type="image/png" height="74" width="144"/>
+</item>
+<item>
+  <title>Modeling Diamond Prices with Regression Analysis</title>
+  <link>https://sumaiyaalvi.github.io/projects/diamonds/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> Spring 2025<br>
+<strong>Methods:</strong> Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics<br>
+<strong>Course:</strong> PSTAT 126 - Regression Analysis</p>
+<p>This project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.</p>
+<p>Using <strong>R</strong>, I analyzed relationships between price and several predictors, including <strong>carat, cut, color, and depth</strong>. Through exploratory data analysis, hypothesis testing, and model comparison, I found that <strong>carat, cut, and color</strong> were the most important predictors of diamond price, while <strong>depth</strong> did not meaningfully improve the model.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>R</strong></li>
+<li><strong>ggplot2</strong></li>
+<li><strong>dplyr</strong></li>
+<li><strong>Exploratory Data Analysis (EDA)</strong></li>
+<li><strong>ANOVA</strong></li>
+<li><strong>Simple Linear Regression</strong></li>
+<li><strong>Multiple Linear Regression</strong></li>
+<li><strong>Log Transformation</strong></li>
+<li><strong>Residual Analysis</strong></li>
+<li><strong>Model Selection</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>Which diamond characteristics are most strongly associated with price?</li>
+<li>How well can diamond price be predicted using carat, cut, color, and depth?</li>
+<li>Do transformations improve model fit and better satisfy regression assumptions?</li>
+<li>Which combination of predictors produces the strongest and most interpretable final model?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>In this project, I completed the full analysis independently in <strong>R</strong>. This included selecting a random sample from the dataset, creating visualizations, fitting and interpreting regression models, checking model assumptions, comparing adjusted <img src="https://latex.codecogs.com/png.latex?R%5E2"> values across models, and identifying the final best-performing model.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>I combined visualization, statistical testing, and regression modeling to understand the drivers of diamond price.</p>
+<section id="data-collection-and-sampling" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-and-sampling">Data Collection and Sampling</h3>
+<p>I worked with a diamonds dataset from <strong>Kaggle</strong> that included variables such as price, carat, cut, color, depth, and clarity. For this project, I selected a random sample of <strong>1,000 diamonds</strong> and focused on <strong>carat, cut, color, depth, and price</strong> in order to build a manageable and interpretable regression analysis.</p>
+</section>
+<section id="exploratory-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h3>
+<p>I began by creating summary statistics, histograms for the quantitative variables, and bar plots for the categorical variables. The distributions showed that <strong>carat</strong> and <strong>price</strong> were both strongly right-skewed, indicating that the sample contained many lower-carat, lower-priced diamonds and relatively few high-end diamonds.</p>
+<p>The bar plots also showed that <strong>Ideal</strong> cuts were the most common, while the distribution of diamond colors was fairly even except for <strong>J</strong>, which appeared much less frequently. These early patterns suggested that carat, cut, and color might all influence price in different ways.</p>
+</section>
+<section id="initial-relationship-testing" class="level3">
+<h3 class="anchored" data-anchor-id="initial-relationship-testing">Initial Relationship Testing</h3>
+<p>To examine relationships between variables, I calculated correlations among the quantitative predictors and used <strong>ANOVA</strong> to test whether price differed across levels of cut and color. The strongest relationship was between <strong>price and carat</strong>, with a correlation of about <strong>0.92</strong>, indicating that larger diamonds tended to be much more expensive.</p>
+<p>The ANOVA results also showed statistically significant differences in price across both <strong>cut</strong> and <strong>color</strong> categories. In contrast, <strong>depth</strong> showed almost no linear relationship with price, suggesting that it would likely be less useful as a predictor.</p>
+</section>
+<section id="regression-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="regression-modeling">Regression Modeling</h3>
+<p>I first fit a <strong>multiple linear regression model</strong> using price as the response and carat, depth, cut, and color as predictors. This model explained a large proportion of the variability in price, but it also showed that <strong>depth was not statistically significant</strong>, while some levels of cut and color were.</p>
+<p>I then fit a <strong>simple linear regression model</strong> using <strong>carat alone</strong> to better understand its individual effect on price. Carat was a highly significant predictor, but residual diagnostics showed clear violations of the linearity and constant variance assumptions.</p>
+</section>
+<section id="model-transformation-and-diagnostics" class="level3">
+<h3 class="anchored" data-anchor-id="model-transformation-and-diagnostics">Model Transformation and Diagnostics</h3>
+<p>To address these issues, I transformed the variables by taking the logs of both <strong>price</strong> and <strong>carat</strong>. After fitting a model with <strong>log(price)</strong> as the response and <strong>log(carat)</strong> as the predictor, the residual plots improved substantially and the assumptions of linearity, normality, and homoscedasticity were much better satisfied.</p>
+<p>I confirmed the improvement using both the <strong>residuals vs.&nbsp;fitted plot</strong> and a <strong>Q-Q plot</strong>. The transformed model also produced a stronger fit, with the <img src="https://latex.codecogs.com/png.latex?R%5E2"> increasing from about <strong>0.85</strong> in the simple linear model to about <strong>0.93</strong> after the log transformation.</p>
+</section>
+<section id="model-selection" class="level3">
+<h3 class="anchored" data-anchor-id="model-selection">Model Selection</h3>
+<p>To determine the best final model, I compared adjusted <img src="https://latex.codecogs.com/png.latex?R%5E2"> values after adding <strong>depth, cut, and color</strong> to the transformed model. Adding <strong>depth</strong> slightly decreased adjusted <img src="https://latex.codecogs.com/png.latex?R%5E2">, indicating that it did not improve the model. Adding <strong>cut</strong> and <strong>color</strong>, however, both improved fit, and the best-performing model included:</p>
+<ul>
+<li><strong>log(carat)</strong></li>
+<li><strong>cut</strong></li>
+<li><strong>color</strong></li>
+</ul>
+<p>This final model achieved an <img src="https://latex.codecogs.com/png.latex?R%5E2"> of about <strong>0.9447</strong>, showing that it explained nearly <strong>94% of the variation in log diamond price</strong>.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>A few major findings emerged from the analysis:</p>
+<ul>
+<li><strong>Carat</strong> was the strongest predictor of diamond price</li>
+<li><strong>Cut</strong> and <strong>color</strong> both improved the model and helped explain additional variation in price</li>
+<li><strong>Depth</strong> did not meaningfully contribute to predicting price and was dropped from the final model</li>
+<li>Log-transforming <strong>price</strong> and <strong>carat</strong> substantially improved the regression assumptions and overall model fit</li>
+<li>The final model using <strong>log(carat), cut, and color</strong> explained about <strong>94%</strong> of the variability in log price</li>
+</ul>
+</section>
+<section id="view-the-full-report" class="level2">
+<h2 class="anchored" data-anchor-id="view-the-full-report">View the full report</h2>
+<iframe src="../../projects/diamonds/finalproject.pdf" width="100%" height="800px">
+</iframe>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project strengthened my understanding of how regression modeling can be used not just to make predictions, but also to compare predictors, evaluate assumptions, and improve model performance through thoughtful transformations. It gave me more experience interpreting categorical and quantitative predictors together in a multiple regression setting, and helped me see how model diagnostics directly shape the decisions made during analysis.</p>
+<p>What I found especially valuable was the process of refining the model rather than stopping at the first strong result. Seeing how the log transformation improved the residual patterns, and how model comparison helped justify dropping depth while keeping cut and color, made the final model feel much more intentional and statistically sound.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>Regression Analysis</category>
+  <guid>https://sumaiyaalvi.github.io/projects/diamonds/</guid>
+  <pubDate>Mon, 09 Mar 2026 18:25:41 GMT</pubDate>
+  <media:content url="https://sumaiyaalvi.github.io/projects/diamonds/diamonds.png" medium="image" type="image/png" height="58" width="144"/>
 </item>
 <item>
   <title>Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch</title>
@@ -206,7 +320,7 @@
   <category>Python</category>
   <category>Google Colab</category>
   <guid>https://sumaiyaalvi.github.io/projects/beats-by-dre/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:05:32 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 18:25:41 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/beats-by-dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 </channel>

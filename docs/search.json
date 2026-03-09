@@ -18,7 +18,7 @@
     "href": "projects.html",
     "title": "Projects Portfolio",
     "section": "",
-    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Diamond Prices with Regression Analysis\n\n\nUsing regression analysis in R to identify how carat, cut, and color influence diamond prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -186,14 +186,14 @@
     "href": "projects/coyotes/index.html",
     "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
     "section": "",
-    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
+    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis Course: GEOG 176A - Intro to GIS\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
   },
   {
     "objectID": "projects/coyotes/index.html#overview",
     "href": "projects/coyotes/index.html#overview",
     "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
     "section": "",
-    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
+    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis Course: GEOG 176A - Intro to GIS\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
   },
   {
     "objectID": "projects/coyotes/index.html#tools-and-skills",
@@ -243,5 +243,75 @@
     "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
     "section": "Reflection",
     "text": "Reflection\nThis project gave me hands-on experience using ArcGIS Pro to work with spatial data and apply analytical techniques to a real-world environmental question. It strengthened my skills in data preparation, spatial thinking, and map-based storytelling, while also showing me how geographic analysis can be used to better understand the relationship between people and wildlife in urban environments.\nWhat I found especially valuable was being able to connect technical spatial methods to a broader question about coexistence and city planning. The project reinforced how changes in human behavior can shape ecological patterns in ways that become visible through careful spatial analysis."
+  },
+  {
+    "objectID": "projects/diamonds/index.html",
+    "href": "projects/diamonds/index.html",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "",
+    "text": "Timeline: Spring 2025\nMethods: Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics\nCourse: PSTAT 126 - Regression Analysis\nThis project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.\nUsing R, I analyzed relationships between price and several predictors, including carat, cut, color, and depth. Through exploratory data analysis, hypothesis testing, and model comparison, I found that carat, cut, and color were the most important predictors of diamond price, while depth did not meaningfully improve the model."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#overview",
+    "href": "projects/diamonds/index.html#overview",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "",
+    "text": "Timeline: Spring 2025\nMethods: Exploratory Data Analysis, ANOVA, Simple Linear Regression, Multiple Linear Regression, Log Transformation, Model Diagnostics\nCourse: PSTAT 126 - Regression Analysis\nThis project explored how different diamond characteristics influence price using a random sample of 1,000 observations from a larger diamonds dataset. The goal was to determine which features were most useful for predicting diamond prices, and to build a regression model that balanced strong fit with clear interpretation.\nUsing R, I analyzed relationships between price and several predictors, including carat, cut, color, and depth. Through exploratory data analysis, hypothesis testing, and model comparison, I found that carat, cut, and color were the most important predictors of diamond price, while depth did not meaningfully improve the model."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#tools-and-skills",
+    "href": "projects/diamonds/index.html#tools-and-skills",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nR\nggplot2\ndplyr\nExploratory Data Analysis (EDA)\nANOVA\nSimple Linear Regression\nMultiple Linear Regression\nLog Transformation\nResidual Analysis\nModel Selection"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#project-goals",
+    "href": "projects/diamonds/index.html#project-goals",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nWhich diamond characteristics are most strongly associated with price?\nHow well can diamond price be predicted using carat, cut, color, and depth?\nDo transformations improve model fit and better satisfy regression assumptions?\nWhich combination of predictors produces the strongest and most interpretable final model?"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#my-role",
+    "href": "projects/diamonds/index.html#my-role",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "My Role",
+    "text": "My Role\nIn this project, I completed the full analysis independently in R. This included selecting a random sample from the dataset, creating visualizations, fitting and interpreting regression models, checking model assumptions, comparing adjusted \\(R^2\\) values across models, and identifying the final best-performing model."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#methods",
+    "href": "projects/diamonds/index.html#methods",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Methods",
+    "text": "Methods\nI combined visualization, statistical testing, and regression modeling to understand the drivers of diamond price.\n\nData Collection and Sampling\nI worked with a diamonds dataset from Kaggle that included variables such as price, carat, cut, color, depth, and clarity. For this project, I selected a random sample of 1,000 diamonds and focused on carat, cut, color, depth, and price in order to build a manageable and interpretable regression analysis.\n\n\nExploratory Data Analysis\nI began by creating summary statistics, histograms for the quantitative variables, and bar plots for the categorical variables. The distributions showed that carat and price were both strongly right-skewed, indicating that the sample contained many lower-carat, lower-priced diamonds and relatively few high-end diamonds.\nThe bar plots also showed that Ideal cuts were the most common, while the distribution of diamond colors was fairly even except for J, which appeared much less frequently. These early patterns suggested that carat, cut, and color might all influence price in different ways.\n\n\nInitial Relationship Testing\nTo examine relationships between variables, I calculated correlations among the quantitative predictors and used ANOVA to test whether price differed across levels of cut and color. The strongest relationship was between price and carat, with a correlation of about 0.92, indicating that larger diamonds tended to be much more expensive.\nThe ANOVA results also showed statistically significant differences in price across both cut and color categories. In contrast, depth showed almost no linear relationship with price, suggesting that it would likely be less useful as a predictor.\n\n\nRegression Modeling\nI first fit a multiple linear regression model using price as the response and carat, depth, cut, and color as predictors. This model explained a large proportion of the variability in price, but it also showed that depth was not statistically significant, while some levels of cut and color were.\nI then fit a simple linear regression model using carat alone to better understand its individual effect on price. Carat was a highly significant predictor, but residual diagnostics showed clear violations of the linearity and constant variance assumptions.\n\n\nModel Transformation and Diagnostics\nTo address these issues, I transformed the variables by taking the logs of both price and carat. After fitting a model with log(price) as the response and log(carat) as the predictor, the residual plots improved substantially and the assumptions of linearity, normality, and homoscedasticity were much better satisfied.\nI confirmed the improvement using both the residuals vs. fitted plot and a Q-Q plot. The transformed model also produced a stronger fit, with the \\(R^2\\) increasing from about 0.85 in the simple linear model to about 0.93 after the log transformation.\n\n\nModel Selection\nTo determine the best final model, I compared adjusted \\(R^2\\) values after adding depth, cut, and color to the transformed model. Adding depth slightly decreased adjusted \\(R^2\\), indicating that it did not improve the model. Adding cut and color, however, both improved fit, and the best-performing model included:\n\nlog(carat)\ncut\ncolor\n\nThis final model achieved an \\(R^2\\) of about 0.9447, showing that it explained nearly 94% of the variation in log diamond price."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#key-takeaways",
+    "href": "projects/diamonds/index.html#key-takeaways",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nA few major findings emerged from the analysis:\n\nCarat was the strongest predictor of diamond price\nCut and color both improved the model and helped explain additional variation in price\nDepth did not meaningfully contribute to predicting price and was dropped from the final model\nLog-transforming price and carat substantially improved the regression assumptions and overall model fit\nThe final model using log(carat), cut, and color explained about 94% of the variability in log price"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#deliverable",
+    "href": "projects/diamonds/index.html#deliverable",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Deliverable",
+    "text": "Deliverable\nView the full analysis (R Markdown / PDF)"
+  },
+  {
+    "objectID": "projects/diamonds/index.html#reflection",
+    "href": "projects/diamonds/index.html#reflection",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "Reflection",
+    "text": "Reflection\nThis project strengthened my understanding of how regression modeling can be used not just to make predictions, but also to compare predictors, evaluate assumptions, and improve model performance through thoughtful transformations. It gave me more experience interpreting categorical and quantitative predictors together in a multiple regression setting, and helped me see how model diagnostics directly shape the decisions made during analysis.\nWhat I found especially valuable was the process of refining the model rather than stopping at the first strong result. Seeing how the log transformation improved the residual patterns, and how model comparison helped justify dropping depth while keeping cut and color, made the final model feel much more intentional and statistically sound."
+  },
+  {
+    "objectID": "projects/diamonds/index.html#view-the-full-report",
+    "href": "projects/diamonds/index.html#view-the-full-report",
+    "title": "Modeling Diamond Prices with Regression Analysis",
+    "section": "View the full report",
+    "text": "View the full report"
   }
 ]
