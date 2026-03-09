@@ -10,10 +10,10 @@
 <atom:link href="https://sumaiyaalvi.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 09 Mar 2026 17:13:41 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Mar 2026 18:05:32 GMT</lastBuildDate>
 <item>
-  <title>Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch</title>
-  <link>https://sumaiyaalvi.github.io/projects/beats by dre/</link>
+  <title>Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles</title>
+  <link>https://sumaiyaalvi.github.io/projects/coyotes/</link>
   <description><![CDATA[ 
 
 
@@ -21,6 +21,110 @@
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> November-December 2025<br>
+<strong>Methods:</strong> Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis</p>
+<p>This project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using <strong>coyote sightings in Los Angeles</strong> as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.</p>
+<p>To explore this, my partner and I compared coyote sightings from <strong>April 2019, April 2020, and April 2021</strong> to capture conditions before, during, and after the lockdown period. Using <strong>public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro</strong>, we analyzed how the extent, distribution, and density of coyote activity changed across the three years.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>ArcGIS Pro</strong></li>
+<li><strong>Spatial Analysis</strong></li>
+<li><strong>Convex Hull Analysis</strong></li>
+<li><strong>Buffer Analysis</strong></li>
+<li><strong>Spatial Join</strong></li>
+<li><strong>Kernel Density Analysis</strong></li>
+<li><strong>Map Design</strong></li>
+<li><strong>Environmental Data Interpretation</strong></li>
+<li><strong>Collaborative Research</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>Did reduced human mobility during the COVID-19 lockdown allow coyotes to expand into new urban areas?</li>
+<li>How did the spatial extent of coyote sightings change before, during, and after lockdown?</li>
+<li>Was reduced human activity associated with changes in where coyotes were observed?</li>
+<li>What can these patterns tell us about coexistence between wildlife and people in urban environments?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>This project was completed in collaboration with one partner, and responsibilities were shared evenly across all stages of the analysis. I worked extensively on importing and cleaning our CSV datasets, converting them into spatial point layers in <strong>ArcGIS Pro</strong>, and helping conduct the spatial analyses used throughout the project. We also worked together on map design, interpretation of results, and presenting our findings in a clear and visually effective way.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>We combined multiple datasets and spatial analysis techniques to investigate how coyote activity changed as human mobility declined during the pandemic.</p>
+<section id="data-collection-and-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-and-preparation">Data Collection and Preparation</h3>
+<p>We used <strong>coyote sighting data from iNaturalist</strong>, <strong>parking citation data from the Los Angeles Open Data Portal</strong>, and <strong>land cover data from ArcGIS Online</strong>. All datasets were filtered spatially to <strong>Los Angeles County</strong> and temporally to <strong>April 2019, April 2020, and April 2021</strong> in order to control for seasonal variation and make meaningful comparisons across years.</p>
+<p>After filtering the data, we imported CSV files into ArcGIS Pro and converted them into spatial point layers using latitude and longitude fields. This preparation allowed us to compare wildlife sightings and human mobility patterns within the same geographic space.</p>
+</section>
+<section id="convex-hull-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="convex-hull-analysis">Convex Hull Analysis</h3>
+<p>To examine the overall spatial extent of coyote sightings, we used <strong>convex hull analysis</strong> for each study year. This created polygons representing the outer boundary of sightings and allowed us to compare how far coyote activity extended across Los Angeles over time.</p>
+<p>The analysis showed that the geographic extent of coyote sightings expanded noticeably in <strong>April 2020</strong> compared to <strong>2019</strong>, suggesting that coyotes occupied a wider range of areas during the lockdown. In <strong>2021</strong>, the extent contracted again, appearing more similar to pre-lockdown conditions.</p>
+</section>
+<section id="buffer-analysis-and-spatial-join" class="level3">
+<h3 class="anchored" data-anchor-id="buffer-analysis-and-spatial-join">Buffer Analysis and Spatial Join</h3>
+<p>To investigate the relationship between wildlife presence and human activity, we created <strong>1500-meter buffers</strong> around coyote sightings and used a <strong>spatial join</strong> to count nearby parking citations. Parking citations served as a proxy for human mobility, since fewer people moving around the city would likely correspond with fewer citations being issued.</p>
+<p>This analysis revealed a sharp drop in citations near coyote sightings during lockdown. In <strong>April 2019</strong>, there were <strong>5,530</strong> parking citations within 1500 meters of coyote sightings; in <strong>April 2020</strong>, that number dropped to <strong>1,452</strong>; and in <strong>April 2021</strong>, it increased to <strong>10,579</strong>, indicating a strong rebound in human mobility.</p>
+</section>
+<section id="kernel-density-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="kernel-density-analysis">Kernel Density Analysis</h3>
+<p>We also used <strong>kernel density analysis</strong> to identify areas with higher concentrations of coyote sightings. The 2020 density maps showed a more widespread distribution of coyote activity compared to the other years, with increased sightings in more urbanized areas such as the <strong>San Fernando Valley</strong> and areas near <strong>Santa Monica</strong>.</p>
+<p>This suggested that during the lockdown, coyotes were not only observed more often, but were also active across a broader range of urban environments rather than remaining concentrated near parks or natural open spaces.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>A few major patterns emerged from the analysis:</p>
+<ul>
+<li>The spatial extent of coyote sightings expanded during the 2020 lockdown compared to 2019 and 2021</li>
+<li>Parking citations near coyote sightings dropped sharply in 2020, reflecting reduced human mobility</li>
+<li>Kernel density maps showed more widespread coyote activity in urban areas during lockdown</li>
+<li>Together, these findings suggest that reduced human presence coincided with broader and more visible coyote movement throughout Los Angeles</li>
+</ul>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<p>This project resulted in several final deliverables, which are linked below.</p>
+<ul>
+<li><a href="../../projects/coyotes/176A.pdf" target="_blank">View the final presentation (PDF)</a></li>
+<li><a href="https://docs.google.com/document/d/1EPLdGc6Zpx2B4ksjTrxDC-OHBIef4WEUCXclU9oSY7s/edit?usp=sharing" target="_blank">Read the written project report</a></li>
+</ul>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project gave me hands-on experience using <strong>ArcGIS Pro</strong> to work with spatial data and apply analytical techniques to a real-world environmental question. It strengthened my skills in data preparation, spatial thinking, and map-based storytelling, while also showing me how geographic analysis can be used to better understand the relationship between people and wildlife in urban environments.</p>
+<p>What I found especially valuable was being able to connect technical spatial methods to a broader question about coexistence and city planning. The project reinforced how changes in human behavior can shape ecological patterns in ways that become visible through careful spatial analysis.</p>
+<iframe src="../../projects/coyotes/176A.pdf" width="100%" height="800px">
+</iframe>
+
+
+</section>
+
+ ]]></description>
+  <category>ArcGIS Pro</category>
+  <category>Spatial Analysis</category>
+  <guid>https://sumaiyaalvi.github.io/projects/coyotes/</guid>
+  <pubDate>Mon, 09 Mar 2026 18:05:32 GMT</pubDate>
+  <media:content url="https://sumaiyaalvi.github.io/projects/coyotes/coyote.png" medium="image" type="image/png" height="74" width="144"/>
+</item>
+<item>
+  <title>Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch</title>
+  <link>https://sumaiyaalvi.github.io/projects/beats-by-dre/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> April–June 2025<br>
+<strong>Methods:</strong> EDA, Sentiment Analysis, Qualitative Analysis</p>
 <p>From April to June 2025, I worked on a consumer insights and social listening project centered on the <strong>Beats Pill launch</strong>. The goal of this project was to better understand how consumers were responding to the product by combining survey data with social media conversations and translating those findings into actionable recommendations.</p>
 <p>Using <strong>Python in Google Colab</strong>, I collected, cleaned, and structured both qualitative and quantitative data. I then used <strong>exploratory data analysis, sentiment analysis, and qualitative review</strong> to identify major themes in consumer perception, feature preferences, and overall behavior.</p>
 </section>
@@ -61,6 +165,7 @@
 <section id="sentiment-analysis-and-eda" class="level3">
 <h3 class="anchored" data-anchor-id="sentiment-analysis-and-eda">Sentiment Analysis and EDA</h3>
 <p>Using Python, I performed sentiment analysis and exploratory data analysis to identify patterns in how people discussed the product. This helped highlight overall tone, recurring opinions, and feature-level trends in consumer reactions.</p>
+<p><a href="https://colab.research.google.com/drive/1XdiDhP6dCfExjtOHgyNSwKGqtlW2_j58?usp=sharing" class="btn" target="_blank"><i class="fa-brands fa-python" aria-label="python"></i> Cleaning and Prepping Data, &amp; Exploratory Data Analysis</a></p>
 </section>
 <section id="qualitative-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="qualitative-analysis">Qualitative Analysis</h3>
@@ -76,28 +181,33 @@
 <li>Combining quantitative summaries with qualitative review made the recommendations more grounded and actionable</li>
 <li>Clear visual storytelling was important for communicating insights to stakeholders without a technical background</li>
 </ul>
+<p><a href="https://colab.research.google.com/drive/1TqpU3Bv5_LH7ynEEZ1YSFTC7VmrAfaSc?usp=sharing" class="btn" target="_blank"><i class="fa-brands fa-python" aria-label="python"></i> Sharing Insights</a></p>
 </section>
 <section id="deliverables" class="level2">
 <h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
 <p>This project resulted in several final deliverables, which are linked below.</p>
-<p><a href="../../projects/beats by dre/beats_presentation.pdf" target="_blank">View the final presentation (PDF)</a></p>
-<p><a href="https://claude.ai/public/artifacts/cc49c7ec-1b6e-40db-93fe-6429e480c300" target="_blank">Open the Claude insights dashboard</a></p>
-<p><a href="https://docs.google.com/document/d/1_2_djk76Xk8LL9TROq4A0o5ZydId4PDDbNxEnnify3k/edit?usp=sharing" target="_blank">Read the project summary</a></p>
+<ul>
+<li><a href="../../projects/beats-by-dre/beats_presentation.pdf" target="_blank">View the final presentation (PDF)</a></li>
+<li><a href="https://claude.ai/public/artifacts/cc49c7ec-1b6e-40db-93fe-6429e480c300" target="_blank">Open the Claude insights dashboard</a></li>
+<li><a href="https://docs.google.com/document/d/1_2_djk76Xk8LL9TROq4A0o5ZydId4PDDbNxEnnify3k/edit?usp=sharing" target="_blank">Read the project summary</a></li>
+</ul>
 </section>
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <p>This project strengthened my skills in <strong>consumer analytics, storytelling, and stakeholder communication</strong>. It also gave me more experience working with messy real-world data and thinking carefully about how to turn analysis into recommendations that are both clear and useful.</p>
 <p>What I found especially valuable was the balance between technical analysis and communication. Beyond identifying trends in the data, the project required me to think about how to present those findings in a consulting-style format that could support real decision-making.</p>
-<iframe src="../../projects/beats by dre/beats_presentation.pdf" width="100%" height="800px">
+<iframe src="../../projects/beats-by-dre/beats_presentation.pdf" width="100%" height="800px">
 </iframe>
 
 
 </section>
 
  ]]></description>
-  <guid>https://sumaiyaalvi.github.io/projects/beats by dre/</guid>
-  <pubDate>Mon, 09 Mar 2026 17:13:41 GMT</pubDate>
-  <media:content url="https://sumaiyaalvi.github.io/projects/beats by dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
+  <category>Python</category>
+  <category>Google Colab</category>
+  <guid>https://sumaiyaalvi.github.io/projects/beats-by-dre/</guid>
+  <pubDate>Mon, 09 Mar 2026 18:05:32 GMT</pubDate>
+  <media:content url="https://sumaiyaalvi.github.io/projects/beats-by-dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,99 @@
+---
+title: "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles"
+description: |
+  Using spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles
+image: coyote.png
+categories: [ArcGIS Pro, Spatial Analysis]
+draft: false
+format:
+  html:
+    toc: true
+---
+
+## Overview
+
+**Timeline:** November-December 2025  
+**Methods:** Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis
+**Course:** GEOG 176A - Intro to GIS
+
+This project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using **coyote sightings in Los Angeles** as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.
+
+To explore this, my partner and I compared coyote sightings from **April 2019, April 2020, and April 2021** to capture conditions before, during, and after the lockdown period. Using **public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro**, we analyzed how the extent, distribution, and density of coyote activity changed across the three years.
+
+## Tools and Skills
+
+- **ArcGIS Pro**
+- **Spatial Analysis**
+- **Convex Hull Analysis**
+- **Buffer Analysis**
+- **Spatial Join**
+- **Kernel Density Analysis**
+- **Map Design**
+- **Environmental Data Interpretation**
+- **Collaborative Research**
+
+## Project Goals
+
+This project focused on a few main questions:
+
+- Did reduced human mobility during the COVID-19 lockdown allow coyotes to expand into new urban areas?
+- How did the spatial extent of coyote sightings change before, during, and after lockdown?
+- Was reduced human activity associated with changes in where coyotes were observed?
+- What can these patterns tell us about coexistence between wildlife and people in urban environments?
+
+## My Role
+
+This project was completed in collaboration with one partner, and responsibilities were shared evenly across all stages of the analysis. I worked extensively on importing and cleaning our CSV datasets, converting them into spatial point layers in **ArcGIS Pro**, and helping conduct the spatial analyses used throughout the project. We also worked together on map design, interpretation of results, and presenting our findings in a clear and visually effective way.
+
+## Methods
+
+We combined multiple datasets and spatial analysis techniques to investigate how coyote activity changed as human mobility declined during the pandemic.
+
+### Data Collection and Preparation
+
+We used **coyote sighting data from iNaturalist**, **parking citation data from the Los Angeles Open Data Portal**, and **land cover data from ArcGIS Online**. All datasets were filtered spatially to **Los Angeles County** and temporally to **April 2019, April 2020, and April 2021** in order to control for seasonal variation and make meaningful comparisons across years.
+
+After filtering the data, we imported CSV files into ArcGIS Pro and converted them into spatial point layers using latitude and longitude fields. This preparation allowed us to compare wildlife sightings and human mobility patterns within the same geographic space.
+
+### Convex Hull Analysis
+
+To examine the overall spatial extent of coyote sightings, we used **convex hull analysis** for each study year. This created polygons representing the outer boundary of sightings and allowed us to compare how far coyote activity extended across Los Angeles over time.
+
+The analysis showed that the geographic extent of coyote sightings expanded noticeably in **April 2020** compared to **2019**, suggesting that coyotes occupied a wider range of areas during the lockdown. In **2021**, the extent contracted again, appearing more similar to pre-lockdown conditions.
+
+### Buffer Analysis and Spatial Join
+
+To investigate the relationship between wildlife presence and human activity, we created **1500-meter buffers** around coyote sightings and used a **spatial join** to count nearby parking citations. Parking citations served as a proxy for human mobility, since fewer people moving around the city would likely correspond with fewer citations being issued.
+
+This analysis revealed a sharp drop in citations near coyote sightings during lockdown. In **April 2019**, there were **5,530** parking citations within 1500 meters of coyote sightings; in **April 2020**, that number dropped to **1,452**; and in **April 2021**, it increased to **10,579**, indicating a strong rebound in human mobility.
+
+### Kernel Density Analysis
+
+We also used **kernel density analysis** to identify areas with higher concentrations of coyote sightings. The 2020 density maps showed a more widespread distribution of coyote activity compared to the other years, with increased sightings in more urbanized areas such as the **San Fernando Valley** and areas near **Santa Monica**.
+
+This suggested that during the lockdown, coyotes were not only observed more often, but were also active across a broader range of urban environments rather than remaining concentrated near parks or natural open spaces.
+
+## Key Takeaways
+
+A few major patterns emerged from the analysis:
+
+- The spatial extent of coyote sightings expanded during the 2020 lockdown compared to 2019 and 2021
+- Parking citations near coyote sightings dropped sharply in 2020, reflecting reduced human mobility
+- Kernel density maps showed more widespread coyote activity in urban areas during lockdown
+- Together, these findings suggest that reduced human presence coincided with broader and more visible coyote movement throughout Los Angeles
+
+## Deliverables
+
+This project resulted in several final deliverables, which are linked below.
+
+- [View the final presentation (PDF)](../../projects/coyotes/176A.pdf){target="_blank"}
+- [Read the written project report](https://docs.google.com/document/d/1EPLdGc6Zpx2B4ksjTrxDC-OHBIef4WEUCXclU9oSY7s/edit?usp=sharing){target="_blank"}
+
+## Reflection
+
+This project gave me hands-on experience using **ArcGIS Pro** to work with spatial data and apply analytical techniques to a real-world environmental question. It strengthened my skills in data preparation, spatial thinking, and map-based storytelling, while also showing me how geographic analysis can be used to better understand the relationship between people and wildlife in urban environments.
+
+What I found especially valuable was being able to connect technical spatial methods to a broader question about coexistence and city planning. The project reinforced how changes in human behavior can shape ecological patterns in ways that become visible through careful spatial analysis.
+
+<iframe src="../../projects/coyotes/176A.pdf" width="100%" height="800px"></iframe>
+

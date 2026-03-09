@@ -18,7 +18,7 @@
     "href": "projects.html",
     "title": "Projects Portfolio",
     "section": "",
-    "text": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -88,14 +88,14 @@
     "href": "projects/beats by dre/index.html#methods",
     "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
     "section": "Methods",
-    "text": "Methods\nI combined both quantitative and qualitative approaches to better understand consumer responses.\n\nData Collection and Cleaning\nI worked with consumer survey responses and social media conversations related to the Beats Pill launch. A large part of the project involved cleaning and structuring the data so it could be analyzed consistently across sources.\n\n\nSentiment Analysis and EDA\nUsing Python, I performed sentiment analysis and exploratory data analysis to identify patterns in how people discussed the product. This helped highlight overall tone, recurring opinions, and feature-level trends in consumer reactions.\n\n\nQualitative Analysis\nIn addition to numerical summaries, I reviewed open-ended responses and discussion content to identify themes that might not be fully captured through sentiment scores alone. This helped provide more context around what consumers liked, disliked, or expected from the product."
+    "text": "Methods\nI combined both quantitative and qualitative approaches to better understand consumer responses.\n\nData Collection and Cleaning\nI worked with consumer survey responses and social media conversations related to the Beats Pill launch. A large part of the project involved cleaning and structuring the data so it could be analyzed consistently across sources.\n\n\nSentiment Analysis and EDA\nUsing Python, I performed sentiment analysis and exploratory data analysis to identify patterns in how people discussed the product. This helped highlight overall tone, recurring opinions, and feature-level trends in consumer reactions.\n Cleaning and Prepping Data, & Exploratory Data Analaysis\n\n\nQualitative Analysis\nIn addition to numerical summaries, I reviewed open-ended responses and discussion content to identify themes that might not be fully captured through sentiment scores alone. This helped provide more context around what consumers liked, disliked, or expected from the product."
   },
   {
     "objectID": "projects/beats by dre/index.html#key-takeaways",
     "href": "projects/beats by dre/index.html#key-takeaways",
     "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\nA few major themes emerged from the analysis:\n\nConsumer reactions were shaped by a mix of product features, brand perception, and launch messaging\nSocial listening data revealed recurring points of praise and criticism that complemented the survey findings\nCombining quantitative summaries with qualitative review made the recommendations more grounded and actionable\nClear visual storytelling was important for communicating insights to stakeholders without a technical background"
+    "text": "Key Takeaways\nA few major themes emerged from the analysis:\n\nConsumer reactions were shaped by a mix of product features, brand perception, and launch messaging\nSocial listening data revealed recurring points of praise and criticism that complemented the survey findings\nCombining quantitative summaries with qualitative review made the recommendations more grounded and actionable\nClear visual storytelling was important for communicating insights to stakeholders without a technical background\n\n Sharing Insights"
   },
   {
     "objectID": "projects/beats by dre/index.html#deliverables",
@@ -117,5 +117,131 @@
     "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
     "section": "Embedded Presentation",
     "text": "Embedded Presentation"
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html",
+    "href": "projects/beats-by-dre/index.html",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "",
+    "text": "Timeline: April–June 2025\nMethods: EDA, Sentiment Analysis, Qualitative Analysis\nFrom April to June 2025, I worked on a consumer insights and social listening project centered on the Beats Pill launch. The goal of this project was to better understand how consumers were responding to the product by combining survey data with social media conversations and translating those findings into actionable recommendations.\nUsing Python in Google Colab, I collected, cleaned, and structured both qualitative and quantitative data. I then used exploratory data analysis, sentiment analysis, and qualitative review to identify major themes in consumer perception, feature preferences, and overall behavior."
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#overview",
+    "href": "projects/beats-by-dre/index.html#overview",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "",
+    "text": "Timeline: April–June 2025\nMethods: EDA, Sentiment Analysis, Qualitative Analysis\nFrom April to June 2025, I worked on a consumer insights and social listening project centered on the Beats Pill launch. The goal of this project was to better understand how consumers were responding to the product by combining survey data with social media conversations and translating those findings into actionable recommendations.\nUsing Python in Google Colab, I collected, cleaned, and structured both qualitative and quantitative data. I then used exploratory data analysis, sentiment analysis, and qualitative review to identify major themes in consumer perception, feature preferences, and overall behavior."
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#tools-and-skills",
+    "href": "projects/beats-by-dre/index.html#tools-and-skills",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nPython\nGoogle Colab\nExploratory Data Analysis (EDA)\nSentiment Analysis\nQualitative Analysis\nData Visualization\nDashboard Development\nStakeholder Communication"
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#project-goals",
+    "href": "projects/beats-by-dre/index.html#project-goals",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nHow were consumers reacting to the Beats Pill launch?\nWhat product features or qualities were mentioned most often?\nWhat themes emerged from survey responses and social media discussions?\nHow could these findings be turned into useful product or marketing recommendations?"
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#my-role",
+    "href": "projects/beats-by-dre/index.html#my-role",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "My Role",
+    "text": "My Role\nIn this project, I worked on the full analysis pipeline from data preparation to final presentation. This included collecting and organizing data, analyzing sentiment and discussion themes, creating visualizations, and summarizing the results in a way that would be useful for non-technical stakeholders."
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#methods",
+    "href": "projects/beats-by-dre/index.html#methods",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "Methods",
+    "text": "Methods\nI combined both quantitative and qualitative approaches to better understand consumer responses.\n\nData Collection and Cleaning\nI worked with consumer survey responses and social media conversations related to the Beats Pill launch. A large part of the project involved cleaning and structuring the data so it could be analyzed consistently across sources.\n\n\nSentiment Analysis and EDA\nUsing Python, I performed sentiment analysis and exploratory data analysis to identify patterns in how people discussed the product. This helped highlight overall tone, recurring opinions, and feature-level trends in consumer reactions.\n Cleaning and Prepping Data, & Exploratory Data Analysis\n\n\nQualitative Analysis\nIn addition to numerical summaries, I reviewed open-ended responses and discussion content to identify themes that might not be fully captured through sentiment scores alone. This helped provide more context around what consumers liked, disliked, or expected from the product."
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#key-takeaways",
+    "href": "projects/beats-by-dre/index.html#key-takeaways",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nA few major themes emerged from the analysis:\n\nConsumer reactions were shaped by a mix of product features, brand perception, and launch messaging\nSocial listening data revealed recurring points of praise and criticism that complemented the survey findings\nCombining quantitative summaries with qualitative review made the recommendations more grounded and actionable\nClear visual storytelling was important for communicating insights to stakeholders without a technical background\n\n Sharing Insights"
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#deliverables",
+    "href": "projects/beats-by-dre/index.html#deliverables",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "Deliverables",
+    "text": "Deliverables\nThis project resulted in several final deliverables, which are linked below.\n\nView the final presentation (PDF)\nOpen the Claude insights dashboard\nRead the project summary"
+  },
+  {
+    "objectID": "projects/beats-by-dre/index.html#reflection",
+    "href": "projects/beats-by-dre/index.html#reflection",
+    "title": "Consumer Insights & Social Listening Analysis for the Beats Pill Launch",
+    "section": "Reflection",
+    "text": "Reflection\nThis project strengthened my skills in consumer analytics, storytelling, and stakeholder communication. It also gave me more experience working with messy real-world data and thinking carefully about how to turn analysis into recommendations that are both clear and useful.\nWhat I found especially valuable was the balance between technical analysis and communication. Beyond identifying trends in the data, the project required me to think about how to present those findings in a consulting-style format that could support real decision-making."
+  },
+  {
+    "objectID": "projects/coyotes/index.html",
+    "href": "projects/coyotes/index.html",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "",
+    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#overview",
+    "href": "projects/coyotes/index.html#overview",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "",
+    "text": "Timeline: November-December 2025\nMethods: Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis\nThis project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using coyote sightings in Los Angeles as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.\nTo explore this, my partner and I compared coyote sightings from April 2019, April 2020, and April 2021 to capture conditions before, during, and after the lockdown period. Using public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro, we analyzed how the extent, distribution, and density of coyote activity changed across the three years."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#tools-and-skills",
+    "href": "projects/coyotes/index.html#tools-and-skills",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nArcGIS Pro\nSpatial Analysis\nConvex Hull Analysis\nBuffer Analysis\nSpatial Join\nKernel Density Analysis\nMap Design\nEnvironmental Data Interpretation\nCollaborative Research"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#project-goals",
+    "href": "projects/coyotes/index.html#project-goals",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nDid reduced human mobility during the COVID-19 lockdown allow coyotes to expand into new urban areas?\nHow did the spatial extent of coyote sightings change before, during, and after lockdown?\nWas reduced human activity associated with changes in where coyotes were observed?\nWhat can these patterns tell us about coexistence between wildlife and people in urban environments?"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#my-role",
+    "href": "projects/coyotes/index.html#my-role",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "My Role",
+    "text": "My Role\nThis project was completed in collaboration with one partner, and responsibilities were shared evenly across all stages of the analysis. I worked extensively on importing and cleaning our CSV datasets, converting them into spatial point layers in ArcGIS Pro, and helping conduct the spatial analyses used throughout the project. We also worked together on map design, interpretation of results, and presenting our findings in a clear and visually effective way."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#methods",
+    "href": "projects/coyotes/index.html#methods",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Methods",
+    "text": "Methods\nWe combined multiple datasets and spatial analysis techniques to investigate how coyote activity changed as human mobility declined during the pandemic.\n\nData Collection and Preparation\nWe used coyote sighting data from iNaturalist, parking citation data from the Los Angeles Open Data Portal, and land cover data from ArcGIS Online. All datasets were filtered spatially to Los Angeles County and temporally to April 2019, April 2020, and April 2021 in order to control for seasonal variation and make meaningful comparisons across years.\nAfter filtering the data, we imported CSV files into ArcGIS Pro and converted them into spatial point layers using latitude and longitude fields. This preparation allowed us to compare wildlife sightings and human mobility patterns within the same geographic space.\n\n\nConvex Hull Analysis\nTo examine the overall spatial extent of coyote sightings, we used convex hull analysis for each study year. This created polygons representing the outer boundary of sightings and allowed us to compare how far coyote activity extended across Los Angeles over time.\nThe analysis showed that the geographic extent of coyote sightings expanded noticeably in April 2020 compared to 2019, suggesting that coyotes occupied a wider range of areas during the lockdown. In 2021, the extent contracted again, appearing more similar to pre-lockdown conditions.\n\n\nBuffer Analysis and Spatial Join\nTo investigate the relationship between wildlife presence and human activity, we created 1500-meter buffers around coyote sightings and used a spatial join to count nearby parking citations. Parking citations served as a proxy for human mobility, since fewer people moving around the city would likely correspond with fewer citations being issued.\nThis analysis revealed a sharp drop in citations near coyote sightings during lockdown. In April 2019, there were 5,530 parking citations within 1500 meters of coyote sightings; in April 2020, that number dropped to 1,452; and in April 2021, it increased to 10,579, indicating a strong rebound in human mobility.\n\n\nKernel Density Analysis\nWe also used kernel density analysis to identify areas with higher concentrations of coyote sightings. The 2020 density maps showed a more widespread distribution of coyote activity compared to the other years, with increased sightings in more urbanized areas such as the San Fernando Valley and areas near Santa Monica.\nThis suggested that during the lockdown, coyotes were not only observed more often, but were also active across a broader range of urban environments rather than remaining concentrated near parks or natural open spaces."
+  },
+  {
+    "objectID": "projects/coyotes/index.html#key-takeaways",
+    "href": "projects/coyotes/index.html#key-takeaways",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nA few major patterns emerged from the analysis:\n\nThe spatial extent of coyote sightings expanded during the 2020 lockdown compared to 2019 and 2021\nParking citations near coyote sightings dropped sharply in 2020, reflecting reduced human mobility\nKernel density maps showed more widespread coyote activity in urban areas during lockdown\nTogether, these findings suggest that reduced human presence coincided with broader and more visible coyote movement throughout Los Angeles"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#deliverables",
+    "href": "projects/coyotes/index.html#deliverables",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Deliverables",
+    "text": "Deliverables\nThis project resulted in several final deliverables, which are linked below.\n\nView the final presentation (PDF)\nRead the written project report"
+  },
+  {
+    "objectID": "projects/coyotes/index.html#reflection",
+    "href": "projects/coyotes/index.html#reflection",
+    "title": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles",
+    "section": "Reflection",
+    "text": "Reflection\nThis project gave me hands-on experience using ArcGIS Pro to work with spatial data and apply analytical techniques to a real-world environmental question. It strengthened my skills in data preparation, spatial thinking, and map-based storytelling, while also showing me how geographic analysis can be used to better understand the relationship between people and wildlife in urban environments.\nWhat I found especially valuable was being able to connect technical spatial methods to a broader question about coexistence and city planning. The project reinforced how changes in human behavior can shape ecological patterns in ways that become visible through careful spatial analysis."
   }
 ]

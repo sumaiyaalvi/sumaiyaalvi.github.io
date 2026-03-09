@@ -5,6 +5,7 @@
 
 // Fonts
 $Libre: "Libre Franklin", sans-serif;
+$Sans: "DM Sans", sans-serif;
 
 // Colors
 $txt_purp: #959cc8;
@@ -71,3 +72,23 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $Libre;
 }
 
+.quarto-title-banner .title,
+.quarto-title-block .title {
+  color: $burnt_burg !important;
+  font-family: $Libre !important;
+  letter-spacing: 0.7px !important; 
+  font-weight: 800 !important;
+}
+
+.quarto-title-banner .subtitle,
+.quarto-title-block .subtitle {
+  color: $socials_purp !important;
+  font-family: $Sans;
+}
+
+/* Project card titles */
+.quarto-grid-item .listing-title {
+  color: $burnt_burg !important;
+  font-family: $Libre;
+  font-weight: 700;
+}
