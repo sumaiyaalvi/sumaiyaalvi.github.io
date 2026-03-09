@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Using Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals">
 
-<title>Projects Portfolio – Sumaiya Alvi</title>
+<title>Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy – Sumaiya Alvi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5673081cf465d1cbbb9360dfb1a66f45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5673081cf465d1cbbb9360dfb1a66f45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,76 +70,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Sumaiya Alvi" href="projects.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -150,23 +91,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Sumaiya Alvi</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">All About Me!</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./interests.html"> 
+    <a class="nav-link" href="../../interests.html"> 
 <span class="menu-text">Around the World</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume and Coursework</span></a>
   </li>  
 </ul>
@@ -184,127 +125,156 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Projects Portfolio</h1>
-            <p class="subtitle lead">Some of my personal and academic projects</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#tools-and-skills" id="toc-tools-and-skills" class="nav-link" data-scroll-target="#tools-and-skills">Tools and Skills</a></li>
+  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">Project Goals</a></li>
+  <li><a href="#my-role" id="toc-my-role" class="nav-link" data-scroll-target="#my-role">My Role</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#data-organization-and-categorization" id="toc-data-organization-and-categorization" class="nav-link" data-scroll-target="#data-organization-and-categorization">Data Organization and Categorization</a></li>
+  <li><a href="#frequency-analysis" id="toc-frequency-analysis" class="nav-link" data-scroll-target="#frequency-analysis">Frequency Analysis</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#final-visuals" id="toc-final-visuals" class="nav-link" data-scroll-target="#final-visuals">Final Visuals</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Google Sheets</div>
+    <div class="quarto-category">Datawrapper</div>
+    <div class="quarto-category">Data Visualization</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Using Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals</p>
+  </div>
+</div>
 
 
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> 2025<br>
+<strong>Context:</strong> Advocacy project for an Associated Students senator<br>
+<strong>Methods:</strong> Spreadsheet analysis, categorization, frequency counts, data visualization</p>
+<p>This project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.</p>
+<p>Using a <strong>Google Sheet</strong> containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered <strong>30 or more times</strong>, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>Google Sheets</strong></li>
+<li><strong>Data Cleaning</strong></li>
+<li><strong>Categorization</strong></li>
+<li><strong>Frequency Analysis</strong></li>
+<li><strong>Data Interpretation</strong></li>
+<li><strong>Datawrapper</strong></li>
+<li><strong>Data Visualization</strong></li>
+<li><strong>Advocacy-Focused Communication</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>How many dining hall options were offered overall?</li>
+<li>How many of those options were vegan?</li>
+<li>Of the vegan options, how many could reasonably be considered nutritionally sufficient entrees?</li>
+<li>How often were those nutritious vegan entrees actually served throughout the academic year?</li>
+<li>How could these findings be communicated clearly to support campus dining advocacy?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>In this project, I independently analyzed dining hall menu data to support a campus advocacy effort focused on vegan food access. I worked directly in <strong>Google Sheets</strong> to organize the data, count and compare subsets of menu items, and identify patterns in how frequently different vegan options appeared. I then created <strong>Datawrapper</strong> visuals to present the results in a way that would be easy to understand and useful for advocacy.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>This project combined spreadsheet-based analysis with visual storytelling to highlight the difference between simply offering vegan items and offering vegan meals that are both nutritious and consistently available.</p>
+<section id="data-organization-and-categorization" class="level3">
+<h3 class="anchored" data-anchor-id="data-organization-and-categorization">Data Organization and Categorization</h3>
+<p>I started with a Google Sheet containing dining hall menu items collected over the course of the year. From this dataset, I identified the <strong>total number of food options</strong> served and then isolated the subset that qualified as <strong>vegan</strong>.</p>
+<p>From there, I further narrowed the data to focus on vegan items that could reasonably be classified as <strong>nutritionally sufficient entrees</strong>. This distinction was important because the existence of vegan options alone does not necessarily mean students have access to balanced or filling meal choices.</p>
+</section>
+<section id="frequency-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-analysis">Frequency Analysis</h3>
+<p>After identifying the nutritionally sufficient vegan options, I analyzed how often they appeared in the dining halls. One key threshold I used was whether an item had been served <strong>30 or more times</strong> over the data collection period.</p>
+<p>This helped separate items that appeared only occasionally from those that students could actually expect to encounter on a regular basis. The results showed that while there were many vegan options in total, far fewer were both nutritious and served consistently.</p>
+</section>
+<section id="data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<p>To communicate the findings, I created a series of <strong>Datawrapper</strong> charts. These visuals helped compare:</p>
+<ul>
+<li>vegan versus non-vegan dining options overall</li>
+<li>nutritious vegan entrees as a portion of all vegan options</li>
+<li>the small number of nutritionally sufficient vegan entrees that were served regularly</li>
+</ul>
+<p>By presenting the analysis visually, the project made it easier to communicate a policy-relevant point: that the number of meaningful vegan dining choices was much smaller than the raw menu count suggested.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>A few major patterns emerged from the analysis:</p>
+<ul>
+<li>Vegan options made up a minority of overall dining hall offerings</li>
+<li>Within the vegan subset, many items could not be considered nutritionally sufficient entrees</li>
+<li>Only a relatively small number of nutritious vegan entrees were served consistently throughout the year</li>
+<li>Looking only at the total count of vegan items overstated how accessible substantial vegan dining options actually were</li>
+<li>Clear visualizations made the findings more effective for advocacy and communication</li>
+</ul>
+</section>
+<section id="final-visuals" class="level2">
+<h2 class="anchored" data-anchor-id="final-visuals">Final Visuals</h2>
+<iframe title="Number of Vegan vs. Non-Vegan Dining 'Options'" aria-label="Pie Chart" id="datawrapper-chart-08Oa3" src="https://datawrapper.dwcdn.net/08Oa3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 70% !important; border: none;" height="500" data-external="1">
+</iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<iframe title="Nutritious Vegan Entrees as a Portion of Vegan Options" aria-label="Stacked column chart" id="datawrapper-chart-H8Ktj" src="https://datawrapper.dwcdn.net/H8Ktj/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 80% !important; border: none;" height="454" data-external="1">
+</iframe>
+<script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+<div style="max-width:700px; margin:auto;">
+<iframe title="Nutritious Vegan Entrees Served 30+ Times" src="https://datawrapper.dwcdn.net/fd5f8/3/" scrolling="no" frameborder="0" style="width:80%; border:none;" height="500">
+</iframe>
+</div>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project showed me that even relatively simple tools like <strong>Google Sheets</strong> can be powerful when paired with a clear question and strong communication. It reinforced the importance of distinguishing between raw counts and meaningful access, especially in a policy or advocacy context where numbers can easily be misleading without proper interpretation.</p>
+<p>What I found especially valuable was the challenge of turning spreadsheet analysis into a more persuasive visual story. The project strengthened my ability to work with structured data in a practical setting and to present findings in a way that supports real-world decision-making.</p>
 
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QXJjR0lTJTIwUHJvJTJDU3BhdGlhbCUyMEFuYWx5c2lz" data-listing-file-modified-sort="1773079593117" data-listing-reading-time-sort="5" data-listing-word-count-sort="878">
-<a href="./projects/coyotes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/coyotes/coyote.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles
-</h5>
-<div class="card-text listing-description delink">
-<p>Using spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UiUyQ1JlZ3Jlc3Npb24lMjBBbmFseXNpcw==" data-listing-file-modified-sort="1773080737879" data-listing-reading-time-sort="5" data-listing-word-count-sort="936">
-<a href="./projects/diamonds/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/diamonds/diamonds.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modeling Diamond Prices with Regression Analysis
-</h5>
-<div class="card-text listing-description delink">
-<p>Using regression analysis in R to identify how carat, cut, and color influence diamond prices</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="R29vZ2xlJTIwU2hlZXRzJTJDRGF0YXdyYXBwZXIlMkNEYXRhJTIwVmlzdWFsaXphdGlvbg==" data-listing-file-modified-sort="1773082525169" data-listing-reading-time-sort="5" data-listing-word-count-sort="826">
-<a href="./projects/vegan/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/vegan/dininghall.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy
-</h5>
-<div class="card-text listing-description delink">
-<p>Using Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDR29vZ2xlJTIwQ29sYWI=" data-listing-file-modified-sort="1773078419050" data-listing-reading-time-sort="3" data-listing-word-count-sort="531">
-<a href="./projects/beats-by-dre/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/beats-by-dre/beats.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch
-</h5>
-<div class="card-text listing-description delink">
-<p>Using EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

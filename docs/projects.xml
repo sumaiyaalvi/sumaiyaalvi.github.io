@@ -10,7 +10,7 @@
 <atom:link href="https://sumaiyaalvi.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 09 Mar 2026 18:25:41 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Mar 2026 18:55:30 GMT</lastBuildDate>
 <item>
   <title>Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles</title>
   <link>https://sumaiyaalvi.github.io/projects/coyotes/</link>
@@ -110,7 +110,7 @@
   <category>ArcGIS Pro</category>
   <category>Spatial Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/coyotes/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:25:41 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/coyotes/coyote.png" medium="image" type="image/png" height="74" width="144"/>
 </item>
 <item>
@@ -224,8 +224,117 @@
   <category>R</category>
   <category>Regression Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/diamonds/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:25:41 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/diamonds/diamonds.png" medium="image" type="image/png" height="58" width="144"/>
+</item>
+<item>
+  <title>Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy</title>
+  <link>https://sumaiyaalvi.github.io/projects/vegan/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> 2025<br>
+<strong>Context:</strong> Advocacy project for an Associated Students senator<br>
+<strong>Methods:</strong> Spreadsheet analysis, categorization, frequency counts, data visualization</p>
+<p>This project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.</p>
+<p>Using a <strong>Google Sheet</strong> containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered <strong>30 or more times</strong>, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>Google Sheets</strong></li>
+<li><strong>Data Cleaning</strong></li>
+<li><strong>Categorization</strong></li>
+<li><strong>Frequency Analysis</strong></li>
+<li><strong>Data Interpretation</strong></li>
+<li><strong>Datawrapper</strong></li>
+<li><strong>Data Visualization</strong></li>
+<li><strong>Advocacy-Focused Communication</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>How many dining hall options were offered overall?</li>
+<li>How many of those options were vegan?</li>
+<li>Of the vegan options, how many could reasonably be considered nutritionally sufficient entrees?</li>
+<li>How often were those nutritious vegan entrees actually served throughout the academic year?</li>
+<li>How could these findings be communicated clearly to support campus dining advocacy?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>In this project, I independently analyzed dining hall menu data to support a campus advocacy effort focused on vegan food access. I worked directly in <strong>Google Sheets</strong> to organize the data, count and compare subsets of menu items, and identify patterns in how frequently different vegan options appeared. I then created <strong>Datawrapper</strong> visuals to present the results in a way that would be easy to understand and useful for advocacy.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>This project combined spreadsheet-based analysis with visual storytelling to highlight the difference between simply offering vegan items and offering vegan meals that are both nutritious and consistently available.</p>
+<section id="data-organization-and-categorization" class="level3">
+<h3 class="anchored" data-anchor-id="data-organization-and-categorization">Data Organization and Categorization</h3>
+<p>I started with a Google Sheet containing dining hall menu items collected over the course of the year. From this dataset, I identified the <strong>total number of food options</strong> served and then isolated the subset that qualified as <strong>vegan</strong>.</p>
+<p>From there, I further narrowed the data to focus on vegan items that could reasonably be classified as <strong>nutritionally sufficient entrees</strong>. This distinction was important because the existence of vegan options alone does not necessarily mean students have access to balanced or filling meal choices.</p>
+</section>
+<section id="frequency-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-analysis">Frequency Analysis</h3>
+<p>After identifying the nutritionally sufficient vegan options, I analyzed how often they appeared in the dining halls. One key threshold I used was whether an item had been served <strong>30 or more times</strong> over the data collection period.</p>
+<p>This helped separate items that appeared only occasionally from those that students could actually expect to encounter on a regular basis. The results showed that while there were many vegan options in total, far fewer were both nutritious and served consistently.</p>
+</section>
+<section id="data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<p>To communicate the findings, I created a series of <strong>Datawrapper</strong> charts. These visuals helped compare:</p>
+<ul>
+<li>vegan versus non-vegan dining options overall</li>
+<li>nutritious vegan entrees as a portion of all vegan options</li>
+<li>the small number of nutritionally sufficient vegan entrees that were served regularly</li>
+</ul>
+<p>By presenting the analysis visually, the project made it easier to communicate a policy-relevant point: that the number of meaningful vegan dining choices was much smaller than the raw menu count suggested.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>A few major patterns emerged from the analysis:</p>
+<ul>
+<li>Vegan options made up a minority of overall dining hall offerings</li>
+<li>Within the vegan subset, many items could not be considered nutritionally sufficient entrees</li>
+<li>Only a relatively small number of nutritious vegan entrees were served consistently throughout the year</li>
+<li>Looking only at the total count of vegan items overstated how accessible substantial vegan dining options actually were</li>
+<li>Clear visualizations made the findings more effective for advocacy and communication</li>
+</ul>
+</section>
+<section id="final-visuals" class="level2">
+<h2 class="anchored" data-anchor-id="final-visuals">Final Visuals</h2>
+<iframe title="Number of Vegan vs. Non-Vegan Dining 'Options'" aria-label="Pie Chart" id="datawrapper-chart-08Oa3" src="https://datawrapper.dwcdn.net/08Oa3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 70% !important; border: none;" height="500" data-external="1">
+</iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<iframe title="Nutritious Vegan Entrees as a Portion of Vegan Options" aria-label="Stacked column chart" id="datawrapper-chart-H8Ktj" src="https://datawrapper.dwcdn.net/H8Ktj/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 80% !important; border: none;" height="454" data-external="1">
+</iframe>
+<script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+<div style="max-width:700px; margin:auto;">
+<iframe title="Nutritious Vegan Entrees Served 30+ Times" src="https://datawrapper.dwcdn.net/fd5f8/3/" scrolling="no" frameborder="0" style="width:80%; border:none;" height="500">
+</iframe>
+</div>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project showed me that even relatively simple tools like <strong>Google Sheets</strong> can be powerful when paired with a clear question and strong communication. It reinforced the importance of distinguishing between raw counts and meaningful access, especially in a policy or advocacy context where numbers can easily be misleading without proper interpretation.</p>
+<p>What I found especially valuable was the challenge of turning spreadsheet analysis into a more persuasive visual story. The project strengthened my ability to work with structured data in a practical setting and to present findings in a way that supports real-world decision-making.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Google Sheets</category>
+  <category>Datawrapper</category>
+  <category>Data Visualization</category>
+  <guid>https://sumaiyaalvi.github.io/projects/vegan/</guid>
+  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
+  <media:content url="https://sumaiyaalvi.github.io/projects/vegan/dininghall.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch</title>
@@ -320,7 +429,7 @@
   <category>Python</category>
   <category>Google Colab</category>
   <guid>https://sumaiyaalvi.github.io/projects/beats-by-dre/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:25:41 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/beats-by-dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 </channel>

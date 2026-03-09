@@ -18,7 +18,7 @@
     "href": "projects.html",
     "title": "Projects Portfolio",
     "section": "",
-    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Diamond Prices with Regression Analysis\n\n\nUsing regression analysis in R to identify how carat, cut, and color influence diamond prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Diamond Prices with Regression Analysis\n\n\nUsing regression analysis in R to identify how carat, cut, and color influence diamond prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing Vegan Dining Hall Options to Support Campus Food Advocacy\n\n\nUsing Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -313,5 +313,68 @@
     "title": "Modeling Diamond Prices with Regression Analysis",
     "section": "View the full report",
     "text": "View the full report"
+  },
+  {
+    "objectID": "projects/vegan/index.html",
+    "href": "projects/vegan/index.html",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "",
+    "text": "Timeline: 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
+  },
+  {
+    "objectID": "projects/vegan/index.html#overview",
+    "href": "projects/vegan/index.html#overview",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "",
+    "text": "Timeline: 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
+  },
+  {
+    "objectID": "projects/vegan/index.html#tools-and-skills",
+    "href": "projects/vegan/index.html#tools-and-skills",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nGoogle Sheets\nData Cleaning\nCategorization\nFrequency Analysis\nData Interpretation\nDatawrapper\nData Visualization\nAdvocacy-Focused Communication"
+  },
+  {
+    "objectID": "projects/vegan/index.html#project-goals",
+    "href": "projects/vegan/index.html#project-goals",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nHow many dining hall options were offered overall?\nHow many of those options were vegan?\nOf the vegan options, how many could reasonably be considered nutritionally sufficient entrees?\nHow often were those nutritious vegan entrees actually served throughout the academic year?\nHow could these findings be communicated clearly to support campus dining advocacy?"
+  },
+  {
+    "objectID": "projects/vegan/index.html#my-role",
+    "href": "projects/vegan/index.html#my-role",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "My Role",
+    "text": "My Role\nIn this project, I independently analyzed dining hall menu data to support a campus advocacy effort focused on vegan food access. I worked directly in Google Sheets to organize the data, count and compare subsets of menu items, and identify patterns in how frequently different vegan options appeared. I then created Datawrapper visuals to present the results in a way that would be easy to understand and useful for advocacy."
+  },
+  {
+    "objectID": "projects/vegan/index.html#methods",
+    "href": "projects/vegan/index.html#methods",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Methods",
+    "text": "Methods\nThis project combined spreadsheet-based analysis with visual storytelling to highlight the difference between simply offering vegan items and offering vegan meals that are both nutritious and consistently available.\n\nData Organization and Categorization\nI started with a Google Sheet containing dining hall menu items collected over the course of the year. From this dataset, I identified the total number of food options served and then isolated the subset that qualified as vegan.\nFrom there, I further narrowed the data to focus on vegan items that could reasonably be classified as nutritionally sufficient entrees. This distinction was important because the existence of vegan options alone does not necessarily mean students have access to balanced or filling meal choices.\n\n\nFrequency Analysis\nAfter identifying the nutritionally sufficient vegan options, I analyzed how often they appeared in the dining halls. One key threshold I used was whether an item had been served 30 or more times over the data collection period.\nThis helped separate items that appeared only occasionally from those that students could actually expect to encounter on a regular basis. The results showed that while there were many vegan options in total, far fewer were both nutritious and served consistently.\n\n\nData Visualization\nTo communicate the findings, I created a series of Datawrapper charts. These visuals helped compare:\n\nvegan versus non-vegan dining options overall\nnutritious vegan entrees as a portion of all vegan options\nthe small number of nutritionally sufficient vegan entrees that were served regularly\n\nBy presenting the analysis visually, the project made it easier to communicate a policy-relevant point: that the number of meaningful vegan dining choices was much smaller than the raw menu count suggested."
+  },
+  {
+    "objectID": "projects/vegan/index.html#key-takeaways",
+    "href": "projects/vegan/index.html#key-takeaways",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nA few major patterns emerged from the analysis:\n\nVegan options made up a minority of overall dining hall offerings\nWithin the vegan subset, many items could not be considered nutritionally sufficient entrees\nOnly a relatively small number of nutritious vegan entrees were served consistently throughout the year\nLooking only at the total count of vegan items overstated how accessible substantial vegan dining options actually were\nClear visualizations made the findings more effective for advocacy and communication"
+  },
+  {
+    "objectID": "projects/vegan/index.html#final-visuals",
+    "href": "projects/vegan/index.html#final-visuals",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Final Visuals",
+    "text": "Final Visuals"
+  },
+  {
+    "objectID": "projects/vegan/index.html#reflection",
+    "href": "projects/vegan/index.html#reflection",
+    "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
+    "section": "Reflection",
+    "text": "Reflection\nThis project showed me that even relatively simple tools like Google Sheets can be powerful when paired with a clear question and strong communication. It reinforced the importance of distinguishing between raw counts and meaningful access, especially in a policy or advocacy context where numbers can easily be misleading without proper interpretation.\nWhat I found especially valuable was the challenge of turning spreadsheet analysis into a more persuasive visual story. The project strengthened my ability to work with structured data in a practical setting and to present findings in a way that supports real-world decision-making."
   }
 ]

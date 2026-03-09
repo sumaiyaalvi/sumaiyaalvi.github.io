@@ -1,0 +1,107 @@
+---
+title: "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy"
+description: |
+  Using Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals
+image: dininghall.png
+categories: [Google Sheets, Datawrapper, Data Visualization]
+draft: false
+format:
+  html:
+    toc: true
+---
+
+## Overview
+
+**Timeline:** August 2025  
+**Context:** Advocacy project for an Associated Students senator  
+**Methods:** Spreadsheet analysis, categorization, frequency counts, data visualization
+
+This project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.
+
+Using a **Google Sheet** containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered **30 or more times**, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear.
+
+## Tools and Skills
+
+- **Google Sheets**
+- **Data Cleaning**
+- **Categorization**
+- **Frequency Analysis**
+- **Data Interpretation**
+- **Datawrapper**
+- **Data Visualization**
+- **Advocacy-Focused Communication**
+
+## Project Goals
+
+This project focused on a few main questions:
+
+- How many dining hall options were offered overall?
+- How many of those options were vegan?
+- Of the vegan options, how many could reasonably be considered nutritionally sufficient entrees?
+- How often were those nutritious vegan entrees actually served throughout the academic year?
+- How could these findings be communicated clearly to support campus dining advocacy?
+
+## My Role
+
+In this project, I independently analyzed dining hall menu data to support a campus advocacy effort focused on vegan food access. I worked directly in **Google Sheets** to organize the data, count and compare subsets of menu items, and identify patterns in how frequently different vegan options appeared. I then created **Datawrapper** visuals to present the results in a way that would be easy to understand and useful for advocacy.
+
+## Methods
+
+This project combined spreadsheet-based analysis with visual storytelling to highlight the difference between simply offering vegan items and offering vegan meals that are both nutritious and consistently available.
+
+### Data Organization and Categorization
+
+I started with a Google Sheet containing dining hall menu items collected over the course of the year. From this dataset, I identified the **total number of food options** served and then isolated the subset that qualified as **vegan**.
+
+From there, I further narrowed the data to focus on vegan items that could reasonably be classified as **nutritionally sufficient entrees**. This distinction was important because the existence of vegan options alone does not necessarily mean students have access to balanced or filling meal choices.
+
+### Frequency Analysis
+
+After identifying the nutritionally sufficient vegan options, I analyzed how often they appeared in the dining halls. One key threshold I used was whether an item had been served **30 or more times** over the data collection period.
+
+This helped separate items that appeared only occasionally from those that students could actually expect to encounter on a regular basis. The results showed that while there were many vegan options in total, far fewer were both nutritious and served consistently.
+
+### Data Visualization
+
+To communicate the findings, I created a series of **Datawrapper** charts. These visuals helped compare:
+
+- vegan versus non-vegan dining options overall
+- nutritious vegan entrees as a portion of all vegan options
+- the small number of nutritionally sufficient vegan entrees that were served regularly
+
+By presenting the analysis visually, the project made it easier to communicate a policy-relevant point: that the number of meaningful vegan dining choices was much smaller than the raw menu count suggested.
+
+## Key Takeaways
+
+A few major patterns emerged from the analysis:
+
+- Vegan options made up a minority of overall dining hall offerings
+- Within the vegan subset, many items could not be considered nutritionally sufficient entrees
+- Only a relatively small number of nutritious vegan entrees were served consistently throughout the year
+- Looking only at the total count of vegan items overstated how accessible substantial vegan dining options actually were
+- Clear visualizations made the findings more effective for advocacy and communication
+
+## Final Visuals
+
+<iframe title="Number of Vegan vs. Non-Vegan Dining 'Options'" aria-label="Pie Chart" id="datawrapper-chart-08Oa3" src="https://datawrapper.dwcdn.net/08Oa3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 70% !important; border: none;" height="500" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Nutritious Vegan Entrees as a Portion of Vegan Options" aria-label="Stacked column chart" id="datawrapper-chart-H8Ktj" src="https://datawrapper.dwcdn.net/H8Ktj/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 80% !important; border: none;" height="454" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+
+<div style="max-width:700px; margin:auto;">
+<iframe
+  title="Nutritious Vegan Entrees Served 30+ Times"
+  src="https://datawrapper.dwcdn.net/fd5f8/3/"
+  scrolling="no"
+  frameborder="0"
+  style="width:80%; border:none;"
+  height="500">
+</iframe>
+</div>
+
+## Reflection
+
+This project showed me that even relatively simple tools like **Google Sheets** can be powerful when paired with a clear question and strong communication. It reinforced the importance of distinguishing between raw counts and meaningful access, especially in a policy or advocacy context where numbers can easily be misleading without proper interpretation.
+
+What I found especially valuable was the challenge of turning spreadsheet analysis into a more persuasive visual story. The project strengthened my ability to work with structured data in a practical setting and to present findings in a way that supports real-world decision-making.
+
