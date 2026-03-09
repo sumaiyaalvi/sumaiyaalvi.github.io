@@ -1,4 +1,85 @@
 ---
 title: "Around the World"
+format:
+  html:
+    toc: true
 ---
-travel
+
+## On the Road
+
+I love traveling because it always gives me meaningful quality time with the people I’m with, whether that’s family or friends. In a new place, my favorite thing to do is simply walk around. It forces you to slow down and notice the small details you might otherwise miss if you were just driving by. 
+
+My family has taken long road trips for as long as I can remember, so I’ve grown up being comfortable with long journeys across North America. I’ve always loved traveling abroad too, and there’s something about going to the airport that still feels exciting every time. Travel in any and every form is okay with me!
+
+## My favorite trip
+
+### Banff, Canada — July 2022
+
+My favorite place I’ve traveled to is Banff, Canada, which I roadtripped to in July 2022 with my family. The mountains are my favorite kind of landscape, and Banff ended up being the perfect place to fully appreciate them. Between the scenery, the wildlife, and the feeling of being surrounded by nature everywhere you look, it’s easily one of the most beautiful places I’ve been. I would love to go back one day.
+
+::: {layout="[[1, 1, 1]]"}
+![](media/Banff/IMG_0537.jpeg){group="banff"}
+
+![](media/Banff/IMG_0653.jpeg){group="banff"}
+
+![](media/Banff/IMG_0725.jpeg){group="banff"}
+:::
+
+## My most recent trip
+
+### Joshua Tree — December 2025
+
+My most recent trip was to Joshua Tree in December 2025. I had never been there before, so it was really fun to experience the desert and explore a landscape that felt so different from what I’m usually surrounded by. I went with my best friend for New Years, and we also spent time around Palm Springs, which made the trip even more memorable.
+
+::: {layout="[[1,1,1]]"}
+![](media/JT/DSC07237.jpg){group="jt"}
+
+![](media/JT/IMG_0188.jpeg){group="jt"}
+
+![](media/JT/IMG_9481.jpeg){group="jt"}
+:::
+
+## Photos of more of my recent adventures
+
+::: {layout="[[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]]"}
+![San Diego CA, October 2025](media/travel/travel1.jpeg){group="travel"}
+
+![Honolulu HI, September 2025](media/travel/travel2.jpeg){group="travel"}
+
+![Santa Cruz CA, August 2025](media/travel/travel3.jpeg){group="travel"}
+
+![Istanbul Turkey, July 2025](media/travel/travel4.jpeg){group="travel"}
+
+![Dubai UAE, July 2025](media/travel/travel5.jpeg){group="travel"}
+
+![San Francisco CA, January 2025](media/travel/travel6.jpeg){group="travel"}
+
+![Santa Cruz CA, December 2024](media/travel/travel7.jpeg){group="travel"}
+
+![Arnold CA, August 2024](media/travel/travel8.jpeg){group="travel"}
+
+![Crater Lake OR, July 2024](media/travel/travel9.jpeg){group="travel"}
+
+![Tulelake CA, July 2024](media/travel/travel10.jpeg){group="travel"}
+
+![Abu Dhabi UAE, January 2024](media/travel/travel14.jpeg){group="travel"}
+
+![Dubai UAE, December 2023](media/travel/travel13.jpeg){group="travel"}
+
+![Aligarh India, June 2023](media/travel/travel12.jpeg){group="travel"}
+
+![Santa Cruz Island CA, November 2023](media/travel/travel11 2.jpeg){group="travel"}
+
+![Niagara Falls Canada, July 2023](media/travel/travel17.jpeg){group="travel"}
+
+![Montreal Canada, July 2023](media/travel/travel16.jpeg){group="travel"}
+
+![Toronto Canada, June 2023](media/travel/travel15.jpeg){group="travel"}
+
+![Arnold CA, January 2023](media/travel/travel18.jpeg){group="travel"}
+:::
+
+
+
+
+

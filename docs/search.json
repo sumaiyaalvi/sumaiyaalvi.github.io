@@ -4,7 +4,7 @@
     "href": "interests.html",
     "title": "Around the World",
     "section": "",
-    "text": "travel"
+    "text": "I love traveling because it always gives me meaningful quality time with the people I’m with, whether that’s family or friends. In a new place, my favorite thing to do is simply walk around. It forces you to slow down and notice the small details you might otherwise miss if you were just driving by.\nMy family has taken long road trips for as long as I can remember, so I’ve grown up being comfortable with long journeys across North America. I’ve always loved traveling abroad too, and there’s something about going to the airport that still feels exciting every time. Travel in any and every form is okay with me!"
   },
   {
     "objectID": "index.html",
@@ -495,5 +495,33 @@
     "title": "What Factors Influence My Daily Screen Time?",
     "section": "Visualization 2: Screen Time vs. Class/Study Time",
     "text": "Visualization 2: Screen Time vs. Class/Study Time\nThis visualization examines the relationship between class/study time and screen time using a scatterplot. Each point represents one day, allowing the two variables to be compared directly.\nA linear trend line is added to summarize the overall relationship between the variables. This helps identify whether days with more academic work tend to correspond to higher or lower screen time.\n\nplot2_static &lt;- ggplot(\n  data = screentime, #starting with my dataframe\n  aes(\n    x = `Class + Study time (hours)`, #x-axis: continuous predictor\n    y = `Screen Time (hours)`, #y-axis: response variable\n    #custom hover text for the interactive plot\n    text = paste(\n      \"Date:\", Date,\n      \"&lt;br&gt;Class + Study Time:\", `Class + Study time (hours)`, \"hours\",\n      \"&lt;br&gt;Screen Time:\", `Screen Time (hours)`, \"hours\"\n    )\n  )\n) +\n  geom_point(\n    color = \"darkorange\", #changing color from default\n    size = 2, #point size\n    alpha = 0.8 #making points slightly transparent\n  ) +\n  #adding linear regression trend line to show overall relationship\n  geom_smooth(\n    method = \"lm\",\n    se = TRUE, #showing confidence interval around regression line\n    color = \"#014f86\", #custom color for trend line\n    inherit.aes = FALSE, #preventing hover text from applying to regression line\n    aes(\n      x = `Class + Study time (hours)`,\n      y = `Screen Time (hours)`\n    )\n  ) +\n  labs(\n    x = \"Class + Study Time (hours)\", #changing axes labels\n    y = \"Screen Time (hours)\",\n    title = \"Relationship between class/study time and screen time\", #title summarizing main message\n    #subtitle showing most recent observation date\n    subtitle = paste(\"Most recent observation:\", most_recent_date)\n  ) +\n  theme_light() #changing theme from default\n\n\n#using plotly package to make the figure interactive\nplot2_interactive &lt;- ggplotly(plot2_static, tooltip = \"text\") |&gt;\n  layout(\n    font = list(family = \"Sans\"), #editing font for figure title and axes\n    hoverlabel = list(\n      font = list(\n        family = \"Sans\",\n        size = 13, #font size for hover text\n        color = \"#FFFFFF\" #font color for hover text\n      )\n    )\n  )\n\n#display interactive version of the plot\nplot2_interactive\n\n\n\n\n\nFigure 2. Relationship between class/study time (hours) and screen time (hours). Each point represents one day, with the line showing the overall linear trend. The slight negative trend suggests that on days with more class and/or study time, screen time tends to be slightly lower, although the relationship does not appear very strong."
+  },
+  {
+    "objectID": "interests.html#on-the-road",
+    "href": "interests.html#on-the-road",
+    "title": "Around the World",
+    "section": "",
+    "text": "I love traveling because it always gives me meaningful quality time with the people I’m with, whether that’s family or friends. In a new place, my favorite thing to do is simply walk around. It forces you to slow down and notice the small details you might otherwise miss if you were just driving by.\nMy family has taken long road trips for as long as I can remember, so I’ve grown up being comfortable with long journeys across North America. I’ve always loved traveling abroad too, and there’s something about going to the airport that still feels exciting every time. Travel in any and every form is okay with me!"
+  },
+  {
+    "objectID": "interests.html#my-favorite-trip",
+    "href": "interests.html#my-favorite-trip",
+    "title": "Around the World",
+    "section": "My favorite trip",
+    "text": "My favorite trip\n\nBanff, Canada — July 2022\nMy favorite place I’ve traveled to is Banff, Canada, which I roadtripped to in July 2022 with my family. The mountains are my favorite kind of landscape, and Banff ended up being the perfect place to fully appreciate them. Between the scenery, the wildlife, and the feeling of being surrounded by nature everywhere you look, it’s easily one of the most beautiful places I’ve been. I would love to go back one day."
+  },
+  {
+    "objectID": "interests.html#my-most-recent-trip",
+    "href": "interests.html#my-most-recent-trip",
+    "title": "Around the World",
+    "section": "My most recent trip",
+    "text": "My most recent trip\n\nJoshua Tree — December 2025\nMy most recent trip was to Joshua Tree in December 2025. I had never been there before, so it was really fun to experience the desert and explore a landscape that felt so different from what I’m usually surrounded by. I went with my best friend for New Years, and we also spent time around Palm Springs, which made the trip even more memorable."
+  },
+  {
+    "objectID": "interests.html#photos-of-more-of-my-recent-adventures",
+    "href": "interests.html#photos-of-more-of-my-recent-adventures",
+    "title": "Around the World",
+    "section": "Photos of more of my recent adventures",
+    "text": "Photos of more of my recent adventures\n\n\n\n\n\n\nSan Diego CA, October 2025\n\n\n\n\n\n\n\nHonolulu HI, September 2025\n\n\n\n\n\n\n\nSanta Cruz CA, August 2025\n\n\n\n\n\n\n\n\n\nIstanbul Turkey, July 2025\n\n\n\n\n\n\n\nDubai UAE, July 2025\n\n\n\n\n\n\n\nSan Francisco CA, January 2025\n\n\n\n\n\n\n\n\n\nSanta Cruz CA, December 2024\n\n\n\n\n\n\n\nArnold CA, August 2024\n\n\n\n\n\n\n\nCrater Lake OR, July 2024\n\n\n\n\n\n\n\n\n\nTulelake CA, July 2024\n\n\n\n\n\n\n\nAbu Dhabi UAE, January 2024\n\n\n\n\n\n\n\nDubai UAE, December 2023\n\n\n\n\n\n\n\n\n\nAligarh India, June 2023\n\n\n\n\n\n\n\nSanta Cruz Island CA, November 2023\n\n\n\n\n\n\n\nNiagara Falls Canada, July 2023\n\n\n\n\n\n\n\n\n\nMontreal Canada, July 2023\n\n\n\n\n\n\n\nToronto Canada, June 2023\n\n\n\n\n\n\n\nArnold CA, January 2023"
   }
 ]
