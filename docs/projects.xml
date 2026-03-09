@@ -10,7 +10,7 @@
 <atom:link href="https://sumaiyaalvi.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 09 Mar 2026 19:09:53 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Mar 2026 20:23:50 GMT</lastBuildDate>
 <item>
   <title>Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles</title>
   <link>https://sumaiyaalvi.github.io/projects/coyotes/</link>
@@ -110,8 +110,733 @@
   <category>ArcGIS Pro</category>
   <category>Spatial Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/coyotes/</guid>
-  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 20:23:50 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/coyotes/coyote.png" medium="image" type="image/png" height="74" width="144"/>
+</item>
+<item>
+  <title>What Factors Influence My Daily Screen Time?</title>
+  <link>https://sumaiyaalvi.github.io/projects/screentime/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> January–February 2026<br>
+<strong>Course:</strong> ENV S 193DS - Statistics for Environmental Science<br>
+<strong>Methods:</strong> Daily data collection, exploratory visualization, affective visualization, trend analysis</p>
+<p>This project explored how my daily screen time changes depending on different parts of my routine during the school quarter. I collected data from <strong>January to February</strong> on my daily screen time, along with other factors such as <strong>class and study time, sleep, commuting time, social plans, and whether I had an exam or project due</strong>.</p>
+<p>The goal of this project was both analytical and personal. I wanted to better understand my own habits, identify patterns that might explain why my screen time changes from day to day, and think about how data can be represented in a way that feels more reflective and human. To do this, I combined standard plots made in <strong>R with ggplot2</strong> and a hand-drawn <strong>affective visualization</strong> inspired by Giorgia Lupi and Stefanie Posavec’s <em>Week of Goodbyes</em>.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>R</strong></li>
+<li><strong>ggplot2</strong></li>
+<li><strong>Exploratory Data Analysis</strong></li>
+<li><strong>Personal Data Collection</strong></li>
+<li><strong>Affective Visualization</strong></li>
+<li><strong>Visual Encoding</strong></li>
+<li><strong>Data Interpretation</strong></li>
+<li><strong>Reflective Design</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>How does my screen time vary across different days of the week?</li>
+<li>Is there a relationship between class/study time and screen time?</li>
+<li>How do other contextual factors, such as sleep, social plans, commuting, or deadlines, shape my daily screen use?</li>
+<li>How can personal data be visualized in a way that captures both patterns and lived experience?</li>
+</ul>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>This project combined quantitative data analysis with more interpretive visual design.</p>
+<section id="data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection">Data Collection</h3>
+<p>I recorded daily observations on my <strong>screen time</strong>, measured in hours, along with several explanatory variables related to my routine. These included:</p>
+<ul>
+<li><strong>Class + study time (hours)</strong></li>
+<li><strong>Day of the week</strong></li>
+<li><strong>Sleep hours from the night before</strong></li>
+<li><strong>Time spent commuting</strong></li>
+<li><strong>Whether I had social plans</strong></li>
+<li><strong>Whether I had an exam or project due</strong></li>
+</ul>
+<p>Because the data was collected over a specific academic quarter, the results are shaped by my schedule during that time. Even so, the project still helped reveal broader patterns in how my responsibilities and habits interact.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#general use</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(DT) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#package for making interactive tables</span></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(plotly) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#package for making interactive figures</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5">screentime <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"screentime.csv"</span>)</span></code></pre></div></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Using package DT to create an interactive table</span></span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">datatable</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> screentime)</span></code></pre></div></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7fbc3aed6e4b044bd169" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7fbc3aed6e4b044bd169">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],["01/11/2026","01/12/2026","01/13/2026","01/14/2026","01/23/2026","01/24/2026","01/25/2026","01/26/2026","01/27/2026","01/28/2026","01/29/2026","01/30/2026","01/31/2026","02/01/2026","02/02/2026","02/03/2026","02/04/2026","02/05/2026","02/06/2026","02/07/2026","02/08/2026","02/09/2026","02/10/2026","02/11/2026","02/12/2026","02/13/2026","02/18/2026","02/19/2026","02/21/2026","02/22/2026"],["Sunday","Monday","Tuesday","Wednesday","Friday","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Wednesday","Thursday","Saturday","Sunday"],[7.85,5.62,4,5.68,3.73,6.92,4.17,4.82,3.6,6.4,6.65,7.22,5.25,5.82,5.65,6.85,4.13,5.08,4.22,3.5,4.3,5.8,6.22,6.4,2.93,3.25,4.07,5.4,4.22,3.63],[0,4,2.5,3,2,5,9,6,7,3,4,2,0,0,7,3,5,6,5.5,9.5,6,8.5,7,5,2,0,5,3,1,3],[30,40,45,60,80,45,30,40,60,50,30,185,120,185,60,60,50,75,20,35,40,60,60,45,40,75,60,60,120,45],["Yes","No","No","No","Yes","Yes","Yes","No","Yes","No","No","Yes","Yes","Yes","No","No","Yes","Yes","Yes","No","No","No","No","Yes","Yes","Yes","Yes","Yes","Yes","Yes"],[8,9,9,7,7,7,7.5,6,6,8,8,6.5,6,5.5,9,9,9,9,7.5,7,9,8,7,7.5,8,8,8,8,7,7.5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Day of Week<\/th>\n      <th>Screen Time (hours)<\/th>\n      <th>Class + Study time (hours)<\/th>\n      <th>Time spent commuting (minutes)<\/th>\n      <th>Social Plans<\/th>\n      <th>Sleep Time (hours) the night before<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[3,4,5,7]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Date","targets":1},{"name":"Day of Week","targets":2},{"name":"Screen Time (hours)","targets":3},{"name":"Class + Study time (hours)","targets":4},{"name":"Time spent commuting (minutes)","targets":5},{"name":"Social Plans","targets":6},{"name":"Sleep Time (hours) the night before","targets":7}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="code-based-visualizations" class="level1">
+<h1>Code-Based Visualizations</h1>
+<section id="visualization-1-screen-time-across-days-of-the-week" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-1-screen-time-across-days-of-the-week">Visualization 1: Screen Time Across Days of the Week</h2>
+<p>This visualization shows how my daily screen time varies across different days of the week. Each point represents one day, allowing variation in screen time to be compared across weekdays and weekends.</p>
+<p>I used <strong>jittered points</strong> so that observations on the same day would not overlap, and assigned a different color to each day of the week to make patterns easier to compare visually.</p>
+<p>The code also extracts the <strong>most recent observation date</strong> from the dataset and displays it in the subtitle so the time frame of the data is clear.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#finding most recent observation date</span></span>
+<span id="cb3-2">most_recent_date <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">max</span>(screentime<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Date)</span>
+<span id="cb3-3"></span>
+<span id="cb3-4">plot1_static <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> screentime, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#starting with my dataframe</span></span>
+<span id="cb3-5">       <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Day of Week</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#x-axis: categorical variable</span></span>
+<span id="cb3-6">           <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Screen Time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#y-axis: response variable</span></span>
+<span id="cb3-7">           <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Day of Week</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#coloring by day of week</span></span>
+<span id="cb3-8">           <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">text =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Date:"</span>, Date, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#for interactive plot points</span></span>
+<span id="cb3-9">                        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;Day:"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Day of Week</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb3-10">                        <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;Screen Time:"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Screen Time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hours"</span>))) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb3-11">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_jitter</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">width =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.15</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#adding horizontal jitter</span></span>
+<span id="cb3-12">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">alpha =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.7</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#making points slightly transparent</span></span>
+<span id="cb3-13">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#point size</span></span>
+<span id="cb3-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(</span>
+<span id="cb3-15">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Day of Week"</span>,</span>
+<span id="cb3-16">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Screen Time (hours)"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#changing axes labels</span></span>
+<span id="cb3-17">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Screen time by day of the week"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#title summarizing main message,</span></span>
+<span id="cb3-18">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#subtitle for most recent observation</span></span>
+<span id="cb3-19">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">subtitle =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Most recent observation:"</span>, most_recent_date)</span>
+<span id="cb3-20">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb3-21">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_color_manual</span>( <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#changing colors from default</span></span>
+<span id="cb3-22">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">values =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Monday"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"firebrick"</span>,</span>
+<span id="cb3-23">               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Tuesday"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"darkorange"</span>,</span>
+<span id="cb3-24">               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Wednesday"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"yellow3"</span>,</span>
+<span id="cb3-25">               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Thursday"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"green3"</span>,</span>
+<span id="cb3-26">               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Friday"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"blue4"</span>,</span>
+<span id="cb3-27">               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Saturday"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"slateblue4"</span>,</span>
+<span id="cb3-28">               <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sunday"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"pink3"</span>)</span>
+<span id="cb3-29">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-30">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_light</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#changing theme from default</span></span>
+<span id="cb3-31">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">legend.position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"none"</span>) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#removing legend</span></span>
+<span id="cb3-32"></span>
+<span id="cb3-33"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># convert to interactive plotly</span></span>
+<span id="cb3-34">plot1_interactive <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplotly</span>(plot1_static, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">tooltip =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"text"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-35">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">layout</span>(</span>
+<span id="cb3-36">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">font =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">family =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sans"</span>),  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#editing font for figure title and axes</span></span>
+<span id="cb3-37">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">hoverlabel =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(</span>
+<span id="cb3-38">      <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">font =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(</span>
+<span id="cb3-39">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">family =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sans"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#hover text font</span></span>
+<span id="cb3-40">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">13</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#hover text font size</span></span>
+<span id="cb3-41">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#FFFFFF"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#font color for hover text</span></span>
+<span id="cb3-42">      )</span>
+<span id="cb3-43">    )</span>
+<span id="cb3-44">  )</span>
+<span id="cb3-45"></span>
+<span id="cb3-46"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#display interactive version of the plot</span></span>
+<span id="cb3-47">plot1_interactive</span></code></pre></div></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-d77f415d17f37f20b975" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d77f415d17f37f20b975">{"x":{"data":[{"x":[1.0780265598790719,1.0107760705286637,0.91777931186370554,1.0576605367008596],"y":[3.7375691262632609,7.2246245199702681,4.2267738321647048,3.256754424363375],"text":["Date: 01/23/2026 <br>Day: Friday <br>Screen Time: 3.73 hours","Date: 01/30/2026 <br>Day: Friday <br>Screen Time: 7.22 hours","Date: 02/06/2026 <br>Day: Friday <br>Screen Time: 4.22 hours","Date: 02/13/2026 <br>Day: Friday <br>Screen Time: 3.25 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,139,1)","opacity":0.69999999999999996,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,139,1)"}},"hoveron":"points","name":"Friday","legendgroup":"Friday","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.034373782784678,2.0192267915699631,1.9320929803419857,2.0531573165440933],"y":[5.6244517457373444,4.8207346991598605,5.6520830900780856,5.7964743465967477],"text":["Date: 01/12/2026 <br>Day: Monday <br>Screen Time: 5.62 hours","Date: 01/26/2026 <br>Day: Monday <br>Screen Time: 4.82 hours","Date: 02/02/2026 <br>Day: Monday <br>Screen Time: 5.65 hours","Date: 02/09/2026 <br>Day: Monday <br>Screen Time: 5.8 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(178,34,34,1)","opacity":0.69999999999999996,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(178,34,34,1)"}},"hoveron":"points","name":"Monday","legendgroup":"Monday","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.9025415330426769,2.9409282012842595,3.1265106966253371,2.8552392896264793],"y":[6.9199125025533137,5.2449702095128599,3.5046907269880179,4.2132209569774561],"text":["Date: 01/24/2026 <br>Day: Saturday <br>Screen Time: 6.92 hours","Date: 01/31/2026 <br>Day: Saturday <br>Screen Time: 5.25 hours","Date: 02/07/2026 <br>Day: Saturday <br>Screen Time: 3.5 hours","Date: 02/21/2026 <br>Day: Saturday <br>Screen Time: 4.22 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(71,60,139,1)","opacity":0.69999999999999996,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(71,60,139,1)"}},"hoveron":"points","name":"Saturday","legendgroup":"Saturday","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[4.1274451410165058,4.1366123836720359,3.9698876432841645,3.8575329553801567,3.905795716145076],"y":[7.8510529994554812,4.1650656677260995,5.8185534185729919,4.2986570854485029,3.6379749569110573],"text":["Date: 01/11/2026 <br>Day: Sunday <br>Screen Time: 7.85 hours","Date: 01/25/2026 <br>Day: Sunday <br>Screen Time: 4.17 hours","Date: 02/01/2026 <br>Day: Sunday <br>Screen Time: 5.82 hours","Date: 02/08/2026 <br>Day: Sunday <br>Screen Time: 4.3 hours","Date: 02/22/2026 <br>Day: Sunday <br>Screen Time: 3.63 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(205,145,158,1)","opacity":0.69999999999999996,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(205,145,158,1)"}},"hoveron":"points","name":"Sunday","legendgroup":"Sunday","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5.0319882343290372,4.9304775665281344,4.9095004865434024,5.1016871239757169],"y":[6.6578690892085435,5.083589271299541,2.9258332596234977,5.392087734993547],"text":["Date: 01/29/2026 <br>Day: Thursday <br>Screen Time: 6.65 hours","Date: 02/05/2026 <br>Day: Thursday <br>Screen Time: 5.08 hours","Date: 02/12/2026 <br>Day: Thursday <br>Screen Time: 2.93 hours","Date: 02/19/2026 <br>Day: Thursday <br>Screen Time: 5.4 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,205,0,1)","opacity":0.69999999999999996,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,205,0,1)"}},"hoveron":"points","name":"Thursday","legendgroup":"Thursday","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[6.1356009374605494,6.1232675936305894,5.8812654378125444,6.0161791546270251],"y":[4.0029937216863036,3.5954359336532651,6.8448025832884012,6.2159721012786031],"text":["Date: 01/13/2026 <br>Day: Tuesday <br>Screen Time: 4 hours","Date: 01/27/2026 <br>Day: Tuesday <br>Screen Time: 3.6 hours","Date: 02/03/2026 <br>Day: Tuesday <br>Screen Time: 6.85 hours","Date: 02/10/2026 <br>Day: Tuesday <br>Screen Time: 6.22 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,140,0,1)","opacity":0.69999999999999996,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,140,0,1)"}},"hoveron":"points","name":"Tuesday","legendgroup":"Tuesday","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[7.1178496490465477,6.8568612566916274,6.8667854313738648,6.9158194733550769,6.876060654735193],"y":[5.6851230970658362,6.4034919537380341,4.1351634720861909,6.4029929904043676,4.0758162549696868],"text":["Date: 01/14/2026 <br>Day: Wednesday <br>Screen Time: 5.68 hours","Date: 01/28/2026 <br>Day: Wednesday <br>Screen Time: 6.4 hours","Date: 02/04/2026 <br>Day: Wednesday <br>Screen Time: 4.13 hours","Date: 02/11/2026 <br>Day: Wednesday <br>Screen Time: 6.4 hours","Date: 02/18/2026 <br>Day: Wednesday <br>Screen Time: 4.07 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(205,205,0,1)","opacity":0.69999999999999996,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(205,205,0,1)"}},"hoveron":"points","name":"Wednesday","legendgroup":"Wednesday","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":31.415525114155255},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"Sans","size":14.611872146118724},"title":{"text":"Screen time by day of the week","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,7.5999999999999996],"tickmode":"array","ticktext":["Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday"],"tickvals":[1,2,3,4.0000000000000009,5,6,7],"categoryorder":"array","categoryarray":["Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday"],"nticks":null,"ticks":"outside","tickcolor":"rgba(179,179,179,1)","ticklen":3.6529680365296811,"tickwidth":0.33208800332088001,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(222,222,222,1)","gridwidth":0.33208800332088001,"zeroline":false,"anchor":"y","title":{"text":"Day of Week","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2.6795722726318987,8.0973139864470802],"tickmode":"array","ticktext":["3","4","5","6","7","8"],"tickvals":[3,4,5,6,7,8],"categoryorder":"array","categoryarray":["3","4","5","6","7","8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(179,179,179,1)","ticklen":3.6529680365296811,"tickwidth":0.33208800332088001,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(222,222,222,1)","gridwidth":0.33208800332088001,"zeroline":false,"anchor":"x","title":{"text":"Screen Time (hours)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"rgba(255,255,255,1)","line":{"color":"rgba(179,179,179,1)","width":0.66417600664176002,"linetype":"solid"},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative","hoverlabel":{"font":{"family":"Sans","size":13,"color":"#FFFFFF"}}},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"3e7a246d771a":{"x":{},"y":{},"colour":{},"text":{},"type":"scatter"}},"cur_data":"3e7a246d771a","visdat":{"3e7a246d771a":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Figure 1.</strong> Screen time (hours) across days of the week. Each point represents one daily observation, showing variation in screen use depending on the day. Screen time appears somewhat higher and more variable on weekends compared to some weekdays, suggesting that daily schedule may influence overall screen use.</p>
+</section>
+<section id="visualization-2-screen-time-vs.-classstudy-time" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-2-screen-time-vs.-classstudy-time">Visualization 2: Screen Time vs.&nbsp;Class/Study Time</h2>
+<p>This visualization examines the relationship between <strong>class/study time and screen time</strong> using a scatterplot. Each point represents one day, allowing the two variables to be compared directly.</p>
+<p>A <strong>linear trend line</strong> is added to summarize the overall relationship between the variables. This helps identify whether days with more academic work tend to correspond to higher or lower screen time.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">plot2_static <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(</span>
+<span id="cb4-2">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> screentime, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#starting with my dataframe</span></span>
+<span id="cb4-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(</span>
+<span id="cb4-4">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Class + Study time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#x-axis: continuous predictor</span></span>
+<span id="cb4-5">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Screen Time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#y-axis: response variable</span></span>
+<span id="cb4-6">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#custom hover text for the interactive plot</span></span>
+<span id="cb4-7">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">text =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste</span>(</span>
+<span id="cb4-8">      <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Date:"</span>, Date,</span>
+<span id="cb4-9">      <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;Class + Study Time:"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Class + Study time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hours"</span>,</span>
+<span id="cb4-10">      <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;Screen Time:"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Screen Time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hours"</span></span>
+<span id="cb4-11">    )</span>
+<span id="cb4-12">  )</span>
+<span id="cb4-13">) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(</span>
+<span id="cb4-15">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"darkorange"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#changing color from default</span></span>
+<span id="cb4-16">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#point size</span></span>
+<span id="cb4-17">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">alpha =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.8</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#making points slightly transparent</span></span>
+<span id="cb4-18">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-19">  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#adding linear regression trend line to show overall relationship</span></span>
+<span id="cb4-20">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(</span>
+<span id="cb4-21">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">method =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"lm"</span>,</span>
+<span id="cb4-22">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">se =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#showing confidence interval around regression line</span></span>
+<span id="cb4-23">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#014f86"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#custom color for trend line</span></span>
+<span id="cb4-24">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">inherit.aes =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#preventing hover text from applying to regression line</span></span>
+<span id="cb4-25">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(</span>
+<span id="cb4-26">      <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Class + Study time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>,</span>
+<span id="cb4-27">      <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Screen Time (hours)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb4-28">    )</span>
+<span id="cb4-29">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-30">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(</span>
+<span id="cb4-31">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Class + Study Time (hours)"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#changing axes labels</span></span>
+<span id="cb4-32">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Screen Time (hours)"</span>,</span>
+<span id="cb4-33">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Relationship between class/study time and screen time"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#title summarizing main message</span></span>
+<span id="cb4-34">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#subtitle showing most recent observation date</span></span>
+<span id="cb4-35">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">subtitle =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Most recent observation:"</span>, most_recent_date)</span>
+<span id="cb4-36">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb4-37">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_light</span>() <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#changing theme from default</span></span>
+<span id="cb4-38"></span>
+<span id="cb4-39"></span>
+<span id="cb4-40"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#using plotly package to make the figure interactive</span></span>
+<span id="cb4-41">plot2_interactive <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplotly</span>(plot2_static, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">tooltip =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"text"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb4-42">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">layout</span>(</span>
+<span id="cb4-43">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">font =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">family =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sans"</span>), <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#editing font for figure title and axes</span></span>
+<span id="cb4-44">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">hoverlabel =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(</span>
+<span id="cb4-45">      <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">font =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(</span>
+<span id="cb4-46">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">family =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sans"</span>,</span>
+<span id="cb4-47">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">13</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#font size for hover text</span></span>
+<span id="cb4-48">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#FFFFFF"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#font color for hover text</span></span>
+<span id="cb4-49">      )</span>
+<span id="cb4-50">    )</span>
+<span id="cb4-51">  )</span>
+<span id="cb4-52"></span>
+<span id="cb4-53"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#display interactive version of the plot</span></span>
+<span id="cb4-54">plot2_interactive</span></code></pre></div></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-6d71c75f484b9f743209" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6d71c75f484b9f743209">{"x":{"data":[{"x":[0,4,2.5,3,2,5,9,6,7,3,4,2,0,0,7,3,5,6,5.5,9.5,6,8.5,7,5,2,0,5,3,1,3],"y":[7.8499999999999996,5.6200000000000001,4,5.6799999999999997,3.73,6.9199999999999999,4.1699999999999999,4.8200000000000003,3.6000000000000001,6.4000000000000004,6.6500000000000004,7.2199999999999998,5.25,5.8200000000000003,5.6500000000000004,6.8499999999999996,4.1299999999999999,5.0800000000000001,4.2199999999999998,3.5,4.2999999999999998,5.7999999999999998,6.2199999999999998,6.4000000000000004,2.9300000000000002,3.25,4.0700000000000003,5.4000000000000004,4.2199999999999998,3.6299999999999999],"text":["Date: 01/11/2026 <br>Class + Study Time: 0 hours <br>Screen Time: 7.85 hours","Date: 01/12/2026 <br>Class + Study Time: 4 hours <br>Screen Time: 5.62 hours","Date: 01/13/2026 <br>Class + Study Time: 2.5 hours <br>Screen Time: 4 hours","Date: 01/14/2026 <br>Class + Study Time: 3 hours <br>Screen Time: 5.68 hours","Date: 01/23/2026 <br>Class + Study Time: 2 hours <br>Screen Time: 3.73 hours","Date: 01/24/2026 <br>Class + Study Time: 5 hours <br>Screen Time: 6.92 hours","Date: 01/25/2026 <br>Class + Study Time: 9 hours <br>Screen Time: 4.17 hours","Date: 01/26/2026 <br>Class + Study Time: 6 hours <br>Screen Time: 4.82 hours","Date: 01/27/2026 <br>Class + Study Time: 7 hours <br>Screen Time: 3.6 hours","Date: 01/28/2026 <br>Class + Study Time: 3 hours <br>Screen Time: 6.4 hours","Date: 01/29/2026 <br>Class + Study Time: 4 hours <br>Screen Time: 6.65 hours","Date: 01/30/2026 <br>Class + Study Time: 2 hours <br>Screen Time: 7.22 hours","Date: 01/31/2026 <br>Class + Study Time: 0 hours <br>Screen Time: 5.25 hours","Date: 02/01/2026 <br>Class + Study Time: 0 hours <br>Screen Time: 5.82 hours","Date: 02/02/2026 <br>Class + Study Time: 7 hours <br>Screen Time: 5.65 hours","Date: 02/03/2026 <br>Class + Study Time: 3 hours <br>Screen Time: 6.85 hours","Date: 02/04/2026 <br>Class + Study Time: 5 hours <br>Screen Time: 4.13 hours","Date: 02/05/2026 <br>Class + Study Time: 6 hours <br>Screen Time: 5.08 hours","Date: 02/06/2026 <br>Class + Study Time: 5.5 hours <br>Screen Time: 4.22 hours","Date: 02/07/2026 <br>Class + Study Time: 9.5 hours <br>Screen Time: 3.5 hours","Date: 02/08/2026 <br>Class + Study Time: 6 hours <br>Screen Time: 4.3 hours","Date: 02/09/2026 <br>Class + Study Time: 8.5 hours <br>Screen Time: 5.8 hours","Date: 02/10/2026 <br>Class + Study Time: 7 hours <br>Screen Time: 6.22 hours","Date: 02/11/2026 <br>Class + Study Time: 5 hours <br>Screen Time: 6.4 hours","Date: 02/12/2026 <br>Class + Study Time: 2 hours <br>Screen Time: 2.93 hours","Date: 02/13/2026 <br>Class + Study Time: 0 hours <br>Screen Time: 3.25 hours","Date: 02/18/2026 <br>Class + Study Time: 5 hours <br>Screen Time: 4.07 hours","Date: 02/19/2026 <br>Class + Study Time: 3 hours <br>Screen Time: 5.4 hours","Date: 02/21/2026 <br>Class + Study Time: 1 hours <br>Screen Time: 4.22 hours","Date: 02/22/2026 <br>Class + Study Time: 3 hours <br>Screen Time: 3.63 hours"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,140,0,1)","opacity":0.80000000000000004,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,140,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.12025316455696203,0.24050632911392406,0.36075949367088611,0.48101265822784811,0.60126582278481011,0.72151898734177222,0.84177215189873422,0.96202531645569622,1.0822784810126582,1.2025316455696202,1.3227848101265822,1.4430379746835444,1.5632911392405064,1.6835443037974684,1.8037974683544304,1.9240506329113924,2.0443037974683547,2.1645569620253164,2.2848101265822787,2.4050632911392404,2.5253164556962027,2.6455696202531644,2.7658227848101267,2.8860759493670889,3.0063291139240507,3.1265822784810129,3.2468354430379747,3.3670886075949369,3.4873417721518987,3.6075949367088609,3.7278481012658227,3.8481012658227849,3.9683544303797471,4.0886075949367093,4.2088607594936711,4.3291139240506329,4.4493670886075947,4.5696202531645573,4.6898734177215191,4.8101265822784809,4.9303797468354436,5.0506329113924053,5.1708860759493671,5.2911392405063289,5.4113924050632916,5.5316455696202533,5.6518987341772151,5.7721518987341778,5.8924050632911396,6.0126582278481013,6.1329113924050631,6.2531645569620258,6.3734177215189876,6.4936708860759493,6.6139240506329111,6.7341772151898738,6.8544303797468356,6.9746835443037973,7.09493670886076,7.2151898734177218,7.3354430379746836,7.4556962025316453,7.575949367088608,7.6962025316455698,7.8164556962025316,7.9367088607594942,8.0569620253164551,8.1772151898734187,8.2974683544303804,8.4177215189873422,8.537974683544304,8.6582278481012658,8.7784810126582276,8.8987341772151893,9.0189873417721529,9.1392405063291147,9.2594936708860764,9.3797468354430382,9.5],"y":[5.3976812048948846,5.3893891322739123,5.3810970596529408,5.3728049870319685,5.3645129144109962,5.3562208417900239,5.3479287691690525,5.3396366965480802,5.3313446239271078,5.3230525513061364,5.3147604786851641,5.3064684060641918,5.2981763334432204,5.2898842608222481,5.2815921882012757,5.2733001155803034,5.265008042959332,5.2567159703383597,5.2484238977173874,5.240131825096416,5.2318397524754436,5.2235476798544713,5.215255607233499,5.2069635346125276,5.1986714619915553,5.190379389370583,5.1820873167496115,5.1737952441286392,5.1655031715076669,5.1572110988866955,5.1489190262657232,5.1406269536447509,5.1323348810237786,5.1240428084028071,5.1157507357818348,5.1074586631608625,5.0991665905398911,5.0908745179189188,5.0825824452979464,5.0742903726769741,5.0659983000560027,5.0577062274350304,5.0494141548140581,5.0411220821930867,5.0328300095721143,5.024537936951142,5.0162458643301697,5.0079537917091983,4.999661719088226,4.9913696464672537,4.9830775738462822,4.9747855012253099,4.9664934286043376,4.9582013559833662,4.9499092833623939,4.9416172107414216,4.9333251381204493,4.9250330654994778,4.9167409928785055,4.9084489202575332,4.9001568476365618,4.8918647750155895,4.8835727023946172,4.8752806297736448,4.8669885571526734,4.8586964845317011,4.8504044119107288,4.8421123392897574,4.8338202666687851,4.8255281940478127,4.8172361214268413,4.808944048805869,4.8006519761848967,4.7923599035639253,4.784067830942953,4.7757757583219806,4.7674836857010083,4.7591916130800369,4.7508995404590646,4.7426074678380923],"text":"","type":"scatter","mode":"lines","name":"fitted values","line":{"width":3.7795275590551185,"color":"rgba(1,79,134,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.12025316455696203,0.24050632911392406,0.36075949367088611,0.48101265822784811,0.60126582278481011,0.72151898734177222,0.84177215189873422,0.96202531645569622,1.0822784810126582,1.2025316455696202,1.3227848101265822,1.4430379746835444,1.5632911392405064,1.6835443037974684,1.8037974683544304,1.9240506329113924,2.0443037974683547,2.1645569620253164,2.2848101265822787,2.4050632911392404,2.5253164556962027,2.6455696202531644,2.7658227848101267,2.8860759493670889,3.0063291139240507,3.1265822784810129,3.2468354430379747,3.3670886075949369,3.4873417721518987,3.6075949367088609,3.7278481012658227,3.8481012658227849,3.9683544303797471,4.0886075949367093,4.2088607594936711,4.3291139240506329,4.4493670886075947,4.5696202531645573,4.6898734177215191,4.8101265822784809,4.9303797468354436,5.0506329113924053,5.1708860759493671,5.2911392405063289,5.4113924050632916,5.5316455696202533,5.6518987341772151,5.7721518987341778,5.8924050632911396,6.0126582278481013,6.1329113924050631,6.2531645569620258,6.3734177215189876,6.4936708860759493,6.6139240506329111,6.7341772151898738,6.8544303797468356,6.9746835443037973,7.09493670886076,7.2151898734177218,7.3354430379746836,7.4556962025316453,7.575949367088608,7.6962025316455698,7.8164556962025316,7.9367088607594942,8.0569620253164551,8.1772151898734187,8.2974683544303804,8.4177215189873422,8.537974683544304,8.6582278481012658,8.7784810126582276,8.8987341772151893,9.0189873417721529,9.1392405063291147,9.2594936708860764,9.3797468354430382,9.5,9.5,9.5,9.3797468354430382,9.2594936708860764,9.1392405063291147,9.0189873417721529,8.8987341772151893,8.7784810126582276,8.6582278481012658,8.537974683544304,8.4177215189873422,8.2974683544303804,8.1772151898734187,8.0569620253164551,7.9367088607594942,7.8164556962025316,7.6962025316455698,7.575949367088608,7.4556962025316453,7.3354430379746836,7.2151898734177218,7.09493670886076,6.9746835443037973,6.8544303797468356,6.7341772151898738,6.6139240506329111,6.4936708860759493,6.3734177215189876,6.2531645569620258,6.1329113924050631,6.0126582278481013,5.8924050632911396,5.7721518987341778,5.6518987341772151,5.5316455696202533,5.4113924050632916,5.2911392405063289,5.1708860759493671,5.0506329113924053,4.9303797468354436,4.8101265822784809,4.6898734177215191,4.5696202531645573,4.4493670886075947,4.3291139240506329,4.2088607594936711,4.0886075949367093,3.9683544303797471,3.8481012658227849,3.7278481012658227,3.6075949367088609,3.4873417721518987,3.3670886075949369,3.2468354430379747,3.1265822784810129,3.0063291139240507,2.8860759493670889,2.7658227848101267,2.6455696202531644,2.5253164556962027,2.4050632911392404,2.2848101265822787,2.1645569620253164,2.0443037974683547,1.9240506329113924,1.8037974683544304,1.6835443037974684,1.5632911392405064,1.4430379746835444,1.3227848101265822,1.2025316455696202,1.0822784810126582,0.96202531645569622,0.84177215189873422,0.72151898734177222,0.60126582278481011,0.48101265822784811,0.36075949367088611,0.24050632911392406,0.12025316455696203,0,0],"y":[4.4762838764724329,4.4868601055250643,4.4972643455378094,4.5074854483228739,4.5175114051331065,4.5273292780242738,4.5369251271545776,4.5462839343072492,4.5553895231221224,4.5642244767786471,4.5727700541966652,4.5810061062237022,4.588910993769284,4.5964615104373037,4.6036328129023119,4.6103983630740926,4.6167298869864872,4.6225973563054614,4.6279689993322117,4.6328113493070546,4.6370893385944791,4.6407664478077937,4.6438049189358885,4.6461660408578869,4.647810514053818,4.6486988986383224,4.6487921459176169,4.6480522084722331,4.6464427174511043,4.6439297087065148,4.6404823722360424,4.6360737929845488,4.6306816463893306,4.6242888100977266,4.6168838548002178,4.608461382432357,4.5990221888674707,4.5885732398100663,4.5771274615743565,4.5647033611981245,4.5513245013440615,4.5370188634545716,4.5218181369623682,4.5057569729333355,4.4888722377844923,4.4712022975067738,4.4527863561255749,4.4336638649224538,4.4138740120244915,4.393455295911127,4.3724451815097591,4.3508798339518027,4.3287939226792673,4.3062204872656862,4.2831908558336913,4.2597346070957975,4.2358795676144574,4.2116518367038047,4.187075832347098,4.1621743524848345,4.1369686469736875,4.1114784963859314,4.085722294591525,4.0597171327328692,4.033478882766766,4.0070222792160024,3.9803609981542341,3.9535077327533701,3.9264742649637987,3.8992715330849537,3.8719096951264822,3.8443981879670721,3.8167457823958717,3.7889606341764788,3.7610503313107038,3.7330219377027123,3.7048820334370722,3.6766367518892906,3.6482918138866958,3.6198525591326507,3.6198525591326507,5.8653623765435334,5.8535072670314339,5.8417464742707832,5.8300853379649444,5.8185295789412486,5.8070853305752017,5.7957591729513718,5.7845581699739217,5.7734899096446659,5.7625625477272004,5.7517848550106718,5.741166268373771,5.7307169458261447,5.7204478256672235,5.7103706898473998,5.7004982315385808,5.6908441268144205,5.6814231101977093,5.6722510536452475,5.6633450482994361,5.6547234880302319,5.646406153409913,5.638414294295151,5.6307707086264411,5.6234998143870456,5.6166277108910965,5.6101822247010462,5.6041929345294079,5.5986911684988172,5.5937099661828054,5.5892839970233803,5.5854494261519605,5.5822437184959428,5.5797053725347645,5.5778735763955103,5.5767877813597364,5.5764871914528378,5.5770101726657479,5.5783935914154892,5.5806720987679439,5.5838773841558238,5.5880374290215364,5.5931757960277713,5.5993109922123114,5.606455943889368,5.6146176167634518,5.6237968067078876,5.6339881156582265,5.6451801143049529,5.6573556802954039,5.6704924890668762,5.6845636255642296,5.6995382797850453,5.7153824875816062,5.7320598801028435,5.7495324099292926,5.7677610283671683,5.7867062955311095,5.806328911901149,5.8265901663564081,5.8474523008857773,5.868878796102563,5.890834584371258,5.9132861989321768,5.9362018680865143,5.9595515635002396,5.9833070112071924,6.0074416731171567,6.0319307059046814,6.056750903173663,6.0818806258336258,6.1072997247320933,6.1329894587889111,6.1589324111835273,6.185112405555774,6.211514423688886,6.2381245257410631,6.2649297737680723,6.2919181590227602,6.3190785333173363,4.4762838764724329],"text":"","type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(1,79,134,0.4)","dash":"solid"},"fill":"toself","fillcolor":"rgba(153,153,153,0.4)","hoveron":"points","hoverinfo":"x+y","showlegend":false,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":31.415525114155255},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"Sans","size":14.611872146118724},"title":{"text":"Relationship between class/study time and screen time","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.47500000000000003,9.9749999999999996],"tickmode":"array","ticktext":["0.0","2.5","5.0","7.5"],"tickvals":[0,2.5,5,7.5],"categoryorder":"array","categoryarray":["0.0","2.5","5.0","7.5"],"nticks":null,"ticks":"outside","tickcolor":"rgba(179,179,179,1)","ticklen":3.6529680365296811,"tickwidth":0.33208800332088001,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(222,222,222,1)","gridwidth":0.33208800332088001,"zeroline":false,"anchor":"y","title":{"text":"Class + Study Time (hours)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2.6840000000000002,8.0960000000000001],"tickmode":"array","ticktext":["3","4","5","6","7","8"],"tickvals":[3,4,5,6,7,8],"categoryorder":"array","categoryarray":["3","4","5","6","7","8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(179,179,179,1)","ticklen":3.6529680365296811,"tickwidth":0.33208800332088001,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(222,222,222,1)","gridwidth":0.33208800332088001,"zeroline":false,"anchor":"x","title":{"text":"Screen Time (hours)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"rgba(255,255,255,1)","line":{"color":"rgba(179,179,179,1)","width":0.66417600664176002,"linetype":"solid"},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative","hoverlabel":{"font":{"family":"Sans","size":13,"color":"#FFFFFF"}}},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"3e7a65a5a072":{"x":{},"y":{},"text":{},"type":"scatter"},"3e7a5cc8d080":{"x":{},"y":{}}},"cur_data":"3e7a65a5a072","visdat":{"3e7a65a5a072":["function (y) ","x"],"3e7a5cc8d080":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Figure 2.</strong> Relationship between class/study time (hours) and screen time (hours). Each point represents one day, with the line showing the overall linear trend. The slight negative trend suggests that on days with more class and/or study time, screen time tends to be slightly lower, although the relationship does not appear very strong.</p>
+</section>
+</section>
+<section id="affective-visualization" class="level1">
+<h1>Affective Visualization</h1>
+<p>Alongside the code-based plots, I created a <strong>hand-drawn affective visualization</strong> to represent the same dataset in a more symbolic and personal way. The project was inspired by <strong>Giorgia Lupi and Stefanie Posavec’s <em>Week of Goodbyes</em></strong>, which uses hand-drawn marks to encode personal experiences. Rather than focusing only on statistical relationships, this piece emphasizes how daily habits feel when viewed together over time.</p>
+<p>The visualization uses a custom visual language:</p>
+<ul>
+<li><strong>Shape</strong> represents screen time level<br>
+</li>
+<li><strong>Fill pattern</strong> represents class/study time<br>
+</li>
+<li><strong>Outline style</strong> indicates social plans<br>
+</li>
+<li><strong>Red underline</strong> marks low sleep<br>
+</li>
+<li><strong>Red dot</strong> marks an exam or project due</li>
+</ul>
+<p>This format allowed me to visualize my habits in a way that feels more reflective than a conventional chart, while still encoding several variables at once.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://sumaiyaalvi.github.io/projects/screentime/draft.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</section>
+<section id="key-takeaways" class="level1">
+<h1>Key Takeaways</h1>
+<p>Several patterns emerged from this project:</p>
+<ul>
+<li>Screen time varies across days of the week, with some weekend days showing more variability.</li>
+<li>There appears to be a slight negative relationship between class/study time and screen time.</li>
+<li>Contextual factors such as sleep, deadlines, and social plans likely shape screen time in ways that are not fully captured by a simple regression line.</li>
+<li>Affective visualization can reveal patterns and experiences that traditional charts may not communicate as clearly.</li>
+</ul>
+</section>
+<section id="reflection" class="level1">
+<h1>Reflection</h1>
+<p>This project helped me think about data in two different ways: as something to analyze statistically, and as something to represent personally. The <strong>ggplot visualizations</strong> helped identify general trends, while the <strong>hand-drawn affective visualization</strong> captured the context and variability of daily life.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>ggplot2</category>
+  <category>Affective Visualization</category>
+  <guid>https://sumaiyaalvi.github.io/projects/screentime/</guid>
+  <pubDate>Mon, 09 Mar 2026 20:23:50 GMT</pubDate>
+  <media:content url="https://sumaiyaalvi.github.io/projects/screentime/snippet.png" medium="image" type="image/png" height="62" width="144"/>
 </item>
 <item>
   <title>Modeling Diamond Prices with Regression Analysis</title>
@@ -224,7 +949,7 @@
   <category>R</category>
   <category>Regression Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/diamonds/</guid>
-  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 20:23:50 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/diamonds/diamonds.png" medium="image" type="image/png" height="58" width="144"/>
 </item>
 <item>
@@ -311,7 +1036,7 @@
 <h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
 <p>This project resulted in a published article and accompanying data visualizations.</p>
 <ul>
-<li><a href="https://dailynexus.com/2025-02-13/a-decade-of-increases-ucsb-housing-costs-show-consistent-climb/">Read the full article in the Daily Nexus</a></li>
+<li><a href="https://dailynexus.com/2025-02-13/a-decade-of-increases-ucsb-housing-costs-show-consistent-climb/" target="_blank">Read the full article in the Daily Nexus</a></li>
 </ul>
 </section>
 <section id="visualizations" class="level2">
@@ -338,7 +1063,7 @@
   <category>Datawrapper</category>
   <category>Python</category>
   <guid>https://sumaiyaalvi.github.io/projects/housing/</guid>
-  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 20:23:50 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/housing/housing.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
@@ -447,7 +1172,7 @@
   <category>Datawrapper</category>
   <category>Data Visualization</category>
   <guid>https://sumaiyaalvi.github.io/projects/vegan/</guid>
-  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 20:23:50 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/vegan/dininghall.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -543,7 +1268,7 @@
   <category>Python</category>
   <category>Google Colab</category>
   <guid>https://sumaiyaalvi.github.io/projects/beats-by-dre/</guid>
-  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 20:23:50 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/beats-by-dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 </channel>
