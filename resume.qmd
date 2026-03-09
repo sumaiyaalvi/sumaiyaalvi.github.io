@@ -2,3 +2,60 @@
 title: "Resume/CV"
 ---
 
+## My most recent resume
+
+(as of March 2026)
+
+<iframe src="media/Sumaiya Alvi Resume Ds.docx.pdf" width="100%" height="800px"></iframe>
+
+
+## Notable coursework at UCSB
+
+### PSTAT 120A/B/C - Probability & Statistics
+
+**Spring 2024, Fall 2024, Fall 2025**
+
+This three-course sequence provided a mathematical foundation in **probability theory and statistical inference**. I learned about probability distributions, expectations, limit theorems, and statistical estimation, and how these concepts support many statistical methods used in data analysis. The sequence helped me understand the theoretical reasoning behind modeling uncertainty and drawing conclusions from data.
+
+### PSTAT 126 - Regression Analysis
+
+**Winter 2025**
+
+This course focused on **building and interpreting linear regression models using `R`**. I learned how to estimate model parameters, evaluate assumptions such as linearity and homoscedasticity, and assess model fit through diagnostic plots and statistical tests. The class emphasized using regression both for prediction and for understanding relationships between variables.
+
+### PSTAT 122 - Design of Experiments
+
+**Winter 2025**
+
+In this course I learned how to design experiments that isolate the effects of multiple variables using **randomization, blocking, and factorial designs**. Using `R`, I analyzed experimental results and interpreted how different treatment combinations influenced outcomes. The course emphasized how thoughtful experimental design leads to more reliable and interpretable results.
+
+### PSTAT 131 - Statistical Machine Learning
+
+**Fall 2025**
+
+In this course I was introduced to machine learning methods used for prediction and classification. Using `R`, I implemented models such as **regularized regression and classification algorithms**, and learned how to evaluate model performance using **training/testing splits and cross-validation**. The class focused on understanding how models generalize to new data and how to prevent overfitting.
+
+### PSTAT 134 - Statistical Data Science
+
+**Winter 2026**
+
+This course focused on the programming and computational tools used in modern data science. Using `Python`, I worked with libraries such as **pandas** to clean and manipulate datasets, accessed external data through **APIs**, and used **Git and the command line** to manage and reproduce analyses. Through a series of **DataCamp modules and projects**, I developed practical experience working with data pipelines and organizing code for reproducible data analysis.
+
+### ENV S 193 DS - Statistics for Environmental Science
+
+**Winter 2026**
+
+This course focused on applying statistical methods to environmental datasets and interpreting the results in real-world contexts. Using `R`, I conducted hypothesis tests, performed statistical analyses, and created complex visualizations to explore patterns in environmental data. The class emphasized selecting appropriate statistical methods and communicating results clearly while connecting the analysis to broader environmental questions.
+
+### GEOG 176A - Intro to Geographic Information Systems
+
+**Fall 2025**
+
+This course introduced the fundamentals of **GIS and spatial data analysis using ArcGIS Pro**. I worked with geographic datasets to create maps, analyze spatial relationships, and visualize geographic patterns. The class emphasized how spatial data can be used to communicate information about places, environments, and geographic trends. For my final project, I analyzed how COVID-19 lockdowns impacted wildlife behavior in urban areas (specifically coyotes in Los Angeles county).
+
+
+
+
+
+
+

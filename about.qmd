@@ -9,7 +9,7 @@ I’m originally from Mountain House, California, where my family has lived for 
 Living in a town where there wasn’t always much to do taught me to be resourceful and to appreciate the slower pace of everyday life. Mountain House is where I learned to enjoy simple things, like taking long walks and spending time outside. Growing up there gave me a strong sense of community and helped shape the way I value connection, quiet moments, and the scenery around me.
 
 ::: {layout="[[1, 1, 1]]"}
-![Going for walks around the neighborhood](media/Home/IMG_3045.jpeg){group="Home"}
+![On a walk around my neighborhood](media/Home/IMG_9396.jpeg){group="Home"}
 
 ![High school graduation with my friends](media/Home/IMG_9775.jpeg){group="Home"}
 
@@ -41,7 +41,7 @@ I’m also a big Formula 1 fan. No matter how early the race starts, I’ll usua
 ::: {layout="[[1, 1, 1]]"}
 ![Looking for my next read](media/Hobbies/IMG_0284.jpg){group="Hobbies"}
 
-![My older sister and I in outfits my granda made for us](media/Hobbies/outfits.jpeg){group="Hobbies"}
+![Me and my sister in outfits my grandma sewed](media/Hobbies/outfits.jpeg){group="Hobbies"}
 
 ![Up at 5 AM watching the Monza Grand Prix](media/Hobbies/IMG_2094.jpeg){group="Hobbies"}
 :::
