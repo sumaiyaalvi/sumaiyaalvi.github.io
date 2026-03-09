@@ -20,10 +20,10 @@ website:
 format:
   html:
     theme:
-      light: Morph
-      dark: Solar
-    css: styles.css
-    toc: true
+      - Morph
+      - styles.scss
+    mainfont: DM Sans
+    toc: false
     page-layout: full
 
 

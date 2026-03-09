@@ -1,0 +1,66 @@
+/*-- scss:defaults --*/
+
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Fonts
+$Libre: "Libre Franklin", sans-serif;
+
+// Colors
+$txt_purp: #959cc8;
+$lighter_purp: #bac4de;
+$darker_purp: #2f4f7a; // landing page socials color
+$socials_purp: #485785;
+$burnt_burg: #6D213C;
+
+// Base document Colors
+$navbar-hl: $socials_purp; // highlight color when hovering over navbar links
+$secondary: $socials_purp;
+
+// social buttons default
+.quarto-about-jolla .about-link {
+  color: $txt_purp !important;
+  border-color: $txt_purp !important;
+  opacity: 1 !important;
+}
+
+.quarto-about-jolla .about-link span,
+.quarto-about-jolla .about-link i { // icon appearance
+  color: $txt_purp !important;
+  opacity: 1 !important;
+}
+
+// social buttons hover
+.quarto-about-jolla .about-link:hover {
+  color: $darker_purp !important;
+  border-color: $darker_purp !important;
+}
+
+.quarto-about-jolla .about-link:hover span,
+.quarto-about-jolla .about-link:hover i {
+  color: $darker_purp !important;
+}
+
+// Inline code
+$code-bg: $txt_purp; // inline code background color
+$code-color: $darker_purp; // inline code text color
+
+// Code blocks
+$code-block-bg: $lighter_purp; // code block background color 
+
+/*-- scss:rules --*/
+
+h1, h2 {
+  letter-spacing: 0.7px;
+  font-weight: 800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $Libre;
+}
+
+.title {
+  color: $burnt_burg;
+  font-family: $Libre;
+}
+

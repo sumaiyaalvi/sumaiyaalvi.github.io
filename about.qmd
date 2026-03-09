@@ -2,4 +2,16 @@
 title: "About Me"
 ---
 
-About me
+# About me
+
+## This is me 
+
+### Myself,
+
+and more `as`
+
+```{r}
+#you can see
+duh <- 2
+```
+
