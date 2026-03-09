@@ -1,6 +1,5 @@
 ---
-title: "Projects"
-format: html
+title: "Projects and Coursework"
 ---
 
-projects
+projects i've #done

@@ -48,6 +48,13 @@ $code-color: $darker_purp; // inline code text color
 // Code blocks
 $code-block-bg: $lighter_purp; // code block background color 
 
+.quarto-figure-caption,
+figcaption,
+figure figcaption {
+  color: $txt_purp !important;
+  opacity: 1 !important;
+}
+
 /*-- scss:rules --*/
 
 h1, h2 {
