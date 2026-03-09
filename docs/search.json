@@ -18,7 +18,7 @@
     "href": "projects.html",
     "title": "Projects Portfolio",
     "section": "",
-    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Diamond Prices with Regression Analysis\n\n\nUsing regression analysis in R to identify how carat, cut, and color influence diamond prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing Vegan Dining Hall Options to Support Campus Food Advocacy\n\n\nUsing Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles\n\n\nUsing spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Diamond Prices with Regression Analysis\n\n\nUsing regression analysis in R to identify how carat, cut, and color influence diamond prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing UCSB Housing Costs Through Data Journalism\n\n\nInvestigating a decade of UCSB housing price increases using data analysis and Datawrapper visualizations for the Daily Nexus\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing Vegan Dining Hall Options to Support Campus Food Advocacy\n\n\nUsing Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Insights & Social Listening Analysis for the Beats Pill Launch\n\n\nUsing EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -319,14 +319,14 @@
     "href": "projects/vegan/index.html",
     "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
     "section": "",
-    "text": "Timeline: 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
+    "text": "Timeline: August 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
   },
   {
     "objectID": "projects/vegan/index.html#overview",
     "href": "projects/vegan/index.html#overview",
     "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
     "section": "",
-    "text": "Timeline: 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
+    "text": "Timeline: August 2025\nContext: Advocacy project for an Associated Students senator\nMethods: Spreadsheet analysis, categorization, frequency counts, data visualization\nThis project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.\nUsing a Google Sheet containing dining hall menu data, I analyzed the total number of food options, identified which items were vegan, and then narrowed that subset further to the vegan options that could be considered nutritionally sufficient. I also examined how often these items were served throughout the year, with a particular focus on entrees offered 30 or more times, in order to show that the number of consistent and substantial vegan choices was much smaller than it might initially appear."
   },
   {
     "objectID": "projects/vegan/index.html#tools-and-skills",
@@ -376,5 +376,75 @@
     "title": "Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy",
     "section": "Reflection",
     "text": "Reflection\nThis project showed me that even relatively simple tools like Google Sheets can be powerful when paired with a clear question and strong communication. It reinforced the importance of distinguishing between raw counts and meaningful access, especially in a policy or advocacy context where numbers can easily be misleading without proper interpretation.\nWhat I found especially valuable was the challenge of turning spreadsheet analysis into a more persuasive visual story. The project strengthened my ability to work with structured data in a practical setting and to present findings in a way that supports real-world decision-making."
+  },
+  {
+    "objectID": "projects/housing/index.html",
+    "href": "projects/housing/index.html",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "",
+    "text": "Timeline: October 2024 – February 2025\nPublication: UCSB Daily Nexus\nMethods: Data collection, exploratory analysis, data visualization, interviews, public records research\nThis project was a data-driven article published in the UCSB Daily Nexus that analyzed how housing costs at UC Santa Barbara have changed over the past decade. The goal was to investigate long-term trends in campus housing prices and communicate those findings in a way that would be accessible and meaningful for students making housing decisions.\nWorking as a journalist in the Daily Nexus Data Section, I helped analyze housing data from UCSB Campus Housing and created visualizations showing how prices have changed over time across different housing types and occupancy arrangements. The article combined quantitative analysis with interviews and reporting to explain how rising housing costs affect students."
+  },
+  {
+    "objectID": "projects/housing/index.html#overview",
+    "href": "projects/housing/index.html#overview",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "",
+    "text": "Timeline: October 2024 – February 2025\nPublication: UCSB Daily Nexus\nMethods: Data collection, exploratory analysis, data visualization, interviews, public records research\nThis project was a data-driven article published in the UCSB Daily Nexus that analyzed how housing costs at UC Santa Barbara have changed over the past decade. The goal was to investigate long-term trends in campus housing prices and communicate those findings in a way that would be accessible and meaningful for students making housing decisions.\nWorking as a journalist in the Daily Nexus Data Section, I helped analyze housing data from UCSB Campus Housing and created visualizations showing how prices have changed over time across different housing types and occupancy arrangements. The article combined quantitative analysis with interviews and reporting to explain how rising housing costs affect students."
+  },
+  {
+    "objectID": "projects/housing/index.html#tools-and-skills",
+    "href": "projects/housing/index.html#tools-and-skills",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "Tools and Skills",
+    "text": "Tools and Skills\n\nData Journalism\nDatawrapper\nPython\nExploratory Data Analysis\nPublic Records Research\nInterviewing\nData Visualization\nStorytelling with Data"
+  },
+  {
+    "objectID": "projects/housing/index.html#project-goals",
+    "href": "projects/housing/index.html#project-goals",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "Project Goals",
+    "text": "Project Goals\nThis project focused on a few main questions:\n\nHow have UCSB housing prices changed over the past decade?\nHow do costs compare between residence halls and university apartments?\nHow do occupancy types (single, double, triple) affect overall cost?\nHow have the cost differences between occupancies changed over time?\nWhat do these trends mean for students trying to find affordable housing?"
+  },
+  {
+    "objectID": "projects/housing/index.html#my-role",
+    "href": "projects/housing/index.html#my-role",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "My Role",
+    "text": "My Role\nAs part of the Daily Nexus Data Section, I worked on analyzing housing price data and translating those findings into visuals and narrative reporting. My responsibilities included collecting and organizing housing data, performing exploratory analysis, building charts using Datawrapper, and contributing to the reporting and writing of the final article.\nThe project also involved gathering context through interviews with students and university officials and incorporating those perspectives alongside the quantitative findings."
+  },
+  {
+    "objectID": "projects/housing/index.html#methods",
+    "href": "projects/housing/index.html#methods",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "Methods",
+    "text": "Methods\nThis project combined traditional journalism with data analysis to explain long-term housing trends at UCSB.\n\nData Collection\nHousing cost data was gathered from UCSB Campus Housing Services, which publishes historical pricing information for residence halls and university apartments. The dataset included annual housing rates across multiple occupancy types and meal plan combinations.\nIn addition to housing price data, I conducted interviews with students and university representatives to provide context for the numbers and explain how these changes affect the student experience.\n\n\nExploratory Analysis\nUsing the historical housing dataset, I analyzed how prices changed between the 2013–14 and 2024–25 academic years. The analysis focused on identifying overall trends, comparing housing types, and examining how the cost differences between single, double, and triple occupancies evolved over time.\nThe data showed that housing costs have risen consistently over the past decade, with residence halls increasing faster than university apartments. Overall, housing prices increased by roughly 33% on average, with residence hall rates rising by about 45% during the same period.\n\n\nData Visualization\nTo communicate these trends clearly, I created several charts using Datawrapper, including:\n\nA comparison of occupancy price differences\nA time-series visualization showing how occupancy price gaps changed over time\nVisual comparisons between residence halls and apartment costs\n\nThese visualizations helped translate complex housing data into clear patterns that readers could quickly understand."
+  },
+  {
+    "objectID": "projects/housing/index.html#key-takeaways",
+    "href": "projects/housing/index.html#key-takeaways",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nSeveral important trends emerged from the analysis:\n\nUCSB housing prices have risen steadily over the past decade\nResidence hall costs have increased faster than university apartment costs\nMeal plan requirements contribute significantly to residence hall expenses\nThe cost savings from choosing triple occupancy have narrowed over time\nRising housing prices are pushing more students to consider off-campus options"
+  },
+  {
+    "objectID": "projects/housing/index.html#deliverables",
+    "href": "projects/housing/index.html#deliverables",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "Deliverables",
+    "text": "Deliverables\nThis project resulted in a published article and accompanying data visualizations.\n\nRead the full article in the Daily Nexus"
+  },
+  {
+    "objectID": "projects/housing/index.html#visualizations",
+    "href": "projects/housing/index.html#visualizations",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "Visualizations",
+    "text": "Visualizations"
+  },
+  {
+    "objectID": "projects/housing/index.html#reflection",
+    "href": "projects/housing/index.html#reflection",
+    "title": "Analyzing UCSB Housing Costs Through Data Journalism",
+    "section": "Reflection",
+    "text": "Reflection\nThis project strengthened my skills in data journalism and communicating quantitative findings to a broad audience. It required balancing statistical analysis with narrative storytelling, making sure that the data remained accurate while also being understandable to readers without a technical background.\nWorking on this article also showed me how data analysis can play a role in public conversations about affordability and student life. By combining data visualization with interviews and reporting, the project helped translate housing cost trends into a story that directly impacts the UCSB community."
   }
 ]

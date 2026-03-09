@@ -1,0 +1,104 @@
+---
+title: "Analyzing UCSB Housing Costs Through Data Journalism"
+description: |
+  Investigating a decade of UCSB housing price increases using data analysis and Datawrapper visualizations for the Daily Nexus
+image: housing.png
+categories: [Data Journalism, Datawrapper, Python]
+draft: false
+format:
+  html:
+    toc: true
+---
+
+## Overview
+
+**Timeline:** October 2024 – February 2025  
+**Publication:** UCSB Daily Nexus  
+**Methods:** Data collection, exploratory analysis, data visualization, interviews, public records research
+
+This project was a **data-driven article published in the UCSB Daily Nexus** that analyzed how housing costs at UC Santa Barbara have changed over the past decade. The goal was to investigate long-term trends in campus housing prices and communicate those findings in a way that would be accessible and meaningful for students making housing decisions.
+
+Working as a journalist in the Daily Nexus **Data Section**, I helped analyze housing data from UCSB Campus Housing and created visualizations showing how prices have changed over time across different housing types and occupancy arrangements. The article combined quantitative analysis with interviews and reporting to explain how rising housing costs affect students.
+
+## Tools and Skills
+
+- **Data Journalism**
+- **Datawrapper**
+- **Python**
+- **Exploratory Data Analysis**
+- **Public Records Research**
+- **Interviewing**
+- **Data Visualization**
+- **Storytelling with Data**
+
+## Project Goals
+
+This project focused on a few main questions:
+
+- How have UCSB housing prices changed over the past decade?
+- How do costs compare between residence halls and university apartments?
+- How do occupancy types (single, double, triple) affect overall cost?
+- How have the cost differences between occupancies changed over time?
+- What do these trends mean for students trying to find affordable housing?
+
+## My Role
+
+As part of the **Daily Nexus Data Section**, I worked on analyzing housing price data and translating those findings into visuals and narrative reporting. My responsibilities included collecting and organizing housing data, performing exploratory analysis, building charts using **Datawrapper**, and contributing to the reporting and writing of the final article.
+
+The project also involved gathering context through **interviews with students and university officials** and incorporating those perspectives alongside the quantitative findings.
+
+## Methods
+
+This project combined traditional journalism with data analysis to explain long-term housing trends at UCSB.
+
+### Data Collection
+
+Housing cost data was gathered from **UCSB Campus Housing Services**, which publishes historical pricing information for residence halls and university apartments. The dataset included annual housing rates across multiple occupancy types and meal plan combinations.
+
+In addition to housing price data, I conducted **interviews with students and university representatives** to provide context for the numbers and explain how these changes affect the student experience.
+
+### Exploratory Analysis
+
+Using the historical housing dataset, I analyzed how prices changed between the **2013–14 and 2024–25 academic years**. The analysis focused on identifying overall trends, comparing housing types, and examining how the cost differences between **single, double, and triple occupancies** evolved over time.
+
+The data showed that housing costs have risen consistently over the past decade, with residence halls increasing faster than university apartments. Overall, housing prices increased by roughly **33% on average**, with residence hall rates rising by about **45%** during the same period.
+
+### Data Visualization
+
+To communicate these trends clearly, I created several charts using **Datawrapper**, including:
+
+- A comparison of occupancy price differences
+- A time-series visualization showing how occupancy price gaps changed over time
+- Visual comparisons between residence halls and apartment costs
+
+These visualizations helped translate complex housing data into clear patterns that readers could quickly understand.
+
+## Key Takeaways
+
+Several important trends emerged from the analysis:
+
+- UCSB housing prices have risen steadily over the past decade
+- Residence hall costs have increased faster than university apartment costs
+- Meal plan requirements contribute significantly to residence hall expenses
+- The cost savings from choosing triple occupancy have narrowed over time
+- Rising housing prices are pushing more students to consider off-campus options
+
+## Deliverables
+
+This project resulted in a published article and accompanying data visualizations.
+
+- [Read the full article in the Daily Nexus](https://dailynexus.com/2025-02-13/a-decade-of-increases-ucsb-housing-costs-show-consistent-climb/){target="_blank"}
+
+## Visualizations
+
+<iframe title="Difference in residence hall costs for different occupancies" aria-label="Interactive line chart" id="datawrapper-chart-6B8Rb" src="https://datawrapper.dwcdn.net/6B8Rb/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="567" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="2024-2025 difference in residence hall costs by occupancy" aria-label="Column Chart" id="datawrapper-chart-972jW" src="https://datawrapper.dwcdn.net/972jW/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+## Reflection
+
+This project strengthened my skills in **data journalism and communicating quantitative findings to a broad audience**. It required balancing statistical analysis with narrative storytelling, making sure that the data remained accurate while also being understandable to readers without a technical background.
+
+Working on this article also showed me how data analysis can play a role in public conversations about affordability and student life. By combining data visualization with interviews and reporting, the project helped translate housing cost trends into a story that directly impacts the UCSB community.

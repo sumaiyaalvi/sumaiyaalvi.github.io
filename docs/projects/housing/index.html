@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Investigating a decade of UCSB housing price increases using data analysis and Datawrapper visualizations for the Daily Nexus">
 
-<title>Projects Portfolio – Sumaiya Alvi</title>
+<title>Analyzing UCSB Housing Costs Through Data Journalism – Sumaiya Alvi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5673081cf465d1cbbb9360dfb1a66f45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../media/claude-brands-solid-full.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5673081cf465d1cbbb9360dfb1a66f45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,76 +70,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Sumaiya Alvi" href="projects.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -150,23 +91,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Sumaiya Alvi</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">All About Me!</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./interests.html"> 
+    <a class="nav-link" href="../../interests.html"> 
 <span class="menu-text">Around the World</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume and Coursework</span></a>
   </li>  
 </ul>
@@ -184,148 +125,162 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Projects Portfolio</h1>
-            <p class="subtitle lead">Some of my personal and academic projects</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#tools-and-skills" id="toc-tools-and-skills" class="nav-link" data-scroll-target="#tools-and-skills">Tools and Skills</a></li>
+  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">Project Goals</a></li>
+  <li><a href="#my-role" id="toc-my-role" class="nav-link" data-scroll-target="#my-role">My Role</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data Collection</a></li>
+  <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">Exploratory Analysis</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
+  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analyzing UCSB Housing Costs Through Data Journalism</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data Journalism</div>
+    <div class="quarto-category">Datawrapper</div>
+    <div class="quarto-category">Python</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Investigating a decade of UCSB housing price increases using data analysis and Datawrapper visualizations for the Daily Nexus</p>
+  </div>
+</div>
 
 
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> October 2024 – February 2025<br>
+<strong>Publication:</strong> UCSB Daily Nexus<br>
+<strong>Methods:</strong> Data collection, exploratory analysis, data visualization, interviews, public records research</p>
+<p>This project was a <strong>data-driven article published in the UCSB Daily Nexus</strong> that analyzed how housing costs at UC Santa Barbara have changed over the past decade. The goal was to investigate long-term trends in campus housing prices and communicate those findings in a way that would be accessible and meaningful for students making housing decisions.</p>
+<p>Working as a journalist in the Daily Nexus <strong>Data Section</strong>, I helped analyze housing data from UCSB Campus Housing and created visualizations showing how prices have changed over time across different housing types and occupancy arrangements. The article combined quantitative analysis with interviews and reporting to explain how rising housing costs affect students.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>Data Journalism</strong></li>
+<li><strong>Datawrapper</strong></li>
+<li><strong>Python</strong></li>
+<li><strong>Exploratory Data Analysis</strong></li>
+<li><strong>Public Records Research</strong></li>
+<li><strong>Interviewing</strong></li>
+<li><strong>Data Visualization</strong></li>
+<li><strong>Storytelling with Data</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>How have UCSB housing prices changed over the past decade?</li>
+<li>How do costs compare between residence halls and university apartments?</li>
+<li>How do occupancy types (single, double, triple) affect overall cost?</li>
+<li>How have the cost differences between occupancies changed over time?</li>
+<li>What do these trends mean for students trying to find affordable housing?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>As part of the <strong>Daily Nexus Data Section</strong>, I worked on analyzing housing price data and translating those findings into visuals and narrative reporting. My responsibilities included collecting and organizing housing data, performing exploratory analysis, building charts using <strong>Datawrapper</strong>, and contributing to the reporting and writing of the final article.</p>
+<p>The project also involved gathering context through <strong>interviews with students and university officials</strong> and incorporating those perspectives alongside the quantitative findings.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>This project combined traditional journalism with data analysis to explain long-term housing trends at UCSB.</p>
+<section id="data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection">Data Collection</h3>
+<p>Housing cost data was gathered from <strong>UCSB Campus Housing Services</strong>, which publishes historical pricing information for residence halls and university apartments. The dataset included annual housing rates across multiple occupancy types and meal plan combinations.</p>
+<p>In addition to housing price data, I conducted <strong>interviews with students and university representatives</strong> to provide context for the numbers and explain how these changes affect the student experience.</p>
+</section>
+<section id="exploratory-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-analysis">Exploratory Analysis</h3>
+<p>Using the historical housing dataset, I analyzed how prices changed between the <strong>2013–14 and 2024–25 academic years</strong>. The analysis focused on identifying overall trends, comparing housing types, and examining how the cost differences between <strong>single, double, and triple occupancies</strong> evolved over time.</p>
+<p>The data showed that housing costs have risen consistently over the past decade, with residence halls increasing faster than university apartments. Overall, housing prices increased by roughly <strong>33% on average</strong>, with residence hall rates rising by about <strong>45%</strong> during the same period.</p>
+</section>
+<section id="data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<p>To communicate these trends clearly, I created several charts using <strong>Datawrapper</strong>, including:</p>
+<ul>
+<li>A comparison of occupancy price differences</li>
+<li>A time-series visualization showing how occupancy price gaps changed over time</li>
+<li>Visual comparisons between residence halls and apartment costs</li>
+</ul>
+<p>These visualizations helped translate complex housing data into clear patterns that readers could quickly understand.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>Several important trends emerged from the analysis:</p>
+<ul>
+<li>UCSB housing prices have risen steadily over the past decade</li>
+<li>Residence hall costs have increased faster than university apartment costs</li>
+<li>Meal plan requirements contribute significantly to residence hall expenses</li>
+<li>The cost savings from choosing triple occupancy have narrowed over time</li>
+<li>Rising housing prices are pushing more students to consider off-campus options</li>
+</ul>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<p>This project resulted in a published article and accompanying data visualizations.</p>
+<ul>
+<li><a href="https://dailynexus.com/2025-02-13/a-decade-of-increases-ucsb-housing-costs-show-consistent-climb/">Read the full article in the Daily Nexus</a></li>
+</ul>
+</section>
+<section id="visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
+<iframe title="Difference in residence hall costs for different occupancies" aria-label="Interactive line chart" id="datawrapper-chart-6B8Rb" src="https://datawrapper.dwcdn.net/6B8Rb/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="567" data-external="1">
+</iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<iframe title="2024-2025 difference in residence hall costs by occupancy" aria-label="Column Chart" id="datawrapper-chart-972jW" src="https://datawrapper.dwcdn.net/972jW/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495" data-external="1">
+</iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project strengthened my skills in <strong>data journalism and communicating quantitative findings to a broad audience</strong>. It required balancing statistical analysis with narrative storytelling, making sure that the data remained accurate while also being understandable to readers without a technical background.</p>
+<p>Working on this article also showed me how data analysis can play a role in public conversations about affordability and student life. By combining data visualization with interviews and reporting, the project helped translate housing cost trends into a story that directly impacts the UCSB community.</p>
 
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QXJjR0lTJTIwUHJvJTJDU3BhdGlhbCUyMEFuYWx5c2lz" data-listing-file-modified-sort="1773079593117" data-listing-reading-time-sort="5" data-listing-word-count-sort="878">
-<a href="./projects/coyotes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/coyotes/coyote.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles
-</h5>
-<div class="card-text listing-description delink">
-<p>Using spatial analysis in ArcGIS Pro to examine changes in coyote activity during the COVID-19 lockdowns in Los Angeles</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UiUyQ1JlZ3Jlc3Npb24lMjBBbmFseXNpcw==" data-listing-file-modified-sort="1773080737879" data-listing-reading-time-sort="5" data-listing-word-count-sort="936">
-<a href="./projects/diamonds/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/diamonds/diamonds.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modeling Diamond Prices with Regression Analysis
-</h5>
-<div class="card-text listing-description delink">
-<p>Using regression analysis in R to identify how carat, cut, and color influence diamond prices</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMEpvdXJuYWxpc20lMkNEYXRhd3JhcHBlciUyQ1B5dGhvbg==" data-listing-file-modified-sort="1773083346714" data-listing-reading-time-sort="4" data-listing-word-count-sort="726">
-<a href="./projects/housing/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/housing/housing.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Analyzing UCSB Housing Costs Through Data Journalism
-</h5>
-<div class="card-text listing-description delink">
-<p>Investigating a decade of UCSB housing price increases using data analysis and Datawrapper visualizations for the Daily Nexus</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="R29vZ2xlJTIwU2hlZXRzJTJDRGF0YXdyYXBwZXIlMkNEYXRhJTIwVmlzdWFsaXphdGlvbg==" data-listing-file-modified-sort="1773082596279" data-listing-reading-time-sort="5" data-listing-word-count-sort="827">
-<a href="./projects/vegan/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/vegan/dininghall.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy
-</h5>
-<div class="card-text listing-description delink">
-<p>Using Google Sheets and Datawrapper to quantify the availability of vegan dining hall options and highlight gaps in nutritionally sufficient meals</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDR29vZ2xlJTIwQ29sYWI=" data-listing-file-modified-sort="1773078419050" data-listing-reading-time-sort="3" data-listing-word-count-sort="531">
-<a href="./projects/beats-by-dre/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/beats-by-dre/beats.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Consumer Insights &amp; Social Listening Analysis for the Beats Pill Launch
-</h5>
-<div class="card-text listing-description delink">
-<p>Using EDA and sentiment analysis in Python to explore consumer reactions to the Beats Pill launch</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

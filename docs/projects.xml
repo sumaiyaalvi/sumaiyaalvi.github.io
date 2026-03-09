@@ -10,7 +10,7 @@
 <atom:link href="https://sumaiyaalvi.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 09 Mar 2026 18:55:30 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Mar 2026 19:09:53 GMT</lastBuildDate>
 <item>
   <title>Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles</title>
   <link>https://sumaiyaalvi.github.io/projects/coyotes/</link>
@@ -110,7 +110,7 @@
   <category>ArcGIS Pro</category>
   <category>Spatial Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/coyotes/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/coyotes/coyote.png" medium="image" type="image/png" height="74" width="144"/>
 </item>
 <item>
@@ -224,8 +224,122 @@
   <category>R</category>
   <category>Regression Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/diamonds/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/diamonds/diamonds.png" medium="image" type="image/png" height="58" width="144"/>
+</item>
+<item>
+  <title>Analyzing UCSB Housing Costs Through Data Journalism</title>
+  <link>https://sumaiyaalvi.github.io/projects/housing/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Timeline:</strong> October 2024 – February 2025<br>
+<strong>Publication:</strong> UCSB Daily Nexus<br>
+<strong>Methods:</strong> Data collection, exploratory analysis, data visualization, interviews, public records research</p>
+<p>This project was a <strong>data-driven article published in the UCSB Daily Nexus</strong> that analyzed how housing costs at UC Santa Barbara have changed over the past decade. The goal was to investigate long-term trends in campus housing prices and communicate those findings in a way that would be accessible and meaningful for students making housing decisions.</p>
+<p>Working as a journalist in the Daily Nexus <strong>Data Section</strong>, I helped analyze housing data from UCSB Campus Housing and created visualizations showing how prices have changed over time across different housing types and occupancy arrangements. The article combined quantitative analysis with interviews and reporting to explain how rising housing costs affect students.</p>
+</section>
+<section id="tools-and-skills" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-skills">Tools and Skills</h2>
+<ul>
+<li><strong>Data Journalism</strong></li>
+<li><strong>Datawrapper</strong></li>
+<li><strong>Python</strong></li>
+<li><strong>Exploratory Data Analysis</strong></li>
+<li><strong>Public Records Research</strong></li>
+<li><strong>Interviewing</strong></li>
+<li><strong>Data Visualization</strong></li>
+<li><strong>Storytelling with Data</strong></li>
+</ul>
+</section>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<p>This project focused on a few main questions:</p>
+<ul>
+<li>How have UCSB housing prices changed over the past decade?</li>
+<li>How do costs compare between residence halls and university apartments?</li>
+<li>How do occupancy types (single, double, triple) affect overall cost?</li>
+<li>How have the cost differences between occupancies changed over time?</li>
+<li>What do these trends mean for students trying to find affordable housing?</li>
+</ul>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My Role</h2>
+<p>As part of the <strong>Daily Nexus Data Section</strong>, I worked on analyzing housing price data and translating those findings into visuals and narrative reporting. My responsibilities included collecting and organizing housing data, performing exploratory analysis, building charts using <strong>Datawrapper</strong>, and contributing to the reporting and writing of the final article.</p>
+<p>The project also involved gathering context through <strong>interviews with students and university officials</strong> and incorporating those perspectives alongside the quantitative findings.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>This project combined traditional journalism with data analysis to explain long-term housing trends at UCSB.</p>
+<section id="data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection">Data Collection</h3>
+<p>Housing cost data was gathered from <strong>UCSB Campus Housing Services</strong>, which publishes historical pricing information for residence halls and university apartments. The dataset included annual housing rates across multiple occupancy types and meal plan combinations.</p>
+<p>In addition to housing price data, I conducted <strong>interviews with students and university representatives</strong> to provide context for the numbers and explain how these changes affect the student experience.</p>
+</section>
+<section id="exploratory-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-analysis">Exploratory Analysis</h3>
+<p>Using the historical housing dataset, I analyzed how prices changed between the <strong>2013–14 and 2024–25 academic years</strong>. The analysis focused on identifying overall trends, comparing housing types, and examining how the cost differences between <strong>single, double, and triple occupancies</strong> evolved over time.</p>
+<p>The data showed that housing costs have risen consistently over the past decade, with residence halls increasing faster than university apartments. Overall, housing prices increased by roughly <strong>33% on average</strong>, with residence hall rates rising by about <strong>45%</strong> during the same period.</p>
+</section>
+<section id="data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<p>To communicate these trends clearly, I created several charts using <strong>Datawrapper</strong>, including:</p>
+<ul>
+<li>A comparison of occupancy price differences</li>
+<li>A time-series visualization showing how occupancy price gaps changed over time</li>
+<li>Visual comparisons between residence halls and apartment costs</li>
+</ul>
+<p>These visualizations helped translate complex housing data into clear patterns that readers could quickly understand.</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p>Several important trends emerged from the analysis:</p>
+<ul>
+<li>UCSB housing prices have risen steadily over the past decade</li>
+<li>Residence hall costs have increased faster than university apartment costs</li>
+<li>Meal plan requirements contribute significantly to residence hall expenses</li>
+<li>The cost savings from choosing triple occupancy have narrowed over time</li>
+<li>Rising housing prices are pushing more students to consider off-campus options</li>
+</ul>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<p>This project resulted in a published article and accompanying data visualizations.</p>
+<ul>
+<li><a href="https://dailynexus.com/2025-02-13/a-decade-of-increases-ucsb-housing-costs-show-consistent-climb/">Read the full article in the Daily Nexus</a></li>
+</ul>
+</section>
+<section id="visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
+<iframe title="Difference in residence hall costs for different occupancies" aria-label="Interactive line chart" id="datawrapper-chart-6B8Rb" src="https://datawrapper.dwcdn.net/6B8Rb/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="567" data-external="1">
+</iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<iframe title="2024-2025 difference in residence hall costs by occupancy" aria-label="Column Chart" id="datawrapper-chart-972jW" src="https://datawrapper.dwcdn.net/972jW/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495" data-external="1">
+</iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>This project strengthened my skills in <strong>data journalism and communicating quantitative findings to a broad audience</strong>. It required balancing statistical analysis with narrative storytelling, making sure that the data remained accurate while also being understandable to readers without a technical background.</p>
+<p>Working on this article also showed me how data analysis can play a role in public conversations about affordability and student life. By combining data visualization with interviews and reporting, the project helped translate housing cost trends into a story that directly impacts the UCSB community.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Data Journalism</category>
+  <category>Datawrapper</category>
+  <category>Python</category>
+  <guid>https://sumaiyaalvi.github.io/projects/housing/</guid>
+  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
+  <media:content url="https://sumaiyaalvi.github.io/projects/housing/housing.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
   <title>Analyzing Vegan Dining Hall Options to Support Campus Food Advocacy</title>
@@ -237,7 +351,7 @@
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><strong>Timeline:</strong> 2025<br>
+<p><strong>Timeline:</strong> August 2025<br>
 <strong>Context:</strong> Advocacy project for an Associated Students senator<br>
 <strong>Methods:</strong> Spreadsheet analysis, categorization, frequency counts, data visualization</p>
 <p>This project was created to support advocacy for more vegan dining hall options at UCSB. The goal was to quantify how many dining hall items were vegan, and more importantly, how many of those options were actually nutritionally sufficient and served frequently enough to be considered realistic meal choices for students.</p>
@@ -333,7 +447,7 @@
   <category>Datawrapper</category>
   <category>Data Visualization</category>
   <guid>https://sumaiyaalvi.github.io/projects/vegan/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/vegan/dininghall.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -429,7 +543,7 @@
   <category>Python</category>
   <category>Google Colab</category>
   <guid>https://sumaiyaalvi.github.io/projects/beats-by-dre/</guid>
-  <pubDate>Mon, 09 Mar 2026 18:55:30 GMT</pubDate>
+  <pubDate>Mon, 09 Mar 2026 19:09:53 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/beats-by-dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 </channel>
