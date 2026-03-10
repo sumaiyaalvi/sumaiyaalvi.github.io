@@ -10,7 +10,7 @@
 <atom:link href="https://sumaiyaalvi.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 09 Mar 2026 22:08:19 GMT</lastBuildDate>
+<lastBuildDate>Tue, 10 Mar 2026 15:41:46 GMT</lastBuildDate>
 <item>
   <title>Urban Wildlife During COVID-19: Analyzing Coyote Movement in Los Angeles</title>
   <link>https://sumaiyaalvi.github.io/projects/coyotes/</link>
@@ -22,7 +22,8 @@
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><strong>Timeline:</strong> November-December 2025<br>
-<strong>Methods:</strong> Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis <strong>Course:</strong> GEOG 176A - Intro to GIS</p>
+<strong>Methods:</strong> Convex Hull Analysis, Buffer Analysis, Spatial Join, Kernel Density Analysis<br>
+<strong>Course:</strong> GEOG 176A - Intro to GIS</p>
 <p>This project examined how changes in human activity during the COVID-19 lockdowns influenced urban wildlife behavior, using <strong>coyote sightings in Los Angeles</strong> as a case study. During 2020, many people reported seeing wildlife in urban spaces more often, which raised questions about how strongly human mobility shapes animal movement in cities.</p>
 <p>To explore this, my partner and I compared coyote sightings from <strong>April 2019, April 2020, and April 2021</strong> to capture conditions before, during, and after the lockdown period. Using <strong>public wildlife observation data, parking citation data as a proxy for human mobility, and ArcGIS Pro</strong>, we analyzed how the extent, distribution, and density of coyote activity changed across the three years.</p>
 </section>
@@ -110,7 +111,7 @@
   <category>ArcGIS Pro</category>
   <category>Spatial Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/coyotes/</guid>
-  <pubDate>Mon, 09 Mar 2026 22:08:19 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 15:41:46 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/coyotes/coyote.png" medium="image" type="image/png" height="74" width="144"/>
 </item>
 <item>
@@ -835,7 +836,7 @@ font-style: inherit;">#display interactive version of the plot</span></span>
   <category>ggplot2</category>
   <category>Affective Visualization</category>
   <guid>https://sumaiyaalvi.github.io/projects/screentime/</guid>
-  <pubDate>Mon, 09 Mar 2026 22:08:19 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 15:41:46 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/screentime/snippet.png" medium="image" type="image/png" height="62" width="144"/>
 </item>
 <item>
@@ -949,7 +950,7 @@ font-style: inherit;">#display interactive version of the plot</span></span>
   <category>R</category>
   <category>Regression Analysis</category>
   <guid>https://sumaiyaalvi.github.io/projects/diamonds/</guid>
-  <pubDate>Mon, 09 Mar 2026 22:08:19 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 15:41:46 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/diamonds/diamonds.png" medium="image" type="image/png" height="58" width="144"/>
 </item>
 <item>
@@ -1063,7 +1064,7 @@ font-style: inherit;">#display interactive version of the plot</span></span>
   <category>Datawrapper</category>
   <category>Python</category>
   <guid>https://sumaiyaalvi.github.io/projects/housing/</guid>
-  <pubDate>Mon, 09 Mar 2026 22:08:19 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 15:41:46 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/housing/housing.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
@@ -1172,7 +1173,7 @@ font-style: inherit;">#display interactive version of the plot</span></span>
   <category>Datawrapper</category>
   <category>Data Visualization</category>
   <guid>https://sumaiyaalvi.github.io/projects/vegan/</guid>
-  <pubDate>Mon, 09 Mar 2026 22:08:19 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 15:41:46 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/vegan/dininghall.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -1268,7 +1269,7 @@ font-style: inherit;">#display interactive version of the plot</span></span>
   <category>Python</category>
   <category>Google Colab</category>
   <guid>https://sumaiyaalvi.github.io/projects/beats-by-dre/</guid>
-  <pubDate>Mon, 09 Mar 2026 22:08:19 GMT</pubDate>
+  <pubDate>Tue, 10 Mar 2026 15:41:46 GMT</pubDate>
   <media:content url="https://sumaiyaalvi.github.io/projects/beats-by-dre/beats.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 </channel>
