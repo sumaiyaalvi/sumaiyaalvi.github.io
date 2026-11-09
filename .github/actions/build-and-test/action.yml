@@ -1,0 +1,47 @@
+name: Build and test
+description: Render the Quarto site into docs/ and run the site and security rules tests.
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: npm
+
+    # The Firebase emulators used by the rules tests run on Java.
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: 21
+
+    - uses: quarto-dev/quarto-actions/setup@v2
+
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        use-public-rspm: true
+
+    # Packages loaded by projects/screentime/index.qmd.
+    - uses: r-lib/actions/setup-r-dependencies@v2
+      with:
+        packages: |
+          any::rmarkdown
+          any::knitr
+          any::tidyverse
+          any::DT
+          any::plotly
+
+    - name: Install Node dependencies
+      shell: bash
+      run: npm ci
+
+    # docs/ is committed, so clear it to keep deleted pages out of the deploy.
+    - name: Render site
+      shell: bash
+      run: |
+        rm -rf docs
+        quarto render
+
+    - name: Run tests
+      shell: bash
+      run: npm test
