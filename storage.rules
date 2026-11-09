@@ -1,0 +1,10 @@
+rules_version = '2';
+
+// Deny everything until the site has features that use Storage.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
